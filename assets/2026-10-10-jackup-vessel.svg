@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="480" fill="#0a1120"/>
+  <!-- sky gradient -->
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123a63"/>
+      <stop offset="1" stop-color="#0b1f38"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5ea7ff"/>
+      <stop offset="1" stop-color="#8a6cff"/>
+    </linearGradient>
+  </defs>
+  <!-- sea and seabed -->
+  <rect x="0" y="300" width="800" height="130" fill="url(#sea)"/>
+  <path d="M0 300 Q 40 292 80 300 T 160 300 T 240 300 T 320 300 T 400 300 T 480 300 T 560 300 T 640 300 T 720 300 T 800 300" fill="none" stroke="#5ea7ff" stroke-width="2" opacity="0.7"/>
+  <rect x="0" y="430" width="800" height="50" fill="#2a2418"/>
+  <text x="16" y="462" fill="#b9a77e" font-size="13">Seabed</text>
+  <text x="16" y="322" fill="#8fc4ff" font-size="13">Sea level</text>
+
+  <!-- legs -->
+  <g fill="#5ea7ff" opacity="0.9">
+    <rect x="150" y="70" width="14" height="362"/>
+    <rect x="390" y="70" width="14" height="362"/>
+  </g>
+  <!-- spudcans -->
+  <g fill="#8a6cff">
+    <path d="M136 432 L178 432 L168 448 L146 448 Z"/>
+    <path d="M376 432 L418 432 L408 448 L386 448 Z"/>
+  </g>
+  <!-- hull raised above waves -->
+  <rect x="110" y="215" width="340" height="44" rx="6" fill="#1c2b46" stroke="url(#acc)" stroke-width="2"/>
+  <text x="200" y="243" fill="#eaf1ff" font-size="15" font-weight="600">Hull lifted clear of the waves</text>
+
+  <!-- crane -->
+  <rect x="300" y="150" width="18" height="65" fill="#8fa1bc"/>
+  <line x1="309" y1="152" x2="560" y2="60" stroke="#eaf1ff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="556" y1="62" x2="556" y2="128" stroke="#8fa1bc" stroke-width="2"/>
+  <!-- nacelle being lifted -->
+  <rect x="532" y="128" width="58" height="22" rx="4" fill="#eaf1ff"/>
+
+  <!-- turbine tower (already installed) -->
+  <rect x="580" y="150" width="14" height="282" fill="#cfd9ec"/>
+
+  <!-- labels -->
+  <g fill="#8fc4ff" font-size="14">
+    <text x="176" y="100">Leg (jacked down to the seabed)</text>
+    <text x="430" y="455">Spudcan foot spreads the load</text>
+    <text x="606" y="250">Turbine tower</text>
+    <text x="604" y="132">Nacelle on the hook</text>
+    <text x="330" y="50">Main crane</text>
+  </g>
+  <line x1="418" y1="448" x2="426" y2="450" stroke="#8fc4ff" stroke-width="1"/>
+  <text x="400" y="24" fill="#eaf1ff" font-size="18" font-weight="700" text-anchor="middle">How a jack-up installation vessel works</text>
+</svg>
