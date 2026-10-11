@@ -9,6 +9,15 @@ Read this first in any new chat about Tech Pulse Daily, the Engine-X blog or eng
 | `engine-x-content` (public, this repo) | The Engine-X blog. Posts in `posts/*.md`, diagrams in `assets/`. `build.py` builds the site; GitHub Actions publishes it to GitHub Pages. Rules: `WRITING_GUIDE.md`. |
 | `Engine-x` (private) | The main site **engx3d.com** on Cloudflare Pages. `blog.html` is the cinematic Journal page (reads `/blog/feed.json`). `functions/blog/[[path]].js` serves this repo's blog at **engx3d.com/blog/**. |
 
+## Claude connectors
+| Connector | Use |
+|---|---|
+| GitHub | Reads/writes the three repos above. |
+| Gmail | Outreach drafts and reply summaries; Claude sends only after Parth says so. |
+| Cloudflare Developer Platform (added 11 Oct 2026) | Workers, KV, R2, D1 on Parth's Cloudflare account. No Workers yet; the site itself runs on Cloudflare Pages. |
+
+Google Search Console is set up for engx3d.com (no connector; check it at search.google.com/search-console).
+
 ## Scheduled tasks (claude.ai → Scheduled tasks), all on Sonnet, IST
 | Time | Task | What it does |
 |---|---|---|
