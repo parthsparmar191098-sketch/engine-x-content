@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="34" fill="#eaf1ff" font-size="19" font-weight="700" text-anchor="middle">Ultrasonic thickness check on a steel plate</text>
+
+  <!-- probe -->
+  <rect x="170" y="70" width="80" height="70" rx="10" fill="#1c2b46" stroke="#5ea7ff" stroke-width="2"/>
+  <text x="210" y="102" fill="#eaf1ff" font-size="13" text-anchor="middle">Probe</text>
+  <text x="210" y="120" fill="#8fa1bc" font-size="11" text-anchor="middle">(transducer)</text>
+  <rect x="180" y="140" width="60" height="10" fill="#8a6cff"/>
+  <text x="260" y="152" fill="#8fc4ff" font-size="12">couplant</text>
+
+  <!-- plate -->
+  <rect x="60" y="150" width="680" height="110" fill="#2b3442" stroke="#8fa1bc" stroke-width="1.5"/>
+  <text x="70" y="244" fill="#cfd9ec" font-size="13">Hull / tank plate</text>
+  <!-- corrosion on back wall at right -->
+  <path d="M470 260 Q 520 238 570 252 T 670 246 L 670 260 Z" fill="#7a3b1f"/>
+  <text x="560" y="290" fill="#e08a5a" font-size="13" text-anchor="middle">corrosion thins the back wall</text>
+
+  <!-- sound path -->
+  <line x1="200" y1="152" x2="200" y2="258" stroke="#5ea7ff" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="220" y1="258" x2="220" y2="152" stroke="#8a6cff" stroke-width="3" marker-end="url(#b)"/>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#5ea7ff"/></marker>
+    <marker id="b" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#8a6cff"/></marker>
+  </defs>
+  <text x="100" y="196" fill="#5ea7ff" font-size="12">pulse in</text>
+  <text x="232" y="196" fill="#b9a6ff" font-size="12">echo back</text>
+
+  <!-- second probe position on thin area -->
+  <rect x="540" y="96" width="60" height="44" rx="8" fill="#1c2b46" stroke="#5ea7ff" stroke-width="2"/>
+  <rect x="548" y="140" width="44" height="10" fill="#8a6cff"/>
+  <line x1="562" y1="152" x2="562" y2="242" stroke="#5ea7ff" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="578" y1="242" x2="578" y2="152" stroke="#8a6cff" stroke-width="3" marker-end="url(#b)"/>
+  <text x="612" y="122" fill="#eaf1ff" font-size="12">shorter echo time</text>
+  <text x="612" y="138" fill="#eaf1ff" font-size="12">= thinner steel</text>
+
+  <!-- formula -->
+  <rect x="120" y="320" width="560" height="96" rx="12" fill="rgba(94,167,255,0.08)" stroke="rgba(94,167,255,0.35)"/>
+  <text x="400" y="356" fill="#eaf1ff" font-size="20" font-weight="700" text-anchor="middle">Thickness = (sound speed × echo time) ÷ 2</text>
+  <text x="400" y="390" fill="#8fa1bc" font-size="14" text-anchor="middle">÷ 2 because the pulse travels down and back. Sound in steel ≈ 5,900 m/s.</text>
+</svg>
