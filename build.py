@@ -129,7 +129,7 @@ HEAD = """<!doctype html>
 """
 
 FOOT = """<footer>
-  <a href="{home}">Engine&#8209;X</a> — interactive 3D machines, engineered by Parth Parmar.
+  <a href="{home}/">Engine&#8209;X</a> · <a href="{home}/blog.html">Journal</a> · <a href="{home}/atlas.html">Atlas</a> — engineered by Parth Parmar.
   · <a href="{base}/rss.xml">RSS</a>
 </footer>
 </body>
@@ -196,7 +196,7 @@ def render_post(p):
 def render_index(posts):
     out = [page_head(SITE["title"], SITE["description"], f"{BASE}/")]
     out.append('<div class="wrap">\n')
-    out.append(f'  <a class="back" href="{SITE["main_site"]}/">&larr; Engine-X home</a>\n')
+    out.append(f'  <a class="back" href="{SITE["main_site"]}/blog.html">&larr; Engine-X Journal</a>\n')
     out.append(f'  <h1>{e(SITE["title"])}</h1>\n')
     out.append(f'  <p class="sub">{e(SITE["description"])}</p>\n')
     out.append('  <div class="filters" role="tablist">\n')
