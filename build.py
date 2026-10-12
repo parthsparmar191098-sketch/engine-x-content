@@ -54,11 +54,13 @@ MAIN = SITE["main_site"].rstrip("/")
 AUTHOR = {
     "name": "Parth Parmar",
     "url": f"{MAIN}/about",
-    "job": "Mechanical Engineer, creator of Engine-X",
+    "job": "Mechanical Engineer & Designer, creator of Engine-X",
     "linkedin": "https://www.linkedin.com/in/parth-parmar-767608309",
-    "bio": ("Mechanical engineer working in ship repair and dry docking in India, with hands-on experience "
-            "in piping, valves, fabrication and pressure testing. He builds Engine-X, a free interactive 3D "
-            "atlas that shows how real machines work inside."),
+    "bio": ("Mechanical engineer and designer from India. He has designed and drafted marine engineering "
+            "projects in AutoCAD and SolidWorks, and works in ship repair and dry docking, with hands-on "
+            "experience in piping, valves, fabrication and pressure testing. He builds Engine-X, a free "
+            "interactive 3D atlas that shows how real machines work inside."),
+    "knows": ["Mechanical design", "AutoCAD", "SolidWorks", "2D drafting and 3D modeling", "Ship repair and dry docking", "Piping and valves", "Pressure and leak testing", "Fabrication", "Interactive 3D web visualization", "AI automation"],
 }
 LOGO = f"{MAIN}/og-image.jpg"
 
@@ -269,7 +271,8 @@ def mini_cards(items):
 
 def post_schema(p, image_url):
     author = {"@type": "Person", "@id": f"{MAIN}/#parth", "name": AUTHOR["name"], "url": AUTHOR["url"],
-              "jobTitle": AUTHOR["job"], "sameAs": [AUTHOR["linkedin"]]}
+              "jobTitle": AUTHOR["job"], "knowsAbout": AUTHOR["knows"],
+              "sameAs": [AUTHOR["linkedin"]]}
     publisher = {"@type": "Organization", "@id": f"{MAIN}/#org", "name": "Engine-X", "url": f"{MAIN}/",
                  "logo": {"@type": "ImageObject", "url": LOGO}}
     article = {
