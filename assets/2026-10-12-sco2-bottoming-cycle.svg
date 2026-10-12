@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5ea7ff"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8a6cff"/></marker></defs>
+<rect width="800" height="460" fill="#0a1120"/>
+<text x="400" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#eaf1ff">Supercritical CO₂ bottoming cycle</text>
+<text x="400" y="58" text-anchor="middle" font-size="14" fill="#8fc4ff">A closed loop turns gas turbine exhaust heat into extra power</text>
+<!-- exhaust duct -->
+<rect x="40" y="110" width="720" height="60" rx="8" fill="#14203a" stroke="#8a6cff" stroke-width="2"/>
+<text x="60" y="136" font-size="14" fill="#eaf1ff" font-weight="700">Gas turbine exhaust (hot)</text>
+<text x="60" y="156" font-size="13" fill="#8fc4ff">heat that would go up the stack</text>
+<line x1="470" y1="140" x2="740" y2="140" stroke="#8a6cff" stroke-width="3" marker-end="url(#b)"/>
+<!-- heater -->
+<rect x="300" y="190" width="150" height="56" rx="8" fill="#1b2a4a" stroke="#5ea7ff" stroke-width="2"/>
+<text x="375" y="215" text-anchor="middle" font-size="14" font-weight="700" fill="#eaf1ff">Exhaust heat</text>
+<text x="375" y="233" text-anchor="middle" font-size="14" font-weight="700" fill="#eaf1ff">exchanger</text>
+<line x1="375" y1="170" x2="375" y2="190" stroke="#8a6cff" stroke-width="3"/>
+<!-- turbine -->
+<polygon points="560,200 660,185 660,265 560,250" fill="#1b2a4a" stroke="#5ea7ff" stroke-width="2"/>
+<text x="610" y="232" text-anchor="middle" font-size="14" font-weight="700" fill="#eaf1ff">Turbine</text>
+<circle cx="735" cy="225" r="32" fill="#1b2a4a" stroke="#8a6cff" stroke-width="2"/>
+<text x="735" y="230" text-anchor="middle" font-size="14" font-weight="700" fill="#eaf1ff">Gen</text>
+<line x1="660" y1="225" x2="703" y2="225" stroke="#eaf1ff" stroke-width="3"/>
+<text x="735" y="275" text-anchor="middle" font-size="13" fill="#8fc4ff">extra power</text>
+<!-- recuperator -->
+<rect x="300" y="310" width="150" height="50" rx="8" fill="#1b2a4a" stroke="#8a6cff" stroke-width="2"/>
+<text x="375" y="332" text-anchor="middle" font-size="14" font-weight="700" fill="#eaf1ff">Recuperator</text>
+<text x="375" y="350" text-anchor="middle" font-size="12" fill="#8fc4ff">reuses outlet heat</text>
+<!-- cooler -->
+<rect x="480" y="390" width="130" height="44" rx="8" fill="#1b2a4a" stroke="#5ea7ff" stroke-width="2"/>
+<text x="545" y="418" text-anchor="middle" font-size="14" font-weight="700" fill="#eaf1ff">Cooler</text>
+<!-- compressor -->
+<polygon points="90,300 190,285 190,365 90,350" fill="#1b2a4a" stroke="#5ea7ff" stroke-width="2" transform="translate(0,0)"/>
+<text x="140" y="332" text-anchor="middle" font-size="14" font-weight="700" fill="#eaf1ff">Compressor</text>
+<text x="150" y="272" text-anchor="middle" font-size="12" fill="#8fc4ff">dense CO₂ = low work</text>
+<!-- arrows -->
+<path d="M190 325 H300" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M375 310 V246" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M450 218 H560" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M610 258 V335 H450" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M375 360 V412 H480" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M545 434 V450 H140 V368" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<text x="20" y="215" font-size="13" fill="#8fc4ff">CO₂ above 31 °C</text>
+<text x="20" y="233" font-size="13" fill="#8fc4ff">and 7.4 MPa</text>
+<text x="20" y="251" font-size="13" fill="#8fc4ff">(supercritical)</text>
+</svg>
