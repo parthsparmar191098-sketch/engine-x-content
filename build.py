@@ -410,9 +410,9 @@ def render_post(p, posts):
     out.append('      <p class="small">Explode, X&#8209;ray and cut them open, free in your browser.</p>\n    </div>\n')
     out.append('    <div class="panel offer"><div class="box-title">Need your machine in 3D?</div>\n'
                '      <p>Engine&#8209;X builds interactive 3D websites for pumps, valves, gearboxes and other '
-               'machines that buyers can rotate, explode and section, plus 3D explainers for colleges and trainers.</p>\n'
-               f'      <a class="btn" href="{MAIN}/contact">Talk to Parth &rarr;</a>\n'
-               f'      <a class="more" href="{MAIN}/about">See services &amp; FAQ</a>\n    </div>\n'
+               'machines that buyers can rotate, explode and section, plus 3D explainers for colleges and trainers. Free quote within 24 hours, 3 rounds of revisions included.</p>\n'
+               f'      <a class="btn" href="{MAIN}/services">Get a free quote &rarr;</a>\n'
+               f'      <a class="more" href="{MAIN}/services">What\'s included</a>\n    </div>\n'
                "  </section>\n")
 
     # author bio
