@@ -7,6 +7,17 @@ summary: A Denver startup says factory-built supercritical CO₂ power blocks ca
 image: assets/2026-10-12-sco2-bottoming-cycle.svg
 image_alt: Diagram of a closed supercritical CO2 loop taking heat from gas turbine exhaust, driving a turbine and generator, with a recuperator and a cooler
 image_credit: Diagram: Engine-X
+keywords: supercritical CO2, sCO2 power cycle, gas turbine waste heat, Brayton cycle, recuperator
+tldr: A closed supercritical CO₂ loop can turn gas-turbine exhaust heat into extra power with much smaller machinery than steam, but the startup's 50% claim still needs real operating data.
+takeaways:
+- Simple-cycle gas turbines send hot exhaust up the stack instead of recovering it.
+- Above about 31 °C and 74 bar, CO₂ becomes a dense supercritical fluid, so turbines and heat exchangers can be much smaller than for steam.
+- The loop is a closed Brayton cycle: compress, recuperate, heat from exhaust, expand, cool.
+- The STEP Demo pilot proved sCO₂ turbomachinery at pilot scale; commercial durability is still the open question.
+faq:
+- What is supercritical CO₂? | Carbon dioxide above roughly 31 °C and 7.4 MPa, where it is neither a normal liquid nor a gas but a dense fluid that flows like a gas.
+- Why use CO₂ instead of steam for waste heat? | Dense CO₂ carries a lot of energy in a small volume, so the turbine, heat exchangers and piping can be much smaller than a steam system.
+- Does an sCO₂ bottoming cycle change the gas turbine? | No. It only takes heat from the exhaust through a heat exchanger, so the gas turbine itself is not modified.
 sources:
 - Turbomachinery Magazine — American Supercritical launches sCO2 power blocks for gas turbine waste heat (6 Oct 2026) | https://www.turbomachinerymag.com/view/american-supercritical-launches-sco-power-blocks-for-gas-turbine-waste-heat
 - Interesting Engineering — American Supercritical funding and supercritical CO2 waste heat power (23 Sep 2026) | https://interestingengineering.com/innovation/supercritical-co2-gas-turbine-waste-heat-power

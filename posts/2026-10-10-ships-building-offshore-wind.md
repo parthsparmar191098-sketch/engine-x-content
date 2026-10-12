@@ -7,6 +7,17 @@ summary: Two jack-up vessels just finished installing 76 giant turbines in the B
 image: assets/2026-10-10-jackup-vessel.svg
 image_alt: Diagram of a jack-up vessel standing on its legs and lifting a wind turbine nacelle
 image_credit: Diagram: Engine-X
+keywords: jack-up vessel, offshore wind installation, rack and pinion jacking, CSOV, motion-compensated gangway
+tldr: Jack-up vessels stand on steel legs to become stable platforms for lifting wind turbines, and new hybrid service ships use motion-compensated gangways to keep technicians safe for decades after.
+takeaways:
+- A floating ship heaves, rolls and pitches, so precise heavy lifts at sea need a stable platform.
+- Jack-up vessels lower four legs to the seabed with rack-and-pinion drives, pre-load them, then lift the hull above the waves.
+- CSOVs maintain wind farms, and new ones use methanol dual-fuel engines and large battery systems.
+- Motion-compensated gangways measure vessel motion and move the opposite way, like noise-cancelling headphones.
+faq:
+- What is a jack-up vessel? | A ship with long steel legs that it lowers to the seabed and uses to lift its hull out of the water, turning itself into a stable platform for heavy crane work.
+- Why can't a normal crane ship install wind turbines? | A floating ship moves with the waves, so lowering a very heavy nacelle onto a tower top with centimetre accuracy is not possible from a moving crane.
+- What does a motion-compensated gangway do? | Sensors measure the ship's heave, roll and pitch, and actuators move the walkway the opposite way so it stays still relative to the turbine.
 sources:
 - Offshore Magazine — weekly offshore wind updates (8 Oct 2026) | https://offshore-mag.com/renewable-energy/news/55410737/north-sea-projects-and-vessel-developments-lead-this-weeks-offshore-wind-updates
 - OE Digital — Cadeler completes Baltic Power installation | https://www.oedigital.com/news/543525-cadeler-wraps-up-turbine-installation-job-at-poland-s-first-offshore-wind-farm

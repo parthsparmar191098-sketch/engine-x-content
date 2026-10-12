@@ -6,18 +6,32 @@ Each post is a Markdown file with a simple header:
     ---
     title: The Ships Building Europe's Offshore Wind Farms
     date: 2026-10-10
+    updated: 2026-10-14       # optional: date of a real content update
     category: news            # news | guide | case-study | field-notes | learn
     tag: machines             # news only: machines | automation | space | design
-    summary: One or two sentences shown on the blog card.
+    summary: One or two sentences shown on the blog card and in the "In short" box.
     image: assets/2026-10-10-jackup.svg      # optional
     image_alt: Diagram of a jack-up vessel    # optional
+    image_credit: Diagram: Engine-X           # optional
     model: turbo              # optional: link to an Engine-X 3D machine
+    keywords: jack-up vessel, offshore wind, monopile   # optional, comma separated
+    video: https://www.youtube.com/watch?v=XXXXXXXXXXX  # optional, YouTube only
+    tldr: One sentence shown at the end of the post.    # optional
     draft: false              # optional, true = not published
+    takeaways:                # optional, 3-5 short bullet points
+    - First key point
+    - Second key point
+    faq:                      # optional, 2-4 questions, "Question | Answer"
+    - What is a jack-up vessel? | A ship that lowers legs to the seabed...
     sources:
     - Offshore Magazine | https://...
     - OE Digital | https://...
     ---
     Markdown body...
+
+Everything else on a post page (contents list, breadcrumbs, reading time,
+author bio, share buttons, related and latest posts, 3D machines, services
+and schema.org data) is generated automatically.
 """
 
 import html
@@ -27,6 +41,7 @@ import shutil
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
+from urllib.parse import quote, urlparse, parse_qs
 
 import markdown
 
@@ -34,6 +49,18 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "_site"
 SITE = json.loads((ROOT / "site.json").read_text(encoding="utf-8"))
 BASE = SITE["base_url"].rstrip("/")
+MAIN = SITE["main_site"].rstrip("/")
+
+AUTHOR = {
+    "name": "Parth Parmar",
+    "url": f"{MAIN}/about",
+    "job": "Mechanical Engineer, creator of Engine-X",
+    "linkedin": "https://www.linkedin.com/in/parth-parmar-767608309",
+    "bio": ("Mechanical engineer working in ship repair and dry docking in India, with hands-on experience "
+            "in piping, valves, fabrication and pressure testing. He builds Engine-X, a free interactive 3D "
+            "atlas that shows how real machines work inside."),
+}
+LOGO = f"{MAIN}/og-image.jpg"
 
 CATEGORIES = {
     "news": "News",
@@ -47,10 +74,13 @@ FILTERS = [("all", "All"), ("news", "News"), ("guide", "Guides"),
 TAGS = {"machines": "⚙️ Machines", "automation": "🤖 Automation",
         "space": "🚀 Space", "design": "✏️ Design"}
 MODELS = {
-    "turbo": "Turbocharger",
-    "pulleybelt": "V-Belt Pulley Drive",
-    "pump": "Centrifugal Pump",
+    "turbo": ("Turbocharger", "Exhaust-driven turbine spinning a compressor, with journal bearings and a wastegate."),
+    "pulleybelt": ("V-Belt Pulley Drive", "Two pulleys and a V-belt reducing speed with true belt kinematics."),
+    "pump": ("Centrifugal Pump", "End-suction pump with a backward-curved impeller and volute casing."),
 }
+LIST_KEYS = ("sources", "takeaways", "faq")
+SIMPLE_KEYS = ("category", "tag", "date", "updated", "model", "draft", "image", "video")
+WORDS_PER_MIN = 220
 
 e = html.escape
 
@@ -61,23 +91,22 @@ def parse(path):
     if not m:
         raise ValueError(f"{path.name}: missing --- header ---")
     head, body = m.groups()
-    meta, sources, in_sources = {}, [], False
+    meta = {k: [] for k in LIST_KEYS}
+    current_list = None
     for line in head.splitlines():
         if not line.strip():
             continue
-        if in_sources and line.lstrip().startswith("- "):
-            item = line.lstrip()[2:]
-            name, _, url = item.partition("|")
-            sources.append((name.strip(), url.strip()))
+        if current_list and line.lstrip().startswith("- "):
+            meta[current_list].append(line.lstrip()[2:].strip())
             continue
-        in_sources = False
+        current_list = None
         key, _, val = line.partition(":")
         key = key.strip().lower()
         val = val.strip()
-        if key in ("category", "tag", "date", "model", "draft", "image"):
-            val = val.split("#", 1)[0].strip()  # allow trailing comments on simple fields
-        if key == "sources":
-            in_sources = True
+        if key in SIMPLE_KEYS:
+            val = val.split(" #", 1)[0].strip()  # allow trailing comments on simple fields
+        if key in LIST_KEYS:
+            current_list = key
             continue
         meta[key] = val
     for req in ("title", "date", "category", "summary"):
@@ -86,10 +115,26 @@ def parse(path):
     if meta["category"] not in CATEGORIES:
         raise ValueError(f"{path.name}: unknown category '{meta['category']}'")
     meta["date_obj"] = datetime.strptime(meta["date"], "%Y-%m-%d")
-    meta["sources"] = sources
+    if meta.get("updated"):
+        meta["updated_obj"] = datetime.strptime(meta["updated"], "%Y-%m-%d")
+    meta["sources"] = [(s.rpartition("|")[0].strip(), s.rpartition("|")[2].strip()) if "|" in s else (s.strip(), "")
+                       for s in meta["sources"]]
+    faq = []
+    for item in meta["faq"]:
+        q, sep, a = item.partition("|")
+        if not sep or not q.strip() or not a.strip():
+            raise ValueError(f"{path.name}: faq lines must be 'Question | Answer'")
+        faq.append((q.strip(), a.strip()))
+    meta["faq"] = faq
     meta["slug"] = path.stem
     meta["url"] = f"{BASE}/posts/{path.stem}.html"
-    meta["body_html"] = markdown.markdown(body, extensions=["extra", "sane_lists"])
+    md = markdown.Markdown(extensions=["extra", "sane_lists", "toc"],
+                           extension_configs={"toc": {"toc_depth": "2-2"}})
+    meta["body_html"] = md.convert(body)
+    meta["toc"] = [(t["id"], t["name"]) for t in md.toc_tokens]
+    text = re.sub(r"<[^>]+>", " ", meta["body_html"])
+    meta["words"] = len(text.split())
+    meta["minutes"] = max(1, round(meta["words"] / WORDS_PER_MIN))
     meta["draft"] = meta.get("draft", "false").lower() == "true"
     return meta
 
@@ -105,6 +150,22 @@ def nice_date(d):
     return d.strftime("%d %b %Y").lstrip("0")
 
 
+def youtube_id(url):
+    u = urlparse(url)
+    if u.hostname in ("youtu.be",):
+        return u.path.strip("/") or None
+    if u.hostname and "youtube" in u.hostname:
+        if u.path.startswith(("/embed/", "/shorts/")):
+            return u.path.split("/")[2]
+        return parse_qs(u.query).get("v", [None])[0]
+    return None
+
+
+def ld(obj):
+    return ('<script type="application/ld+json">'
+            + json.dumps(obj, ensure_ascii=False).replace("</", "<\\/") + "</script>")
+
+
 HEAD = """<!doctype html>
 <html lang="en">
 <head>
@@ -112,12 +173,19 @@ HEAD = """<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
+<meta name="author" content="Parth Parmar">
 <link rel="canonical" href="{canonical}">
+<meta property="og:site_name" content="Engine-X">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:type" content="{ogtype}">
-{ogimage}
+<meta property="og:image" content="{image}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="{image}">
+{extra}
 <link rel="alternate" type="application/rss+xml" title="Engine-X Blog" href="{base}/rss.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -129,74 +197,259 @@ HEAD = """<!doctype html>
 """
 
 FOOT = """<footer>
-  <a href="{home}/">Engine&#8209;X</a> · <a href="{home}/blog.html">Journal</a> · <a href="{home}/atlas.html">Atlas</a> — engineered by Parth Parmar.
+  <a href="{home}/">Engine&#8209;X</a> · <a href="{home}/blog">Journal</a> · <a href="{home}/atlas">Atlas</a> · <a href="{home}/about">About</a> — engineered by Parth Parmar.
   · <a href="{base}/rss.xml">RSS</a>
 </footer>
 </body>
 </html>
 """
 
+POST_JS = """<script>
+(function(){
+  var toc = document.querySelector('.toc');
+  if (toc && window.matchMedia('(min-width: 1200px)').matches) toc.open = true;
+  if (toc) {
+    var links = toc.querySelectorAll('a');
+    var heads = Array.prototype.map.call(links, function(a){ return document.getElementById(a.getAttribute('href').slice(1)); });
+    function mark(){
+      var cur = 0;
+      heads.forEach(function(h, i){ if (h && h.getBoundingClientRect().top < 140) cur = i; });
+      links.forEach(function(a, i){ a.classList.toggle('on', i === cur); });
+    }
+    window.addEventListener('scroll', mark, {passive:true}); mark();
+    links.forEach(function(a){ a.addEventListener('click', function(){ if (!window.matchMedia('(min-width: 1200px)').matches) toc.open = false; }); });
+  }
+  var copy = document.querySelector('.share-copy');
+  if (copy) copy.addEventListener('click', function(){
+    var url = copy.dataset.url;
+    function done(){ copy.textContent = 'Link copied'; setTimeout(function(){ copy.textContent = 'Copy link'; }, 1800); }
+    if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function(){ prompt('Copy this link:', url); });
+    else prompt('Copy this link:', url);
+  });
+  var bar = document.querySelector('.progress');
+  if (bar) window.addEventListener('scroll', function(){
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? h.scrollTop / max : 0) + ')';
+  }, {passive:true});
+})();
+</script>
+"""
 
-def page_head(title, desc, canonical, ogtype="website", image=None, jsonld=""):
-    og = f'<meta property="og:image" content="{e(image)}">' if image else ""
+
+def page_head(title, desc, canonical, ogtype="website", image=None, jsonld="", extra=""):
     return HEAD.format(title=e(title), desc=e(desc), canonical=e(canonical), ogtype=ogtype,
-                       ogimage=og, base=BASE, jsonld=jsonld)
+                       image=e(image or LOGO), base=BASE, jsonld=jsonld, extra=extra)
 
 
-def render_post(p):
-    image_url = f"{BASE}/{p['image']}" if p.get("image") else None
-    ld = {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
+def related_posts(p, posts, n=3):
+    others = [q for q in posts if q["slug"] != p["slug"]]
+
+    def score(q):
+        s = 0
+        if q["category"] == p["category"]:
+            s += 2
+        if p.get("tag") and q.get("tag") == p.get("tag"):
+            s += 2
+        if p.get("model") and q.get("model") == p.get("model"):
+            s += 3
+        return s
+    ranked = sorted(others, key=lambda q: (score(q), q["date"]), reverse=True)
+    return ranked[:n]
+
+
+def mini_cards(items):
+    out = ['  <div class="mini-list">\n']
+    for q in items:
+        out.append(f'    <a class="mini" href="{e(q["url"])}"><span class="kicker">{e(kicker(q))}</span>'
+                   f'<span class="mini-title">{e(q["title"])}</span>'
+                   f'<span class="mini-date">{nice_date(q["date_obj"])} · {q["minutes"]} min read</span></a>\n')
+    out.append("  </div>\n")
+    return "".join(out)
+
+
+def post_schema(p, image_url):
+    author = {"@type": "Person", "@id": f"{MAIN}/#parth", "name": AUTHOR["name"], "url": AUTHOR["url"],
+              "jobTitle": AUTHOR["job"], "sameAs": [AUTHOR["linkedin"]]}
+    publisher = {"@type": "Organization", "@id": f"{MAIN}/#org", "name": "Engine-X", "url": f"{MAIN}/",
+                 "logo": {"@type": "ImageObject", "url": LOGO}}
+    article = {
+        "@type": "BlogPosting" if p["category"] in ("news", "field-notes") else "Article",
+        "@id": p["url"] + "#article",
         "headline": p["title"],
         "description": p["summary"],
+        "image": image_url or LOGO,
         "datePublished": p["date"],
-        "author": {"@type": "Person", "name": "Parth Parmar"},
-        "publisher": {"@type": "Person", "name": "Parth Parmar"},
-        "mainEntityOfPage": p["url"],
+        "dateModified": p.get("updated") or p["date"],
+        "author": author,
+        "publisher": publisher,
+        "mainEntityOfPage": {"@type": "WebPage", "@id": p["url"]},
+        "isPartOf": {"@type": "Blog", "@id": f"{BASE}/#blog", "name": SITE["title"], "url": f"{BASE}/"},
+        "articleSection": CATEGORIES[p["category"]],
+        "wordCount": p["words"],
+        "timeRequired": f"PT{p['minutes']}M",
+        "inLanguage": "en",
     }
-    if image_url:
-        ld["image"] = image_url
-    jsonld = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
-    out = [page_head(f"{p['title']} | Engine-X Blog", p["summary"], p["url"], "article", image_url, jsonld)]
-    out.append('<div class="wrap">\n')
-    out.append(f'  <a class="back" href="{BASE}/">&larr; All posts</a>\n')
+    if p.get("keywords"):
+        article["keywords"] = [k.strip() for k in p["keywords"].split(",") if k.strip()]
+    if p.get("model") in MODELS:
+        article["about"] = {"@type": "Thing", "name": MODELS[p["model"]][0]}
+    if p["sources"]:
+        article["citation"] = [{"@type": "CreativeWork", "name": n, "url": u} for n, u in p["sources"] if u]
+    vid = youtube_id(p["video"]) if p.get("video") else None
+    if vid:
+        article["video"] = {"@type": "VideoObject", "name": p["title"], "description": p["summary"],
+                            "embedUrl": f"https://www.youtube-nocookie.com/embed/{vid}",
+                            "thumbnailUrl": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg",
+                            "uploadDate": p["date"]}
+    graph = [article, {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Engine-X", "item": f"{MAIN}/"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": f"{BASE}/"},
+            {"@type": "ListItem", "position": 3, "name": p["title"], "item": p["url"]},
+        ]}]
+    if p["faq"]:
+        graph.append({"@type": "FAQPage", "@id": p["url"] + "#faq", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
+            for q, a in p["faq"]]})
+    return ld({"@context": "https://schema.org", "@graph": graph})
+
+
+def render_post(p, posts):
+    image_url = f"{BASE}/{p['image']}" if p.get("image") else None
+    extra = (f'<meta property="article:published_time" content="{p["date"]}">\n'
+             f'<meta property="article:modified_time" content="{p.get("updated") or p["date"]}">\n'
+             f'<meta property="article:section" content="{e(CATEGORIES[p["category"]])}">')
+    out = [page_head(f"{p['title']} | Engine-X Blog", p["summary"], p["url"], "article", image_url,
+                     post_schema(p, image_url), extra)]
+    out.append('<div class="progress" aria-hidden="true"></div>\n<div class="wrap">\n')
+
+    # breadcrumbs
+    out.append('  <nav class="crumbs" aria-label="Breadcrumb">'
+               f'<a href="{MAIN}/">Engine&#8209;X</a><span>›</span>'
+               f'<a href="{BASE}/">Blog</a><span>›</span>'
+               f'<span class="here">{e(CATEGORIES[p["category"]])}</span></nav>\n')
     out.append(f'  <div class="kicker">{e(kicker(p))}</div>\n')
     out.append(f'  <h1>{e(p["title"])}</h1>\n')
-    out.append(f'  <p class="meta">By Parth Parmar · {nice_date(p["date_obj"])}</p>\n')
+
+    # author, dates, reading time
+    meta = (f'By <a class="author-link" href="{AUTHOR["url"]}" rel="author">{AUTHOR["name"]}</a>'
+            f' · <time datetime="{p["date"]}">{nice_date(p["date_obj"])}</time>')
+    if p.get("updated_obj") and p["updated"] != p["date"]:
+        meta += f' · Updated <time datetime="{p["updated"]}">{nice_date(p["updated_obj"])}</time>'
+    meta += f' · {p["minutes"]} min read'
+    out.append(f'  <p class="meta">{meta}</p>\n')
+
     if image_url:
         out.append(f'  <figure class="hero"><img src="{e(image_url)}" alt="{e(p.get("image_alt", ""))}">'
                    + (f'<figcaption>{e(p["image_credit"])}</figcaption>' if p.get("image_credit") else "")
                    + "</figure>\n")
+
+    # top summary + key takeaways
+    out.append('  <section class="brief"><div class="box-title">In short</div>\n'
+               f'    <p>{e(p["summary"])}</p>\n')
+    if p["takeaways"]:
+        out.append('    <div class="box-sub">Key takeaways</div><ul>\n')
+        for t in p["takeaways"]:
+            out.append(f"      <li>{e(t)}</li>\n")
+        out.append("    </ul>\n")
+    out.append("  </section>\n")
+
+    # contents
+    if len(p["toc"]) >= 3:
+        out.append('  <details class="toc"><summary>Contents</summary><ol>\n')
+        for anchor, name in p["toc"]:
+            out.append(f'    <li><a href="#{e(anchor)}">{name}</a></li>\n')
+        out.append("  </ol></details>\n")
+
     out.append(f'  <article>{p["body_html"]}</article>\n')
-    model = p.get("model")
-    if model:
-        name = MODELS.get(model, model)
-        out.append('  <div class="cta">\n'
-                   f'    <div class="cta-title">See a {e(name)} in 3D</div>\n'
-                   '    <p>Explode it, cut it open and watch it run — free, in your browser.</p>\n'
-                   f'    <a class="btn" href="{SITE["main_site"]}/atlas.html">Open the Engine-X Atlas &rarr;</a>\n'
-                   '  </div>\n')
-    else:
-        out.append('  <div class="cta">\n'
-                   '    <div class="cta-title">Explore machines in 3D</div>\n'
-                   '    <p>Turbochargers, pumps and belt drives you can explode and section, part by part.</p>\n'
-                   f'    <a class="btn" href="{SITE["main_site"]}/atlas.html">Open the Engine-X Atlas &rarr;</a>\n'
-                   '  </div>\n')
+
+    vid = youtube_id(p["video"]) if p.get("video") else None
+    if vid:
+        out.append('  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/'
+                   f'{e(vid)}" title="{e(p["title"])}" loading="lazy" allowfullscreen '
+                   'allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe></div>\n')
+
+    if p.get("tldr"):
+        out.append(f'  <div class="tldr"><span>TL;DR</span> {e(p["tldr"])}</div>\n')
+
+    if p["faq"]:
+        out.append('  <section class="faq" id="faq"><h2>Frequently asked questions</h2>\n')
+        for q, a in p["faq"]:
+            out.append(f"    <details><summary>{e(q)}</summary><p>{e(a)}</p></details>\n")
+        out.append("  </section>\n")
+
     if p["sources"]:
         out.append('  <div class="sources"><div class="sources-title">Sources</div><ul>\n')
         for name, url in p["sources"]:
             out.append(f'    <li><a href="{e(url)}" rel="noopener" target="_blank">{e(name)}</a></li>\n')
         out.append("  </ul></div>\n")
+
+    # share
+    enc_url, enc_title = quote(p["url"], safe=""), quote(p["title"], safe="")
+    out.append('  <div class="share"><span class="share-label">Share</span>'
+               f'<a href="https://www.linkedin.com/sharing/share-offsite/?url={enc_url}" target="_blank" rel="noopener">LinkedIn</a>'
+               f'<a href="https://wa.me/?text={enc_title}%20{enc_url}" target="_blank" rel="noopener">WhatsApp</a>'
+               f'<a href="https://twitter.com/intent/tweet?url={enc_url}&amp;text={enc_title}" target="_blank" rel="noopener">X</a>'
+               f'<button type="button" class="share-copy" data-url="{e(p["url"])}">Copy link</button></div>\n')
+
+    # related machines (3D atlas) + services offer
+    model = p.get("model")
+    order = ([model] if model in MODELS else []) + [k for k in MODELS if k != model]
+    out.append('  <section class="extras">\n'
+               '    <div class="panel"><div class="box-title">'
+               + (f"See the {e(MODELS[model][0])} in 3D" if model in MODELS else "Explore machines in 3D")
+               + "</div>\n")
+    for k in order:
+        name, desc = MODELS[k]
+        cls = "machine on" if k == model else "machine"
+        out.append(f'      <a class="{cls}" href="{MAIN}/atlas#m={k}"><b>{e(name)}</b><span>{e(desc)}</span></a>\n')
+    out.append('      <p class="small">Explode, X&#8209;ray and cut them open, free in your browser.</p>\n    </div>\n')
+    out.append('    <div class="panel offer"><div class="box-title">Need your machine in 3D?</div>\n'
+               '      <p>Engine&#8209;X builds interactive 3D websites for pumps, valves, gearboxes and other '
+               'machines that buyers can rotate, explode and section, plus 3D explainers for colleges and trainers.</p>\n'
+               f'      <a class="btn" href="{MAIN}/contact">Talk to Parth &rarr;</a>\n'
+               f'      <a class="more" href="{MAIN}/about">See services &amp; FAQ</a>\n    </div>\n'
+               "  </section>\n")
+
+    # author bio
+    out.append('  <section class="bio"><div class="avatar" aria-hidden="true">PP</div><div>\n'
+               f'    <div class="bio-name"><a href="{AUTHOR["url"]}" rel="author">{AUTHOR["name"]}</a></div>\n'
+               f'    <p>{e(AUTHOR["bio"])}</p>\n'
+               f'    <a href="{AUTHOR["url"]}">About</a> · <a href="{AUTHOR["linkedin"]}" target="_blank" rel="noopener">LinkedIn</a>'
+               f' · <a href="{MAIN}/contact">Contact</a>\n'
+               "  </div></section>\n")
+
+    related = related_posts(p, posts)
+    if related:
+        out.append('  <section class="more-posts"><h2>Related posts</h2>\n' + mini_cards(related) + "  </section>\n")
+    seen = {p["slug"]} | {q["slug"] for q in related}
+    latest = [q for q in posts if q["slug"] not in seen][:3]
+    if latest:
+        out.append('  <section class="more-posts"><h2>Latest from the blog</h2>\n' + mini_cards(latest) + "  </section>\n")
+
     out.append("</div>\n")
-    out.append(FOOT.format(home=SITE["main_site"], base=BASE))
+    out.append(POST_JS)
+    out.append(FOOT.format(home=MAIN, base=BASE))
     return "".join(out)
 
 
 def render_index(posts):
-    out = [page_head(SITE["title"], SITE["description"], f"{BASE}/")]
+    schema = ld({"@context": "https://schema.org", "@graph": [
+        {"@type": "Blog", "@id": f"{BASE}/#blog", "name": SITE["title"], "description": SITE["description"],
+         "url": f"{BASE}/", "inLanguage": "en",
+         "publisher": {"@type": "Organization", "@id": f"{MAIN}/#org", "name": "Engine-X", "url": f"{MAIN}/",
+                       "logo": {"@type": "ImageObject", "url": LOGO}},
+         "author": {"@type": "Person", "@id": f"{MAIN}/#parth", "name": AUTHOR["name"], "url": AUTHOR["url"]},
+         "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": p["url"],
+                       "datePublished": p["date"]} for p in posts[:20]]},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Engine-X", "item": f"{MAIN}/"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": f"{BASE}/"}]}]})
+    out = [page_head(SITE["title"], SITE["description"], f"{BASE}/", jsonld=schema)]
     out.append('<div class="wrap">\n')
-    out.append(f'  <a class="back" href="{SITE["main_site"]}/blog.html">&larr; Engine-X Journal</a>\n')
+    out.append('  <nav class="crumbs" aria-label="Breadcrumb">'
+               f'<a href="{MAIN}/">Engine&#8209;X</a><span>›</span><span class="here">Blog</span></nav>\n')
     out.append(f'  <h1>{e(SITE["title"])}</h1>\n')
     out.append(f'  <p class="sub">{e(SITE["description"])}</p>\n')
     out.append('  <div class="filters" role="tablist">\n')
@@ -206,7 +459,7 @@ def render_index(posts):
     out.append('  </div>\n  <div id="list">\n')
     for p in posts:
         out.append(f'  <a class="card" data-c="{p["category"]}" href="{e(p["url"])}">\n'
-                   f'    <div class="kicker">{e(kicker(p))} <span class="date">· {nice_date(p["date_obj"])}</span></div>\n'
+                   f'    <div class="kicker">{e(kicker(p))} <span class="date">· {nice_date(p["date_obj"])} · {p["minutes"]} min read</span></div>\n'
                    f'    <h2>{e(p["title"])}</h2>\n'
                    f'    <p>{e(p["summary"])}</p>\n'
                    "  </a>\n")
@@ -228,7 +481,7 @@ document.querySelectorAll('.chip').forEach(function(b){
 });
 </script>
 """)
-    out.append(FOOT.format(home=SITE["main_site"], base=BASE))
+    out.append(FOOT.format(home=MAIN, base=BASE))
     return "".join(out)
 
 
@@ -248,7 +501,7 @@ def render_rss(posts):
 
 def render_sitemap(posts):
     urls = [f"<url><loc>{BASE}/</loc><changefreq>daily</changefreq></url>"]
-    urls += [f"<url><loc>{e(p['url'])}</loc><lastmod>{p['date']}</lastmod></url>" for p in posts]
+    urls += [f"<url><loc>{e(p['url'])}</loc><lastmod>{p.get('updated') or p['date']}</lastmod></url>" for p in posts]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
             + "".join(urls) + "</urlset>\n")
@@ -270,14 +523,14 @@ def main():
         shutil.copytree(ROOT / "assets", OUT / "assets")
 
     for p in posts:
-        (OUT / "posts" / f"{p['slug']}.html").write_text(render_post(p), encoding="utf-8")
+        (OUT / "posts" / f"{p['slug']}.html").write_text(render_post(p, posts), encoding="utf-8")
     (OUT / "index.html").write_text(render_index(posts), encoding="utf-8")
     (OUT / "rss.xml").write_text(render_rss(posts), encoding="utf-8")
     (OUT / "sitemap.xml").write_text(render_sitemap(posts), encoding="utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
     feed = [{"title": p["title"], "url": p["url"], "date": p["date"], "category": p["category"],
              "category_label": CATEGORIES[p["category"]], "tag": p.get("tag", ""),
-             "kicker": kicker(p), "summary": p["summary"]} for p in posts[:30]]
+             "kicker": kicker(p), "summary": p["summary"], "minutes": p["minutes"]} for p in posts[:30]]
     (OUT / "feed.json").write_text(json.dumps({"base": BASE, "posts": feed}, ensure_ascii=False, indent=1),
                                    encoding="utf-8")
     (OUT / ".nojekyll").write_text("")

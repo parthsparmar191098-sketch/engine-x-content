@@ -31,11 +31,24 @@ Instructions for the daily run that writes one blog post.
 - `summary`: 1–2 sentences, under 220 characters
 - `model`: turbo | pulleybelt | pump — only when genuinely related
 - `sources`: every source used, `Name | URL`
+- `keywords`: 3–6 comma-separated search phrases people would actually type (e.g. "how does a jack-up vessel work")
+- `takeaways`: 3–5 short bullet points (one line each) — shown in the "In short" box at the top
+- `tldr`: one sentence that sums up the whole post — shown at the bottom
+- `faq`: 2–4 real questions a reader would search, written `Question | Answer`; each answer 1–2 sentences, fully supported by the post and its sources
+- `updated`: only when a published post is genuinely revised (new facts or corrections), never just to look fresh
+- `video`: only a relevant YouTube video from an official source (company, agency, university); leave out if none
+
+The template adds the rest automatically: contents list, breadcrumbs, reading time, author link and bio, dates, share buttons, related and latest posts, the 3D machines box, the services box and all schema.org data. Do not write these by hand in the body.
 
 ## Length & structure
 - News: 450–800 words. Case study: 900–1500 words. Guide: 800–1300 words.
-- Open with what happened (2–3 sentences), then `##` sections explaining the engineering.
-- End with a short "engineering takeaway".
+- Open with what happened (2–3 sentences), then `##` sections explaining the engineering. Use at least 3 `##` sections with clear, descriptive headings (they become the contents list).
+- Use numbered steps when explaining a process or how-to, and a short Markdown comparison table when comparing options, specs or old vs new. Only when they genuinely help.
+- Include a real-world example (a named project, vessel, plant or test from the sources) to ground the explanation.
+- A short quote (under 15 words) from an official source is welcome when the exact words matter; one per source at most.
+- Link 1–3 earlier Engine-X posts inside the text where they are genuinely related, using their full URL `https://engx3d.com/blog/posts/<slug>.html`.
+- Link key facts to their source inline the first time they appear, in addition to the Sources list.
+- End with a short "The engineering takeaway" section.
 
 ## Images
 - Prefer an original SVG diagram saved in `assets/` (dark background `#0a1120`, accents `#5ea7ff` / `#8a6cff`, white text, readable at phone width).

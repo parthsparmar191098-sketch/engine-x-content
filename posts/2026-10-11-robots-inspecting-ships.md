@@ -7,6 +7,17 @@ summary: Gecko Robotics is bringing robotic inspection to Anduril's new submarin
 image: assets/2026-10-11-ut-thickness.svg
 image_alt: Diagram of an ultrasonic probe measuring steel plate thickness from the echo time
 image_credit: Diagram: Engine-X
+keywords: ship inspection robots, ultrasonic thickness gauging, non-destructive testing, NDT, dry dock
+tldr: Inspection robots use the same ultrasonic physics as a hand probe, but they cover far more steel, more consistently, and turn hull inspection into data that helps plan dry-dock repairs early.
+takeaways:
+- Inspection is a bottleneck because hulls have huge areas of plate and weld, and qualified NDT technicians are scarce.
+- Ultrasonic thickness gauging times a sound echo: thickness = speed of sound × time ÷ 2.
+- Robots don't change the physics; they add continuous coverage, consistent probe contact and located data.
+- Knowing which plates need renewal before a ship arrives saves days in dry dock.
+faq:
+- How does ultrasonic thickness gauging work? | A probe sends a short sound pulse into the steel, times the echo from the far side, and calculates thickness as speed of sound × time ÷ 2.
+- Do inspection robots replace NDT engineers? | No. Robots collect more consistent data, but an engineer still decides what a thin reading means and how to repair it.
+- Why does early inspection data matter for dry docking? | A ship in dry dock costs money every day, so knowing which plates need cutting out before it arrives avoids days of opening up and measuring.
 sources:
 - MarineLink — Gecko Robotics, Anduril to accelerate American shipbuilding (8 Oct 2026) | https://www.marinelink.com/news/gecko-robotics-anduril-accelerate-543578
 - Ocean News — Gecko Robotics and Anduril partner to accelerate submarine production | https://oceannews.com/news/milestones/gecko-robotics-and-anduril-partner-to-accelerate-submarine-production/
