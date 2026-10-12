@@ -32,6 +32,8 @@ Open the blog PR notification → read → **Merge**. The post appears on engx3d
 - Telegram: English, worldwide tech news, one Daily Digest at 08:00 IST.
 - Blog: one post a day by weekday rotation; reviewed via PR before publishing.
 - No investment tips, no copied text or photos; every fact sourced.
+- Blog SEO (12 Oct 2026): `build.py` adds contents list, breadcrumbs, reading time, author link + bio, dates, "In short" box, TL;DR, expandable FAQ, share buttons, related + latest posts, 3D machines box, services offer and schema.org data (Article/BlogPosting, Person, Organization, BreadcrumbList, FAQPage) to every post. Optional header fields `keywords`, `takeaways`, `tldr`, `faq`, `updated`, `video` are filled by the daily post per `WRITING_GUIDE.md`.
+- engx3d.com (12 Oct 2026): `engine-x-98a.pages.dev` 301-redirects to engx3d.com; site-wide schema.org data added (Organization, services, FAQ on /about, machine list on /atlas).
 
 ## Fixes log
 - **12 Oct 2026** – Digest didn't reach Telegram though the tasks said "success": a tracked `.pyc` file in `techpulse-bot` changed during validation, so `git pull --rebase` failed and nothing was pushed. Fixed by untracking `__pycache__` (+ `.gitignore`). The digest and morning-check prompts now validate with `python3 -B`, commit only the queue file, and confirm the file is on GitHub before reporting OK. If a digest is missing, check `queue/` and `sent/` on GitHub first.
