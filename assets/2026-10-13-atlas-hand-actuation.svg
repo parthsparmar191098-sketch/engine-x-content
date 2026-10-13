@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#5ea7ff"/></marker>
+    <marker id="b" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#8a6cff"/></marker>
+  </defs>
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="34" fill="#eaf1ff" font-size="19" font-weight="700" text-anchor="middle">Cable-driven finger vs directly actuated finger</text>
+
+  <!-- left panel -->
+  <rect x="30" y="56" width="350" height="290" rx="12" fill="rgba(94,167,255,0.06)" stroke="rgba(94,167,255,0.35)"/>
+  <text x="205" y="82" fill="#8fc4ff" font-size="15" font-weight="700" text-anchor="middle">Cable (tendon) driven</text>
+  <rect x="50" y="110" width="70" height="60" rx="8" fill="#1c2b46" stroke="#8a6cff" stroke-width="2"/>
+  <text x="85" y="137" fill="#eaf1ff" font-size="12" text-anchor="middle">Motor in</text>
+  <text x="85" y="153" fill="#eaf1ff" font-size="12" text-anchor="middle">forearm</text>
+  <line x1="120" y1="140" x2="330" y2="140" stroke="#e08a5a" stroke-width="3" stroke-dasharray="6 4"/>
+  <rect x="150" y="125" width="50" height="30" rx="6" fill="#2b3442" stroke="#8fa1bc"/>
+  <rect x="220" y="125" width="50" height="30" rx="6" fill="#2b3442" stroke="#8fa1bc"/>
+  <rect x="290" y="125" width="50" height="30" rx="6" fill="#2b3442" stroke="#8fa1bc"/>
+  <text x="205" y="200" fill="#e08a5a" font-size="13" text-anchor="middle">cables cross every joint</text>
+  <text x="205" y="240" fill="#cfd9ec" font-size="13" text-anchor="middle">stretch, fray, rub, need re-tensioning</text>
+  <text x="205" y="262" fill="#cfd9ec" font-size="13" text-anchor="middle">force at joint is hard to know</text>
+
+  <!-- right panel -->
+  <rect x="420" y="56" width="350" height="290" rx="12" fill="rgba(138,108,255,0.07)" stroke="rgba(138,108,255,0.4)"/>
+  <text x="595" y="82" fill="#b9a6ff" font-size="15" font-weight="700" text-anchor="middle">Direct actuation (Atlas hand)</text>
+  <rect x="440" y="115" width="90" height="50" rx="8" fill="#1c2b46" stroke="#5ea7ff" stroke-width="2"/>
+  <rect x="540" y="115" width="90" height="50" rx="8" fill="#1c2b46" stroke="#5ea7ff" stroke-width="2"/>
+  <rect x="640" y="115" width="90" height="50" rx="8" fill="#1c2b46" stroke="#5ea7ff" stroke-width="2"/>
+  <text x="485" y="145" fill="#eaf1ff" font-size="12" text-anchor="middle">actuator</text>
+  <text x="585" y="145" fill="#eaf1ff" font-size="12" text-anchor="middle">actuator</text>
+  <text x="685" y="145" fill="#eaf1ff" font-size="12" text-anchor="middle">actuator</text>
+  <path d="M530 140 H540 M630 140 H640" stroke="#8fa1bc" stroke-width="3"/>
+  <path d="M485 200 q20 18 40 0" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#a)"/>
+  <path d="M545 200 q-20 18 -40 0" stroke="#8a6cff" stroke-width="3" fill="none" marker-end="url(#b)" transform="translate(60 22)"/>
+  <text x="595" y="240" fill="#cfd9ec" font-size="13" text-anchor="middle">one sealed actuator per joint, no cables</text>
+  <text x="595" y="262" fill="#cfd9ec" font-size="13" text-anchor="middle">push on finger = motor feels it (backdrivable)</text>
+
+  <!-- DOF bar -->
+  <rect x="30" y="366" width="740" height="70" rx="12" fill="rgba(94,167,255,0.08)" stroke="rgba(94,167,255,0.35)"/>
+  <text x="400" y="395" fill="#eaf1ff" font-size="17" font-weight="700" text-anchor="middle">13 DOF = thumb 4 + three fingers × 3</text>
+  <text x="400" y="420" fill="#8fc4ff" font-size="13" text-anchor="middle">A pinky would need 3 more actuators, so it was dropped. Previous hand: 7 DOF.</text>
+</svg>
