@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5ea7ff"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8a6cff"/></marker>
+</defs>
+<rect width="800" height="460" fill="#0a1120"/>
+<text x="400" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#eaf1ff">Roll-out solar array: springs, not motors</text>
+<text x="400" y="58" text-anchor="middle" font-size="14" fill="#8fc4ff">The booms unroll the array, then hold it stiff</text>
+<!-- stage 1 -->
+<text x="130" y="105" text-anchor="middle" font-size="15" font-weight="700" fill="#eaf1ff">1. Stowed</text>
+<rect x="40" y="120" width="180" height="110" rx="10" fill="#14203a" stroke="#8a6cff" stroke-width="2"/>
+<text x="130" y="140" text-anchor="middle" font-size="12" fill="#8fc4ff">Dragon trunk</text>
+<circle cx="130" cy="188" r="36" fill="#1b2a4a" stroke="#5ea7ff" stroke-width="3"/>
+<circle cx="130" cy="188" r="24" fill="none" stroke="#5ea7ff" stroke-width="2"/>
+<circle cx="130" cy="188" r="12" fill="none" stroke="#8a6cff" stroke-width="2"/>
+<circle cx="130" cy="188" r="4" fill="#eaf1ff"/>
+<text x="130" y="262" text-anchor="middle" font-size="13" fill="#eaf1ff">Blanket + booms</text>
+<text x="130" y="280" text-anchor="middle" font-size="13" fill="#eaf1ff">wound on a spindle</text>
+<line x1="226" y1="188" x2="290" y2="188" stroke="#5ea7ff" stroke-width="3" marker-end="url(#a)"/>
+<!-- stage 2 -->
+<text x="400" y="105" text-anchor="middle" font-size="15" font-weight="700" fill="#eaf1ff">2. Released</text>
+<circle cx="320" cy="188" r="26" fill="#1b2a4a" stroke="#5ea7ff" stroke-width="3"/>
+<circle cx="320" cy="188" r="4" fill="#eaf1ff"/>
+<rect x="346" y="150" width="130" height="76" fill="#1b2a4a" stroke="#5ea7ff" stroke-width="2"/>
+<line x1="346" y1="164" x2="476" y2="164" stroke="#8a6cff" stroke-width="4"/>
+<line x1="346" y1="212" x2="476" y2="212" stroke="#8a6cff" stroke-width="4"/>
+<path d="M376 150V226M406 150V226M436 150V226" stroke="#0a1120" stroke-width="1.5"/>
+<line x1="480" y1="188" x2="540" y2="188" stroke="#8a6cff" stroke-width="3" marker-end="url(#b)"/>
+<text x="400" y="262" text-anchor="middle" font-size="13" fill="#eaf1ff">Booms spring back to</text>
+<text x="400" y="280" text-anchor="middle" font-size="13" fill="#eaf1ff">tube shape and unroll</text>
+<!-- stage 3 -->
+<text x="660" y="105" text-anchor="middle" font-size="15" font-weight="700" fill="#eaf1ff">3. Deployed</text>
+<rect x="560" y="132" width="200" height="112" fill="#1b2a4a" stroke="#5ea7ff" stroke-width="2"/>
+<line x1="560" y1="146" x2="760" y2="146" stroke="#8a6cff" stroke-width="5"/>
+<line x1="560" y1="230" x2="760" y2="230" stroke="#8a6cff" stroke-width="5"/>
+<path d="M610 132V244M660 132V244M710 132V244M560 188H760" stroke="#0a1120" stroke-width="1.5"/>
+<text x="660" y="262" text-anchor="middle" font-size="13" fill="#eaf1ff">Stiff booms hold the</text>
+<text x="660" y="280" text-anchor="middle" font-size="13" fill="#eaf1ff">cell blanket flat</text>
+<!-- energy box -->
+<rect x="40" y="310" width="340" height="120" rx="10" fill="#14203a" stroke="#5ea7ff" stroke-width="2"/>
+<text x="60" y="336" font-size="15" font-weight="700" fill="#eaf1ff">Why no motors?</text>
+<text x="60" y="360" font-size="13" fill="#eaf1ff">Flattening the boom stores strain energy,</text>
+<text x="60" y="380" font-size="13" fill="#eaf1ff">like a tape measure wound up. Releasing</text>
+<text x="60" y="400" font-size="13" fill="#eaf1ff">it provides the deployment force.</text>
+<!-- ISS box -->
+<rect x="420" y="310" width="340" height="120" rx="10" fill="#14203a" stroke="#8a6cff" stroke-width="2"/>
+<text x="440" y="336" font-size="15" font-weight="700" fill="#eaf1ff">Fitted on the ISS</text>
+<rect x="450" y="352" width="120" height="60" fill="#1b2a4a" stroke="#8a6cff" stroke-width="2"/>
+<text x="510" y="386" text-anchor="middle" font-size="12" fill="#8fc4ff">Old rigid wing</text>
+<rect x="520" y="362" width="90" height="48" fill="#1b2a4a" stroke="#5ea7ff" stroke-width="3"/>
+<text x="565" y="391" text-anchor="middle" font-size="12" fill="#eaf1ff">New array</text>
+<text x="625" y="380" font-size="12" fill="#eaf1ff">mounted in</text>
+<text x="625" y="397" font-size="12" fill="#eaf1ff">front of old</text>
+</svg>
