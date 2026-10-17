@@ -50,6 +50,20 @@ The template adds the rest automatically: contents list, breadcrumbs, reading ti
 - Link key facts to their source inline the first time they appear, in addition to the Sources list.
 - End with a short "The engineering takeaway" section.
 
+## Answer engines (AEO)
+Write every post so ChatGPT, Perplexity, Google AI Overviews and similar tools can lift a clean answer and cite Engine-X.
+- **Answer first.** The first paragraph answers the post's main question in 40–60 words, as a standalone statement that makes sense out of context. Name the thing directly; never start with "In this article" or "This post".
+- **Question headings.** At least 2 of the `##` headings are phrased the way people ask, e.g. "How does a jack-up vessel stay stable?" or "Why do ships use slow-speed diesels?". Answer each one in the first 1–2 sentences under it, then explain.
+- **Self-contained sections.** Each section repeats the subject by name instead of opening with "it" or "this", so a single section still reads correctly when quoted alone.
+- **Define once, plainly.** The first time a technical term appears, give a one-sentence definition (e.g. "A wastegate is a valve that lets exhaust bypass the turbine.").
+- **Concrete facts.** Prefer specific numbers with units, dates and named examples over vague words like "huge" or "very fast", each traceable to a source.
+- **`faq` questions** are written exactly as someone would type or say them, and the answers are complete on their own.
+- **Link the guides.** When the topic touches them, link the matching Engine-X guide or comparison inside the text:
+  - https://engx3d.com/turbocharger · https://engx3d.com/turbocharger-vs-supercharger
+  - https://engx3d.com/centrifugal-pump · https://engx3d.com/centrifugal-vs-positive-displacement-pump
+  - https://engx3d.com/v-belt-drive · https://engx3d.com/belt-vs-chain-vs-gear-drive
+- **Consistent names.** Always "Engine-X" (with the hyphen) and "Parth Parmar".
+
 ## Images
 - Prefer an original SVG diagram saved in `assets/` (dark background `#0a1120`, accents `#5ea7ff` / `#8a6cff`, white text, readable at phone width).
 - Or a public-domain / properly licensed image (e.g. NASA) with `image_credit`.
