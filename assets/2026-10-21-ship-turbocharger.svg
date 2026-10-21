@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5ea7ff"/></marker>
+    <marker id="av" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a6cff"/></marker>
+  </defs>
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="38" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">How a ship's turbocharger feeds a two-stroke engine</text>
+  <text x="400" y="62" text-anchor="middle" fill="#8fc4ff" font-size="14">Exhaust energy in → dense, cooled charge air out</text>
+
+  <!-- Turbocharger -->
+  <rect x="300" y="92" width="200" height="96" rx="14" fill="#111b30" stroke="#5ea7ff" stroke-width="2"/>
+  <circle cx="350" cy="140" r="30" fill="none" stroke="#8a6cff" stroke-width="3"/>
+  <circle cx="450" cy="140" r="30" fill="none" stroke="#5ea7ff" stroke-width="3"/>
+  <line x1="380" y1="140" x2="420" y2="140" stroke="#eaf1ff" stroke-width="5"/>
+  <text x="350" y="145" text-anchor="middle" fill="#eaf1ff" font-size="13" font-weight="700">Turbine</text>
+  <text x="450" y="145" text-anchor="middle" fill="#eaf1ff" font-size="13" font-weight="700">Comp.</text>
+  <text x="400" y="208" text-anchor="middle" fill="#8fc4ff" font-size="13">One shaft: turbine drives compressor</text>
+
+  <!-- Funnel -->
+  <rect x="120" y="96" width="110" height="44" rx="8" fill="#111b30" stroke="#8a6cff" stroke-width="2"/>
+  <text x="175" y="123" text-anchor="middle" fill="#eaf1ff" font-size="14">To funnel</text>
+  <path d="M320,118 L236,118" stroke="#8a6cff" stroke-width="3" fill="none" marker-end="url(#av)"/>
+
+  <!-- Air intake -->
+  <rect x="570" y="96" width="140" height="44" rx="8" fill="#111b30" stroke="#5ea7ff" stroke-width="2"/>
+  <text x="640" y="116" text-anchor="middle" fill="#eaf1ff" font-size="13">Engine-room air</text>
+  <text x="640" y="132" text-anchor="middle" fill="#8fc4ff" font-size="12">via filter silencer</text>
+  <path d="M570,118 L486,118" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#ab)"/>
+
+  <!-- Cooler -->
+  <rect x="570" y="190" width="140" height="56" rx="8" fill="#111b30" stroke="#5ea7ff" stroke-width="2"/>
+  <text x="640" y="214" text-anchor="middle" fill="#eaf1ff" font-size="14" font-weight="700">Air cooler</text>
+  <text x="640" y="232" text-anchor="middle" fill="#8fc4ff" font-size="12">cooler air = denser air</text>
+  <path d="M480,165 L560,200" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#ab)"/>
+
+  <!-- Aux blower -->
+  <rect x="570" y="300" width="140" height="56" rx="8" fill="#111b30" stroke="#5ea7ff" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="640" y="324" text-anchor="middle" fill="#eaf1ff" font-size="14">Aux. blowers</text>
+  <text x="640" y="342" text-anchor="middle" fill="#8fc4ff" font-size="12">help at low load</text>
+
+  <!-- Scavenge receiver -->
+  <rect x="300" y="300" width="200" height="44" rx="8" fill="#111b30" stroke="#5ea7ff" stroke-width="2"/>
+  <text x="400" y="327" text-anchor="middle" fill="#eaf1ff" font-size="14">Scavenge air receiver</text>
+  <path d="M640,246 L640,272 L500,272 L450,298" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#ab)"/>
+  <path d="M570,328 L506,324" stroke="#5ea7ff" stroke-width="2" fill="none" marker-end="url(#ab)" stroke-dasharray="6 4"/>
+
+  <!-- Engine cylinder -->
+  <rect x="90" y="236" width="150" height="190" rx="10" fill="#111b30" stroke="#eaf1ff" stroke-width="2"/>
+  <text x="165" y="258" text-anchor="middle" fill="#eaf1ff" font-size="14" font-weight="700">Cylinder</text>
+  <rect x="150" y="268" width="30" height="16" fill="#8a6cff"/>
+  <text x="165" y="300" text-anchor="middle" fill="#8fc4ff" font-size="12">exhaust valve</text>
+  <rect x="110" y="368" width="110" height="20" fill="#2a3a5c"/>
+  <text x="165" y="383" text-anchor="middle" fill="#eaf1ff" font-size="12">piston</text>
+  <text x="165" y="412" text-anchor="middle" fill="#8fc4ff" font-size="12">air ports (bottom)</text>
+  <path d="M300,330 L246,392" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#ab)"/>
+  <path d="M165,348 L165,312" stroke="#5ea7ff" stroke-width="2" fill="none" marker-end="url(#ab)"/>
+  <text x="175" y="334" fill="#5ea7ff" font-size="12">uniflow</text>
+  <path d="M165,268 L165,160 L312,160" stroke="#8a6cff" stroke-width="3" fill="none" marker-end="url(#av)"/>
+  <text x="240" y="152" text-anchor="middle" fill="#8a6cff" font-size="13">hot exhaust</text>
+
+  <!-- Legend -->
+  <line x1="560" y1="400" x2="600" y2="400" stroke="#8a6cff" stroke-width="3"/>
+  <text x="610" y="405" fill="#eaf1ff" font-size="13">Exhaust gas</text>
+  <line x1="560" y1="426" x2="600" y2="426" stroke="#5ea7ff" stroke-width="3"/>
+  <text x="610" y="431" fill="#eaf1ff" font-size="13">Charge air</text>
+</svg>
