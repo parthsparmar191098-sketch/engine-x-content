@@ -199,7 +199,7 @@ HEAD = """<!doctype html>
 """
 
 FOOT = """<footer>
-  <a href="{home}/">Engine&#8209;X</a> · <a href="{home}/blog">Journal</a> · <a href="{home}/atlas">Atlas</a> · <a href="{home}/about">About</a> — engineered by Parth Parmar.
+  <a href="{home}/">Engine&#8209;X</a> · <a href="{home}/blog">Journal</a> · <a href="{home}/atlas">Atlas</a> · <a href="{home}/about">About</a> · <a href="{home}/privacy">Privacy</a> · <a href="{home}/disclaimer">Disclaimer</a> — engineered by Parth Parmar.
   · <a href="{base}/rss.xml">RSS</a>
 </footer>
 </body>
