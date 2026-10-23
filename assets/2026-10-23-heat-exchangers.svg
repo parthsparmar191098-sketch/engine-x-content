@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a6cff"/></marker>
+    <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5ea7ff"/></marker>
+  </defs>
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="38" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">Shell and tube vs plate heat exchanger</text>
+  <text x="400" y="62" text-anchor="middle" fill="#8fc4ff" font-size="14">Same job: move heat through a metal wall without mixing fluids</text>
+
+  <!-- Shell and tube -->
+  <rect x="16" y="82" width="376" height="360" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="204" y="110" text-anchor="middle" fill="#eaf1ff" font-size="16" font-weight="700">Shell and tube</text>
+  <rect x="60" y="150" width="290" height="110" rx="40" fill="none" stroke="#8fc4ff" stroke-width="2.5"/>
+  <g stroke="#5ea7ff" stroke-width="2"><line x1="70" y1="180" x2="340" y2="180"/><line x1="70" y1="205" x2="340" y2="205"/><line x1="70" y1="230" x2="340" y2="230"/></g>
+  <g stroke="#eaf1ff" stroke-width="3"><line x1="130" y1="150" x2="130" y2="226"/><line x1="200" y1="184" x2="200" y2="260"/><line x1="270" y1="150" x2="270" y2="226"/></g>
+  <path d="M95,134 L95,242 L165,242 L165,168 L235,168 L235,242 L305,242 L305,168 L322,168 L322,134" fill="none" stroke="#8a6cff" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+  <path d="M28,205 L60,205" stroke="#5ea7ff" stroke-width="3" marker-end="url(#ac)"/>
+  <path d="M350,205 L382,205" stroke="#5ea7ff" stroke-width="3" marker-end="url(#ac)"/>
+  <text x="208" y="134" text-anchor="middle" fill="#8a6cff" font-size="12">shell side: weaves round baffles</text>
+  <text x="200" y="286" text-anchor="middle" fill="#5ea7ff" font-size="12">tube side: through the bundle</text>
+  <text x="204" y="330" text-anchor="middle" fill="#eaf1ff" font-size="13">High pressure &amp; temperature</text>
+  <text x="204" y="352" text-anchor="middle" fill="#eaf1ff" font-size="13">Copes with dirty fluids</text>
+  <text x="204" y="374" text-anchor="middle" fill="#eaf1ff" font-size="13">Large and heavy</text>
+  <text x="204" y="414" text-anchor="middle" fill="#8a6cff" font-size="12">Condensers, refineries</text>
+
+  <!-- Plate -->
+  <rect x="408" y="82" width="376" height="360" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="596" y="110" text-anchor="middle" fill="#eaf1ff" font-size="16" font-weight="700">Plate (gasketed)</text>
+  <g stroke="#8fc4ff" stroke-width="2.5">
+    <line x1="480" y1="140" x2="480" y2="270"/><line x1="510" y1="140" x2="510" y2="270"/><line x1="540" y1="140" x2="540" y2="270"/><line x1="570" y1="140" x2="570" y2="270"/><line x1="600" y1="140" x2="600" y2="270"/><line x1="630" y1="140" x2="630" y2="270"/><line x1="660" y1="140" x2="660" y2="270"/><line x1="690" y1="140" x2="690" y2="270"/><line x1="720" y1="140" x2="720" y2="270"/>
+  </g>
+  <g stroke-width="3">
+    <path d="M495,150 L495,258" stroke="#8a6cff" marker-end="url(#ah)"/>
+    <path d="M525,258 L525,150" stroke="#5ea7ff" marker-end="url(#ac)"/>
+    <path d="M555,150 L555,258" stroke="#8a6cff" marker-end="url(#ah)"/>
+    <path d="M585,258 L585,150" stroke="#5ea7ff" marker-end="url(#ac)"/>
+    <path d="M615,150 L615,258" stroke="#8a6cff" marker-end="url(#ah)"/>
+    <path d="M645,258 L645,150" stroke="#5ea7ff" marker-end="url(#ac)"/>
+    <path d="M675,150 L675,258" stroke="#8a6cff" marker-end="url(#ah)"/>
+    <path d="M705,258 L705,150" stroke="#5ea7ff" marker-end="url(#ac)"/>
+  </g>
+  <text x="600" y="132" text-anchor="middle" fill="#8fc4ff" font-size="12">alternate hot / cold channels</text>
+  <text x="600" y="290" text-anchor="middle" fill="#8fc4ff" font-size="12">counter-flow, high turbulence</text>
+  <text x="596" y="330" text-anchor="middle" fill="#eaf1ff" font-size="13">Compact and very efficient</text>
+  <text x="596" y="352" text-anchor="middle" fill="#eaf1ff" font-size="13">Limited by gaskets</text>
+  <text x="596" y="374" text-anchor="middle" fill="#eaf1ff" font-size="13">Add plates to add capacity</text>
+  <text x="596" y="414" text-anchor="middle" fill="#8a6cff" font-size="12">HVAC, food, ship central coolers</text>
+
+  <line x1="40" y1="452" x2="64" y2="452" stroke="#8a6cff" stroke-width="3"/><text x="70" y="456" fill="#eaf1ff" font-size="11">hot</text>
+  <line x1="110" y1="452" x2="134" y2="452" stroke="#5ea7ff" stroke-width="3"/><text x="140" y="456" fill="#eaf1ff" font-size="11">cold</text>
+</svg>
