@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5ea7ff"/></marker>
+    <marker id="av" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a6cff"/></marker>
+  </defs>
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="38" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">V-belt health: wedge, tension, alignment</text>
+  <text x="400" y="62" text-anchor="middle" fill="#8fc4ff" font-size="14">Most belt failures start in one of these three</text>
+
+  <!-- Panel 1: wedge -->
+  <rect x="20" y="84" width="240" height="356" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="140" y="112" text-anchor="middle" fill="#eaf1ff" font-size="15" font-weight="700">1 · Wedge grip</text>
+  <path d="M60,150 L110,270 L170,270 L220,150" fill="none" stroke="#8fc4ff" stroke-width="4"/>
+  <path d="M82,165 L198,165 L168,235 L112,235 Z" fill="#5ea7ff" fill-opacity="0.35" stroke="#5ea7ff" stroke-width="2"/>
+  <text x="140" y="205" text-anchor="middle" fill="#eaf1ff" font-size="13">belt</text>
+  <path d="M60,200 L92,200" stroke="#8a6cff" stroke-width="2.5" marker-end="url(#av)"/>
+  <path d="M220,200 L188,200" stroke="#8a6cff" stroke-width="2.5" marker-end="url(#av)"/>
+  <text x="140" y="292" text-anchor="middle" fill="#8fc4ff" font-size="12">never touches the bottom</text>
+  <text x="140" y="320" text-anchor="middle" fill="#eaf1ff" font-size="13">Grips on the sides</text>
+  <text x="140" y="348" text-anchor="middle" fill="#8fc4ff" font-size="12">Worn groove → belt sinks</text>
+  <text x="140" y="366" text-anchor="middle" fill="#8fc4ff" font-size="12">→ wedge lost → slip</text>
+  <text x="140" y="400" text-anchor="middle" fill="#8a6cff" font-size="12">Shiny groove wall =</text>
+  <text x="140" y="418" text-anchor="middle" fill="#8a6cff" font-size="12">replace pulley</text>
+
+  <!-- Panel 2: tension -->
+  <rect x="280" y="84" width="240" height="356" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="400" y="112" text-anchor="middle" fill="#eaf1ff" font-size="15" font-weight="700">2 · Tension check</text>
+  <circle cx="320" cy="190" r="26" fill="none" stroke="#8fc4ff" stroke-width="3"/>
+  <circle cx="480" cy="190" r="34" fill="none" stroke="#8fc4ff" stroke-width="3"/>
+  <line x1="320" y1="164" x2="480" y2="156" stroke="#5ea7ff" stroke-width="3" stroke-dasharray="5 4"/>
+  <path d="M320,164 L400,180 L480,156" stroke="#5ea7ff" stroke-width="3" fill="none"/>
+  <line x1="320" y1="216" x2="480" y2="224" stroke="#5ea7ff" stroke-width="3"/>
+  <path d="M400,134 L400,174" stroke="#8a6cff" stroke-width="3" marker-end="url(#av)"/>
+  <text x="410" y="146" fill="#8a6cff" font-size="12">gauge force</text>
+  <text x="400" y="262" text-anchor="middle" fill="#eaf1ff" font-size="13">Deflect ≈ 1/64 of span</text>
+  <text x="400" y="282" text-anchor="middle" fill="#8fc4ff" font-size="12">1,000 mm span → ≈ 16 mm</text>
+  <text x="400" y="318" text-anchor="middle" fill="#eaf1ff" font-size="13">Compare force with chart</text>
+  <text x="400" y="352" text-anchor="middle" fill="#8fc4ff" font-size="12">Lowest tension that</text>
+  <text x="400" y="370" text-anchor="middle" fill="#8fc4ff" font-size="12">doesn't slip at peak load</text>
+  <text x="400" y="408" text-anchor="middle" fill="#8a6cff" font-size="12">Re-check after 24–48 h</text>
+
+  <!-- Panel 3: alignment -->
+  <rect x="540" y="84" width="240" height="356" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="660" y="112" text-anchor="middle" fill="#eaf1ff" font-size="15" font-weight="700">3 · Alignment</text>
+  <text x="660" y="142" text-anchor="middle" fill="#8fc4ff" font-size="12">top view</text>
+  <!-- parallel offset -->
+  <rect x="590" y="156" width="12" height="60" fill="#8fc4ff"/>
+  <rect x="720" y="172" width="12" height="60" fill="#8fc4ff"/>
+  <line x1="580" y1="186" x2="742" y2="186" stroke="#5ea7ff" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="660" y="252" text-anchor="middle" fill="#eaf1ff" font-size="13">Parallel (offset)</text>
+  <!-- angular -->
+  <rect x="590" y="282" width="12" height="60" fill="#8fc4ff"/>
+  <rect x="720" y="282" width="12" height="60" fill="#8fc4ff" transform="rotate(10 726 312)"/>
+  <line x1="580" y1="312" x2="742" y2="312" stroke="#5ea7ff" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="660" y="372" text-anchor="middle" fill="#eaf1ff" font-size="13">Angular (tilted)</text>
+  <text x="660" y="400" text-anchor="middle" fill="#8a6cff" font-size="12">Few degrees off ≈ +17 °C</text>
+  <text x="660" y="418" text-anchor="middle" fill="#8a6cff" font-size="12">→ up to half the belt life</text>
+</svg>
