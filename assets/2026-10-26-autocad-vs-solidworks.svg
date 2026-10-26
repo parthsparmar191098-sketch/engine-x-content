@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5ea7ff"/></marker>
+    <marker id="av" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a6cff"/></marker>
+  </defs>
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="36" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">AutoCAD vs SolidWorks: two workflows</text>
+  <text x="400" y="58" text-anchor="middle" fill="#8fc4ff" font-size="14">Draw the drawing · or model the part and let the drawing follow</text>
+
+  <!-- AutoCAD row -->
+  <rect x="16" y="78" width="768" height="170" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="36" y="104" fill="#eaf1ff" font-size="16" font-weight="700">AutoCAD — 2D drafting (DWG)</text>
+  <g fill="#0a1120" stroke="#8a6cff" stroke-width="2">
+    <rect x="40" y="124" width="150" height="90" rx="6"/><rect x="230" y="124" width="150" height="90" rx="6"/><rect x="420" y="124" width="150" height="90" rx="6"/>
+  </g>
+  <rect x="70" y="150" width="90" height="40" fill="none" stroke="#eaf1ff" stroke-width="1.5"/><circle cx="115" cy="170" r="10" fill="none" stroke="#eaf1ff" stroke-width="1.5"/>
+  <text x="115" y="206" text-anchor="middle" fill="#8fc4ff" font-size="11">front view</text>
+  <rect x="260" y="150" width="90" height="40" fill="none" stroke="#eaf1ff" stroke-width="1.5"/><line x1="305" y1="150" x2="305" y2="190" stroke="#eaf1ff" stroke-dasharray="4 3"/>
+  <text x="305" y="206" text-anchor="middle" fill="#8fc4ff" font-size="11">top view</text>
+  <rect x="460" y="150" width="70" height="40" fill="none" stroke="#eaf1ff" stroke-width="1.5"/>
+  <text x="495" y="206" text-anchor="middle" fill="#8fc4ff" font-size="11">side view</text>
+  <text x="600" y="150" fill="#eaf1ff" font-size="13">Each view drawn</text>
+  <text x="600" y="168" fill="#eaf1ff" font-size="13">separately</text>
+  <text x="600" y="196" fill="#8a6cff" font-size="12">Change = edit every</text>
+  <text x="600" y="212" fill="#8a6cff" font-size="12">view by hand</text>
+
+  <!-- SolidWorks row -->
+  <rect x="16" y="266" width="768" height="178" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="36" y="292" fill="#eaf1ff" font-size="16" font-weight="700">SolidWorks — 3D parametric</text>
+  <g fill="#0a1120" stroke="#5ea7ff" stroke-width="2">
+    <rect x="40" y="312" width="150" height="90" rx="6"/><rect x="230" y="312" width="150" height="90" rx="6"/><rect x="420" y="312" width="150" height="90" rx="6"/><rect x="610" y="312" width="150" height="90" rx="6"/>
+  </g>
+  <path d="M190,357 L226,357" stroke="#5ea7ff" stroke-width="2.5" marker-end="url(#ab)"/>
+  <path d="M380,357 L416,357" stroke="#5ea7ff" stroke-width="2.5" marker-end="url(#ab)"/>
+  <path d="M570,357 L606,357" stroke="#5ea7ff" stroke-width="2.5" marker-end="url(#ab)"/>
+  <rect x="80" y="336" width="70" height="36" fill="none" stroke="#eaf1ff" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="115" y="392" text-anchor="middle" fill="#8fc4ff" font-size="11">1 Sketch + dims</text>
+  <path d="M270,370 L270,340 L320,330 L350,340 L350,370 L300,380 Z" fill="none" stroke="#eaf1ff" stroke-width="1.5"/><path d="M270,340 L300,350 L350,340 M300,350 L300,380" fill="none" stroke="#eaf1ff" stroke-width="1.5"/>
+  <text x="305" y="396" text-anchor="middle" fill="#8fc4ff" font-size="11">2 Part (.sldprt)</text>
+  <circle cx="470" cy="352" r="16" fill="none" stroke="#eaf1ff" stroke-width="1.5"/><rect x="486" y="344" width="50" height="16" fill="none" stroke="#eaf1ff" stroke-width="1.5"/>
+  <text x="495" y="396" text-anchor="middle" fill="#8fc4ff" font-size="11">3 Assembly (.sldasm)</text>
+  <rect x="640" y="330" width="40" height="28" fill="none" stroke="#eaf1ff" stroke-width="1.5"/><rect x="690" y="330" width="40" height="28" fill="none" stroke="#eaf1ff" stroke-width="1.5"/>
+  <text x="685" y="396" text-anchor="middle" fill="#8fc4ff" font-size="11">4 Drawing (.slddrw)</text>
+  <path d="M685,410 C685,436 115,436 115,410" fill="none" stroke="#8a6cff" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#av)"/>
+  <text x="764" y="292" text-anchor="end" fill="#8a6cff" font-size="12">Change one dimension → everything updates</text>
+</svg>
