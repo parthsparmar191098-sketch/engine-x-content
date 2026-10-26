@@ -194,6 +194,7 @@ HEAD = """<!doctype html>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{base}/style.css">
 {jsonld}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6280235034781345" crossorigin="anonymous"></script>
 </head>
 <body>
 """
