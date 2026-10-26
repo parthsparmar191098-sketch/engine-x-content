@@ -3,6 +3,8 @@ title: How a Ship's Turbocharger Keeps a Giant Two-Stroke Engine Breathing
 date: 2026-10-21
 category: guide
 summary: A ship's turbocharger turns waste exhaust heat into charge air for the main engine. How the turbine, compressor, cooler and blowers work together, and how crews keep it clean at sea.
+seo_title: How a Ship's Turbocharger Works on a Two-Stroke Engine
+seo_description: How a marine turbocharger turns exhaust heat into charge air: turbine, compressor, air cooler and blowers, plus how crews clean it at sea.
 image: assets/2026-10-21-ship-turbocharger.svg
 image_alt: Diagram of a marine two-stroke engine turbocharger loop — exhaust drives the turbine, the compressor pushes air through the scavenge air cooler into the engine
 image_credit: Diagram: Engine-X

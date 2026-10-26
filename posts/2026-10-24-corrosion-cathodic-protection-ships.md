@@ -3,6 +3,8 @@ title: How Ships Stop Rusting — Corrosion, Sacrificial Anodes and Impressed Cu
 date: 2026-10-24
 category: guide
 summary: Sea water turns a steel hull into a giant battery. How galvanic corrosion works, how zinc and aluminium anodes sacrifice themselves to protect the hull, and how impressed-current systems do it electrically.
+seo_title: Ship Corrosion: Sacrificial Anodes vs Impressed Current
+seo_description: How sea water corrodes a steel hull, how zinc and aluminium anodes protect it, and how impressed current cathodic protection (ICCP) works.
 image: assets/2026-10-24-cathodic-protection.svg
 image_alt: Diagram comparing a ship hull protected by sacrificial zinc or aluminium anodes with one protected by an impressed current system using inert anodes, a reference electrode and a controller
 image_credit: Diagram: Engine-X

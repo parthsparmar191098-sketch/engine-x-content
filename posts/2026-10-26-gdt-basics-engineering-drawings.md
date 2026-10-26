@@ -3,6 +3,8 @@ title: GD&T Basics — How to Read Geometric Tolerances on an Engineering Drawin
 date: 2026-10-26
 category: learn
 summary: GD&T tells a machinist how much a part's shape, orientation and position may vary and still work. How to read a feature control frame, what datums do, and why position uses a round zone.
+seo_title: GD&T Basics: How to Read Geometric Tolerances
+seo_description: How to read GD&T on an engineering drawing: feature control frames, datums, and why position tolerance uses a round zone. Simple examples.
 image: assets/2026-10-26-gdt-feature-control-frame.svg
 image_alt: Diagram of a GD&T feature control frame for position, labelled symbol, diameter zone, tolerance, MMC modifier and datums A, B and C, next to a square versus round tolerance zone comparison
 image_credit: Diagram: Engine-X

@@ -10,6 +10,8 @@ Each post is a Markdown file with a simple header:
     category: news            # news | guide | case-study | field-notes | learn
     tag: machines             # news only: machines | automation | space | design
     summary: One or two sentences shown on the blog card and in the "In short" box.
+    seo_title: Short title for Google, max 60 characters    # optional
+    seo_description: Search snippet, 120-155 characters      # optional
     image: assets/2026-10-10-jackup.svg      # optional
     image_alt: Diagram of a jack-up vessel    # optional
     image_credit: Diagram: Engine-X           # optional
@@ -319,12 +321,52 @@ def post_schema(p, image_url):
     return ld({"@context": "https://schema.org", "@graph": graph})
 
 
+TITLE_SUFFIX = " | Engine-X Blog"
+TITLE_MAX, DESC_MAX = 60, 155
+
+
+def seo_title(p):
+    """<title> for a post: seo_title if given, else the headline. The blog
+    suffix is only added when the whole thing still fits in Google's ~60
+    characters, so search results do not cut the title off."""
+    t = (p.get("seo_title") or p["title"]).strip()
+    return t + TITLE_SUFFIX if len(t) + len(TITLE_SUFFIX) <= TITLE_MAX else t
+
+
+def seo_description(p):
+    """Meta description: seo_description if given, else the summary,
+    shortened on a word boundary to fit Google's ~155 characters."""
+    d = (p.get("seo_description") or p["summary"]).strip()
+    if len(d) <= DESC_MAX:
+        return d
+    cut = d[:DESC_MAX - 1].rsplit(" ", 1)[0].rstrip(",;:—-– ")
+    return cut + "…"
+
+
+def image_size(rel):
+    """(width, height) of a local SVG/PNG/JPG asset, or None. Lets the browser
+    reserve space for the hero image so the page does not jump (CLS)."""
+    path = ROOT / rel
+    if not path.exists():
+        return None
+    if path.suffix.lower() == ".svg":
+        head = path.read_text(encoding="utf-8", errors="ignore")[:2000]
+        m = re.search(r'viewBox="\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)', head)
+        return (round(float(m.group(1))), round(float(m.group(2)))) if m else None
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            return im.size
+    except Exception:
+        return None
+
+
 def render_post(p, posts):
     image_url = f"{BASE}/{p['image']}" if p.get("image") else None
     extra = (f'<meta property="article:published_time" content="{p["date"]}">\n'
              f'<meta property="article:modified_time" content="{p.get("updated") or p["date"]}">\n'
              f'<meta property="article:section" content="{e(CATEGORIES[p["category"]])}">')
-    out = [page_head(f"{p['title']} | Engine-X Blog", p["summary"], p["url"], "article", image_url,
+    out = [page_head(seo_title(p), seo_description(p), p["url"], "article", image_url,
                      post_schema(p, image_url), extra)]
     out.append('<div class="progress" aria-hidden="true"></div>\n<div class="wrap">\n')
 
@@ -345,7 +387,9 @@ def render_post(p, posts):
     out.append(f'  <p class="meta">{meta}</p>\n')
 
     if image_url:
-        out.append(f'  <figure class="hero"><img src="{e(image_url)}" alt="{e(p.get("image_alt", ""))}">'
+        size = image_size(p["image"])
+        dims = f' width="{size[0]}" height="{size[1]}"' if size else ""
+        out.append(f'  <figure class="hero"><img src="{e(image_url)}" alt="{e(p.get("image_alt", ""))}"{dims}>'
                    + (f'<figcaption>{e(p["image_credit"])}</figcaption>' if p.get("image_credit") else "")
                    + "</figure>\n")
 
@@ -450,7 +494,7 @@ def render_index(posts):
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Engine-X", "item": f"{MAIN}/"},
             {"@type": "ListItem", "position": 2, "name": "Blog", "item": f"{BASE}/"}]}]})
-    out = [page_head(SITE["title"], SITE["description"], f"{BASE}/", jsonld=schema)]
+    out = [page_head(SITE.get("seo_title") or SITE["title"], SITE["description"], f"{BASE}/", jsonld=schema)]
     out.append('<div class="wrap">\n')
     out.append('  <nav class="crumbs" aria-label="Breadcrumb">'
                f'<a href="{MAIN}/">Engine&#8209;X</a><span>›</span><span class="here">Blog</span></nav>\n')

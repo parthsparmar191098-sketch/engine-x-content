@@ -3,6 +3,8 @@ title: What Is Dry Docking? How a Ship Is Taken Out of the Water, Step by Step
 date: 2026-10-23
 category: guide
 summary: Dry docking lifts a ship out of the water so its hull, propeller, rudder and sea valves can be inspected and repaired. How a docking works, why the critical period matters, and what work gets done.
+seo_title: What Is Dry Docking? A Ship Docking, Step by Step
+seo_description: How a ship is dry docked: keel blocks, pumping out the dock, the critical period, and the hull, propeller and valve work done in dock.
 image: assets/2026-10-23-dry-docking.svg
 image_alt: Diagram of a ship in a graving dock settling onto keel blocks as water is pumped out, stern first, with the critical period marked
 image_credit: Diagram: Engine-X

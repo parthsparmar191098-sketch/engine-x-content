@@ -3,6 +3,8 @@ title: Spur, Helical, Bevel or Worm? How to Choose the Right Gear Type
 date: 2026-10-23
 category: guide
 summary: Spur, helical, bevel and worm gears each suit a different shaft layout, load and noise level. How each gear works, its trade-offs, and when engineers pick it.
+seo_title: Spur, Helical, Bevel or Worm Gear? How to Choose
+seo_description: How spur, helical, bevel and worm gears work, which shaft layout, load and noise level each suits, and when engineers pick each one.
 image: assets/2026-10-23-gear-types.svg
 image_alt: Diagram comparing spur, helical, bevel and worm gears by shaft layout, with notes on noise, thrust and efficiency
 image_credit: Diagram: Engine-X

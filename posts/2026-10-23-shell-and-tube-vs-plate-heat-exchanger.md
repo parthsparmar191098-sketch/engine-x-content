@@ -3,6 +3,8 @@ title: Shell and Tube vs Plate Heat Exchanger — How Each Works and When to Use
 date: 2026-10-23
 category: guide
 summary: Shell-and-tube and plate heat exchangers both move heat between two fluids without mixing them. How each one works, how they compare, and why ships use both.
+seo_title: Shell and Tube vs Plate Heat Exchanger Compared
+seo_description: How shell-and-tube and plate heat exchangers work, how they compare on size, cleaning and pressure, and why ships use both.
 image: assets/2026-10-23-heat-exchangers.svg
 image_alt: Diagram comparing a shell-and-tube heat exchanger with baffles and a tube bundle against a plate heat exchanger with alternating hot and cold channels
 image_credit: Diagram: Engine-X
