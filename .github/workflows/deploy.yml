@@ -9,6 +9,10 @@ on:
         description: "Ping every page to IndexNow (Bing / ChatGPT search)"
         type: boolean
         default: false
+      urls:
+        description: "Or ping these exact URLs (space separated)"
+        type: string
+        default: ""
 
 permissions:
   contents: read
@@ -55,8 +59,11 @@ jobs:
         env:
           BEFORE: ${{ github.event.before }}
           PING_ALL: ${{ inputs.ping_all }}
+          URLS: ${{ inputs.urls }}
         run: |
-          if [ "$PING_ALL" = "true" ]; then
+          if [ -n "$URLS" ]; then
+            python indexnow.py $URLS
+          elif [ "$PING_ALL" = "true" ]; then
             python indexnow.py --all
           elif [ -n "$BEFORE" ] && git cat-file -e "$BEFORE" 2>/dev/null; then
             python indexnow.py $(git diff --name-only "$BEFORE" HEAD -- posts/)
