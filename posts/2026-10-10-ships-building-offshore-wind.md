@@ -4,6 +4,8 @@ date: 2026-10-10
 category: news
 tag: machines
 summary: Two jack-up vessels just finished installing 76 giant turbines in the Baltic Sea, and a new wave of hybrid service ships is arriving. Here's how these machines actually work.
+seo_title: Jack-Up Vessels: The Ships That Build Offshore Wind Farms
+seo_description: How jack-up vessels install giant offshore wind turbines: legs, cranes and the hybrid service ships now joining them, explained by an engineer.
 image: assets/2026-10-10-jackup-vessel.svg
 image_alt: Diagram of a jack-up vessel standing on its legs and lifting a wind turbine nacelle
 image_credit: Diagram: Engine-X

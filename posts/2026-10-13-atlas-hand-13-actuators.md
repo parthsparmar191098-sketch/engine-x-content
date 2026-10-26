@@ -4,6 +4,8 @@ date: 2026-10-13
 category: news
 tag: automation
 summary: Atlas's new hand has 13 identical sealed actuators and no cables across the joints. Here is how direct, backdrivable actuation works, and why dropping the pinky was an engineering decision.
+seo_title: Atlas Robot Hand: 13 Actuators, Four Fingers, No Pinky
+seo_description: Boston Dynamics' new Atlas hand uses 13 sealed backdrivable actuators and no cables. How direct actuation works and why the pinky was dropped.
 image: assets/2026-10-13-atlas-hand-actuation.svg
 image_alt: Diagram comparing a cable-driven finger with fragile cables across joints to a directly actuated finger with an encapsulated actuator in each joint, plus the 13 degrees of freedom split of thumb and three fingers
 image_credit: Diagram: Engine-X

@@ -3,6 +3,8 @@ title: How a Cooling Tower Works — Evaporation, Range, Approach and Water Loss
 date: 2026-10-24
 category: guide
 summary: A cooling tower cools water by evaporating a small part of it into moving air. How the fill, fans and drift eliminators work, what range and approach mean, and how much water a tower uses.
+seo_title: How a Cooling Tower Works: Range, Approach, Water Loss
+seo_description: How a cooling tower cools water by evaporation: fill, fans and drift eliminators, what range and approach mean, and how much water it uses.
 image: assets/2026-10-24-cooling-tower.svg
 image_alt: Diagram of an induced-draft counterflow cooling tower with hot water sprayed over fill, air drawn up by a fan, drift eliminators, cold water basin, and labels for range, approach and wet-bulb temperature
 image_credit: Diagram: Engine-X

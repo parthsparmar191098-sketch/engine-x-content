@@ -3,6 +3,8 @@ title: Why V-Belts Slip, Squeal and Fail — Tension, Alignment and Wear Explain
 date: 2026-10-23
 category: guide
 summary: Most V-belt failures come from wrong tension, misaligned pulleys or worn grooves. How a V-belt grips, how to set tension by deflection, and how to read a failed belt.
+seo_title: Why V-Belts Slip, Squeal and Fail (and How to Fix It)
+seo_description: Most V-belt failures come from wrong tension, misaligned pulleys or worn grooves. How to set tension by deflection and read a failed belt.
 image: assets/2026-10-23-v-belt-tension-alignment.svg
 image_alt: Diagram showing V-belt wedging in a pulley groove, the force-deflection tension check at mid-span, and parallel versus angular pulley misalignment
 image_credit: Diagram: Engine-X

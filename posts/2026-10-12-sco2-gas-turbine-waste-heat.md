@@ -4,6 +4,8 @@ date: 2026-10-12
 category: news
 tag: machines
 summary: A Denver startup says factory-built supercritical CO₂ power blocks can add up to 50% more power to a simple-cycle gas turbine. Here is how a CO₂ loop replaces steam, and what is still unproven.
+seo_title: Supercritical CO₂ Loops for Gas Turbine Exhaust Power
+seo_description: How a supercritical CO₂ loop replaces steam to turn gas turbine exhaust heat into up to 50% more power, and what is still unproven.
 image: assets/2026-10-12-sco2-bottoming-cycle.svg
 image_alt: Diagram of a closed supercritical CO2 loop taking heat from gas turbine exhaust, driving a turbine and generator, with a recuperator and a cooler
 image_credit: Diagram: Engine-X

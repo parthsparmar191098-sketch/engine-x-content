@@ -29,6 +29,8 @@ Instructions for the daily run that writes one blog post.
 - `category`: news | guide | case-study | field-notes | learn
 - `tag` (news only): machines | automation | space | design
 - `summary`: 1–2 sentences, under 220 characters
+- `seo_title`: the title Google shows, **max 60 characters**, main search phrase first (e.g. "Pump Cavitation and NPSH Explained, With an Example"). The on-page headline (`title`) can stay longer. " | Engine-X Blog" is added automatically only if it still fits.
+- `seo_description`: the Google snippet, **120–155 characters**, says what the reader will learn; only facts that are in the post. If left out, the summary is cut to 155 automatically.
 - `model`: turbo | pulleybelt | pump — only when genuinely related
 - `sources`: every source used, `Name | URL`
 - `keywords`: 3–6 comma-separated search phrases people would actually type (e.g. "how does a jack-up vessel work")

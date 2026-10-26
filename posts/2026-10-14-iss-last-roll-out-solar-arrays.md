@@ -4,6 +4,8 @@ date: 2026-10-14
 category: news
 tag: space
 summary: A Falcon 9 launched the final pair of roll-out solar arrays to the ISS. They unroll using energy stored in their own composite booms, with no deployment motors at all.
+seo_title: ISS Roll-Out Solar Arrays: Unrolled by Springs, Not Motors
+seo_description: The last roll-out solar arrays for the ISS unroll using energy stored in their own composite booms. How iROSA works with no deployment motors.
 image: assets/2026-10-14-rosa-roll-out-array.svg
 image_alt: Diagram showing a solar array rolled around a spindle in Dragon's trunk, then unrolled by composite slit-tube booms that release stored strain energy, and mounted in front of an old rigid ISS solar wing
 image_credit: Diagram: Engine-X

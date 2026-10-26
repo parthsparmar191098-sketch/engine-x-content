@@ -4,6 +4,8 @@ date: 2026-10-11
 category: news
 tag: automation
 summary: Gecko Robotics is bringing robotic inspection to Anduril's new submarine factory. A look at why inspection slows shipbuilding down, and how a thickness check actually works.
+seo_title: Robotic Ship Inspection: The Engineering Behind It
+seo_description: Why inspection slows shipbuilding, how robots like Gecko's measure hull thickness, and what it means for submarine and ship factories.
 image: assets/2026-10-11-ut-thickness.svg
 image_alt: Diagram of an ultrasonic probe measuring steel plate thickness from the echo time
 image_credit: Diagram: Engine-X

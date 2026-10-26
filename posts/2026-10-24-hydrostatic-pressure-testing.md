@@ -3,6 +3,8 @@ title: Hydrostatic Testing Explained — How Pipelines Are Pressure-Tested for L
 date: 2026-10-24
 category: guide
 summary: A hydrostatic test fills a pipe or vessel with water and raises it above design pressure to prove it is strong and leak-tight. Test pressure, hold time, step-by-step procedure and why water beats air.
+seo_title: Hydrostatic Testing: How Pipelines Are Pressure-Tested
+seo_description: How a hydrostatic test proves a pipe or vessel is strong and leak-tight: test pressure, hold time, step-by-step procedure, and why water beats air.
 image: assets/2026-10-24-hydrostatic-test.svg
 image_alt: Diagram of a pipeline hydrostatic test with a test pump at the low point, vents at the high point, two pressure gauges, and a chart of pressure raised in steps to 1.5 times design pressure
 image_credit: Diagram: Engine-X
