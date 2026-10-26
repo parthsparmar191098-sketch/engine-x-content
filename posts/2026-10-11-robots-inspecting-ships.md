@@ -1,6 +1,7 @@
 ---
 title: Robots Are Taking Over Ship Inspection — Here's the Engineering Behind It
 date: 2026-10-11
+updated: 2026-10-26
 category: news
 tag: automation
 summary: Gecko Robotics is bringing robotic inspection to Anduril's new submarine factory. A look at why inspection slows shipbuilding down, and how a thickness check actually works.
@@ -25,15 +26,17 @@ sources:
 - Ocean News — Gecko Robotics and Anduril partner to accelerate submarine production | https://oceannews.com/news/milestones/gecko-robotics-and-anduril-partner-to-accelerate-submarine-production/
 - The Next Web — Gecko Robotics lands $71M Navy deal (Mar 2026) | https://thenextweb.com/news/gecko-robotics-navy-contract-ship-digital-twins
 ---
-This week, inspection-robot company **Gecko Robotics** announced it is partnering with defence manufacturer **Anduril** to speed up US submarine production. Gecko's robots and software will be used at Anduril's new 160,000 sq ft factory in California, where key submarine components will be made. Anduril has tied the work to a $3.7 billion investment in Virginia-class submarine production, including a new shipyard in Maryland.
+This week, inspection-robot company **Gecko Robotics** announced it is partnering with defence manufacturer **Anduril** to speed up US submarine production. Gecko's robots and software will be used at Anduril's new 160,000 sq ft factory in California, where key submarine components will be made.
+
+Anduril has tied the work to a $3.7 billion investment in Virginia-class submarine production, including a new shipyard in Maryland.
 
 The headline number: on forged components for other defence customers, Gecko says its system has cut **inspection time by up to 90%**, and that workers with no prior non-destructive testing (NDT) experience can be productive after about an hour of training.
 
 As someone who works in a dry dock, that second claim is the interesting one. Here's why.
 
-## Why inspection is a bottleneck
+## Why is ship inspection so slow?
 
-Every critical steel part on a ship — plates, welds, forgings, tanks — has to be checked before it goes into service and again throughout its life. The checks are **non-destructive**: you test the part without cutting it open.
+Ship inspection is slow because every critical steel part on a ship — plates, welds, forgings, tanks — has to be checked before it goes into service and again throughout its life. The checks are **non-destructive**: you test the part without cutting it open.
 
 The problem isn't the physics. It's people and time:
 
@@ -43,9 +46,9 @@ The problem isn't the physics. It's people and time:
 
 If inspection can't keep up with fabrication, the whole yard waits.
 
-## How a thickness check actually works
+## How does ultrasonic thickness gauging work?
 
-The most common check on a hull is **ultrasonic thickness gauging** — and it's simple physics:
+**Ultrasonic thickness gauging** is the most common check on a hull, and it works on simple physics:
 
 1. A probe (transducer) is placed on the steel with a gel or water film called *couplant* so the sound can get in.
 2. It sends a very short, high-frequency sound pulse into the plate.
@@ -54,7 +57,7 @@ The most common check on a hull is **ultrasonic thickness gauging** — and it's
 
 When corrosion eats the inside of a tank or the outside of the hull, the back wall moves closer. The echo comes back sooner, and the reading drops. Compare that to the original plate thickness and you know how much metal has been lost — and whether the plate needs renewing.
 
-## What robots change
+## What do inspection robots change?
 
 A robot doesn't change the physics. It changes **how much steel you can cover and how consistently**:
 

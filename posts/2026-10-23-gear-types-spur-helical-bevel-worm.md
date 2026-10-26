@@ -1,6 +1,7 @@
 ---
 title: Spur, Helical, Bevel or Worm? How to Choose the Right Gear Type
 date: 2026-10-23
+updated: 2026-10-26
 category: guide
 summary: Spur, helical, bevel and worm gears each suit a different shaft layout, load and noise level. How each gear works, its trade-offs, and when engineers pick it.
 seo_title: Spur, Helical, Bevel or Worm Gear? How to Choose
@@ -28,7 +29,9 @@ sources:
 - FIRGELLI — Worm gear reduction & self-locking calculator | https://www.firgelliauto.com/blogs/engineering-calculators/worm-gear-reduction-self-locking-calculator
 - MechRef — Spur gears | https://www.mechref.org/mf/Spur_Gears
 ---
-The right gear type depends first on how the two shafts sit: spur and helical gears connect parallel shafts, bevel gears connect shafts that meet at an angle, and worm gears connect shafts that cross at right angles without meeting. After that, the choice comes down to noise, load, side thrust on the bearings and how much power you can afford to lose.
+The right gear type depends first on how the two shafts sit: spur and helical gears connect parallel shafts, bevel gears connect shafts that meet at an angle, and worm gears connect shafts that cross at right angles without meeting.
+
+After that, the choice comes down to noise, load, side thrust on the bearings and how much power you can afford to lose.
 
 Gears do the same job as belts and chains — carry power from one shaft to another at a new speed — but with teeth instead of friction, so they never slip. The [belt vs chain vs gear drive comparison](https://engx3d.com/belt-vs-chain-vs-gear-drive) on Engine-X covers when gears beat the other two. This guide goes one level deeper: which gear.
 

@@ -1,6 +1,7 @@
 ---
 title: Ball, Roller or Journal Bearing? How Bearing Types Work and How to Choose
 date: 2026-10-23
+updated: 2026-10-26
 category: guide
 summary: Ball, roller and journal bearings all carry a turning shaft, but in very different ways. How each type works, which loads it handles, and how bearing life is calculated.
 seo_title: Ball vs Roller vs Journal Bearings: How to Choose
@@ -27,7 +28,9 @@ sources:
 - Savree — Plain bearing | https://savree.com/en/product/plain-bearing/
 - PIB Sales — Life calculations for bearings | https://pibsales.com/tutorials/life-calculations-for-bearings/
 ---
-Ball bearings, roller bearings and journal bearings all support a turning shaft, but each does it differently: ball bearings roll on point contacts, roller bearings roll on line contacts, and journal bearings let the shaft slide on a thin film of pressurised oil. The right choice depends on the load, its direction, the speed and how much space and lubrication the machine has.
+Ball bearings, roller bearings and journal bearings all support a turning shaft, but each does it differently: ball bearings roll on point contacts, roller bearings roll on line contacts, and journal bearings let the shaft slide on a thin film of pressurised oil.
+
+The right choice depends on the load, its direction, the speed and how much space and lubrication the machine has.
 
 Almost every machine on Engine-X depends on bearings. The [turbocharger](https://engx3d.com/turbocharger) spins on oil-fed journal bearings, a [centrifugal pump](https://engx3d.com/centrifugal-pump) carries its impeller shaft on rolling bearings, and the pulleys of a V-belt drive put a constant side load on their shaft bearings.
 

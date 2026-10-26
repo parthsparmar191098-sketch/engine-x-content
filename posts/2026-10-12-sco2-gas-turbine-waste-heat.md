@@ -1,6 +1,7 @@
 ---
 title: A CO₂ Loop That Squeezes Extra Power From Gas Turbine Exhaust
 date: 2026-10-12
+updated: 2026-10-26
 category: news
 tag: machines
 summary: A Denver startup says factory-built supercritical CO₂ power blocks can add up to 50% more power to a simple-cycle gas turbine. Here is how a CO₂ loop replaces steam, and what is still unproven.
@@ -27,23 +28,25 @@ sources:
 - POWER Magazine — Breakthrough for sCO2 power cycle as STEP Demo completes Phase 1 (9 Oct 2024) | https://www.powermag.com/breakthrough-for-sco2-power-cycle-as-step-demo-completes-phase-1-of-10-mw-project/
 - Southwest Research Institute — STEP Demo pilot plant achieves full operational conditions (16 Oct 2024) | https://www.swri.org/press-release/step-demo-pilot-plant-achieves-full-operational-conditions-phase-1-of-testing
 ---
-A Denver startup called **American Supercritical** has come out of stealth with $8 million in pre-seed funding and a simple pitch: bolt a factory-built "power block" onto the exhaust of a simple-cycle gas turbine and make up to **50% more electricity without burning any extra fuel**. Instead of the usual steam equipment, the block uses carbon dioxide as its working fluid.
+A Denver startup called **American Supercritical** has come out of stealth with $8 million in pre-seed funding and a simple pitch: bolt a factory-built "power block" onto the exhaust of a simple-cycle gas turbine and make up to **50% more electricity without burning any extra fuel**.
+
+Instead of the usual steam equipment, the block uses carbon dioxide as its working fluid.
 
 Those are the company's own claims, and I could not find published operating data from a commercial installation yet. But the mechanism behind them is real engineering, and it is worth understanding.
 
-## Where the wasted heat is
+## Where does a gas turbine waste heat?
 
-A simple-cycle gas turbine sucks in air, compresses it, burns fuel and expands the hot gas through a turbine. After the turbine, the exhaust still leaves at several hundred degrees Celsius. In a combined-cycle plant, that heat is captured by a heat recovery steam generator (HRSG), which boils water to drive a second, steam turbine. Simple-cycle units skip all that, so the heat goes up the stack. The company says about 140 GW of such turbines operate in the US.
+A gas turbine wastes heat in its hot exhaust. A simple-cycle gas turbine sucks in air, compresses it, burns fuel and expands the hot gas through a turbine. After the turbine, the exhaust still leaves at several hundred degrees Celsius. In a combined-cycle plant, that heat is captured by a heat recovery steam generator (HRSG), which boils water to drive a second, steam turbine. Simple-cycle units skip all that, so the heat goes up the stack. The company says about 140 GW of such turbines operate in the US.
 
-## What "supercritical" means
+## What is supercritical CO₂?
 
-Every fluid has a critical point. For CO₂ it is roughly **31 °C and 7.4 MPa** (about 74 bar). Above both, CO₂ is no longer cleanly a liquid or a gas. It is a dense, compressible fluid that flows like a gas but is far denser than any gas.
+Supercritical CO₂ is CO₂ held above its critical point, where it is neither a clean liquid nor a gas. Every fluid has a critical point. For CO₂ it is roughly **31 °C and 7.4 MPa** (about 74 bar). Above both, CO₂ is no longer cleanly a liquid or a gas. It is a dense, compressible fluid that flows like a gas but is far denser than any gas.
 
 That density is the trick. Steam at low pressure is very thin, so steam turbines and condensers must be huge. Dense CO₂ packs a lot of energy into a small volume, so the turbine, heat exchangers and piping shrink. American Supercritical says its block needs about one-tenth the space of a comparable steam system.
 
-## How the loop works
+## How does an sCO₂ power loop work?
 
-It is a closed Brayton cycle, the same thermodynamic idea as the gas turbine itself, but the CO₂ never leaves the loop:
+An sCO₂ power loop is a closed Brayton cycle, the same thermodynamic idea as the gas turbine itself, but the CO₂ never leaves the loop:
 
 1. **Compress.** A compressor raises the cooled CO₂ to very high pressure. Because the fluid is dense, close to liquid-like, this takes much less work than compressing a thin gas. Less compression work means more net power at the shaft.
 2. **Pre-heat (recuperator).** The compressed CO₂ picks up heat from the turbine's own outlet stream through a heat exchanger. This recycles heat that would otherwise be thrown away.
@@ -53,9 +56,9 @@ It is a closed Brayton cycle, the same thermodynamic idea as the gas turbine its
 
 Because the loop only borrows heat from the exhaust stream through a heat exchanger, the gas turbine itself is not changed. The company says no turbine modifications or extra permitting are needed.
 
-## Proof this works at pilot scale
+## Has sCO₂ power worked at pilot scale?
 
-The best public evidence is not from the startup. The STEP Demo, a 10 MWe pilot led by GTI Energy at Southwest Research Institute in San Antonio, ran a simple sCO₂ cycle in 2024. Its turbine reached 27,000 rpm at 500 °C and about 250 bar and delivered around 4 MWe to the grid. The next phase was planned to move to a more efficient recompression cycle at 715 °C. That shows the turbomachinery is real; it does not prove the startup's 50% number.
+Yes. The best public evidence is not from the startup. The STEP Demo, a 10 MWe pilot led by GTI Energy at Southwest Research Institute in San Antonio, ran a simple sCO₂ cycle in 2024. Its turbine reached 27,000 rpm at 500 °C and about 250 bar and delivered around 4 MWe to the grid. The next phase was planned to move to a more efficient recompression cycle at 715 °C. That shows the turbomachinery is real; it does not prove the startup's 50% number.
 
 ## The engineering takeaway
 

@@ -1,6 +1,7 @@
 ---
 title: How Ships Stop Rusting — Corrosion, Sacrificial Anodes and Impressed Current
 date: 2026-10-24
+updated: 2026-10-26
 category: guide
 summary: Sea water turns a steel hull into a giant battery. How galvanic corrosion works, how zinc and aluminium anodes sacrifice themselves to protect the hull, and how impressed-current systems do it electrically.
 seo_title: Ship Corrosion: Sacrificial Anodes vs Impressed Current
@@ -26,7 +27,9 @@ sources:
 - US EPA — Cathodic protection: nature of discharge (vessel discharges) | https://19january2021snapshot.epa.gov/sites/static/files/2015-08/documents/2007_07_10_oceans_regulatory_unds_tdddocuments_appacathodic.pdf
 - Evac — What is a sacrificial anode and why ICCP systems are a better solution | https://evac.com/article/what-is-a-sacrificial-anode-and-why-iccp-systems-are-a-better-solution/
 ---
-Ships stop their steel hulls rusting with two lines of defence: a paint coating that keeps sea water off the steel, and cathodic protection that deals with every scratch and holiday the paint misses. Cathodic protection works by making the hull the protected side of an electrochemical cell — either with blocks of zinc or aluminium that corrode instead of the steel, or with an electrical system that pushes protective current into the water.
+Ships stop their steel hulls rusting with two lines of defence: a paint coating that keeps sea water off the steel, and cathodic protection for every scratch the paint misses — zinc or aluminium anodes that corrode instead of the steel, or an electrical system that pushes protective current into the water.
+
+Cathodic protection works by making the hull the protected side of an electrochemical cell, so the steel stops giving up metal even where the paint has a scratch or a holiday (a missed spot).
 
 Sea water is an excellent electrolyte, and a ship is full of different metals in contact: a steel hull, a bronze propeller, stainless shafts and fittings. Left alone, that combination behaves like a battery, and the steel is the part that gets eaten.
 

@@ -1,6 +1,7 @@
 ---
 title: The Ships That Build Offshore Wind Farms — and the Machines on Board
 date: 2026-10-10
+updated: 2026-10-26
 category: news
 tag: machines
 summary: Two jack-up vessels just finished installing 76 giant turbines in the Baltic Sea, and a new wave of hybrid service ships is arriving. Here's how these machines actually work.
@@ -28,13 +29,13 @@ This week, Poland's first offshore wind farm reached a milestone: all **76 turbi
 
 Putting something that big on a foundation in open sea is not a crane job you can do from a normal ship. It needs a very specific machine.
 
-## Why a normal ship can't do this
+## Why can't a normal ship install an offshore wind turbine?
 
-A ship floats, so it moves — up and down with waves (heave), side to side (roll) and front to back (pitch). Lifting a very heavy nacelle and lowering it onto a tower top with centimetre accuracy is impossible if the crane itself is bobbing on the water.
+A normal ship can't do this job because it floats, so it moves — up and down with waves (heave), side to side (roll) and front to back (pitch). Lifting a very heavy nacelle and lowering it onto a tower top with centimetre accuracy is impossible if the crane itself is bobbing on the water.
 
-## The jack-up vessel: a ship that stands on legs
+## How does a jack-up vessel install wind turbines?
 
-A jack-up vessel solves this by turning itself into a temporary platform:
+A jack-up vessel installs turbines by standing on its own legs, turning itself into a temporary platform:
 
 1. **Sail in like a ship.** The legs are pulled up, so the vessel can travel to the site.
 2. **Lower the legs.** Usually four huge steel legs are driven down to the seabed by rack-and-pinion jacking systems — long toothed racks on the legs, driven by many electric motors and gearboxes.
@@ -44,15 +45,15 @@ A jack-up vessel solves this by turning itself into a temporary platform:
 
 When the turbine is done, the process runs in reverse and the vessel moves to the next foundation.
 
-## The next wave: hybrid service ships
+## What is a CSOV in offshore wind?
 
-Building the farm is only the start — it has to be maintained for decades. That's the job of **CSOVs** (commissioning service operation vessels), which carry technicians and spare parts. Several new ones were in the news this week:
+A **CSOV** (commissioning service operation vessel) is a ship that carries technicians and spare parts to keep a wind farm running, because building the farm is only the start — it has to be maintained for decades. Several new ones were in the news this week:
 
 - **Acta Marine** named *Acta Hercules*, the second of four new CSOVs, which runs on **methanol dual-fuel engines**, and has received the third, *Acta Aquarius*.
 - **Marco Polo Marine's** "CSOV Plus", built at its own yard in Batam, Indonesia, carries a **battery system of over 1 MWh**, designed to be expandable to around 20 MWh for fully electric sailing.
 - **IWS Fleet** ordered four more Skywalker-class CSOVs, with MacGregor supplying **3D motion-compensated cranes and gangways**.
 
-## What "motion-compensated" means
+## What is a motion-compensated gangway?
 
 A motion-compensated gangway is a walkway from the ship to the turbine that stays still while the ship moves under it. Sensors measure the vessel's heave, roll and pitch many times per second, and hydraulic or electric actuators move the gangway in the opposite direction. The result: a technician can walk from a rolling ship onto a turbine platform as if crossing a bridge.
 

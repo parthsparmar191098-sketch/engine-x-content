@@ -1,6 +1,7 @@
 ---
 title: GD&T Basics — How to Read Geometric Tolerances on an Engineering Drawing
 date: 2026-10-26
+updated: 2026-10-26
 category: learn
 summary: GD&T tells a machinist how much a part's shape, orientation and position may vary and still work. How to read a feature control frame, what datums do, and why position uses a round zone.
 seo_title: GD&T Basics: How to Read Geometric Tolerances
@@ -24,7 +25,9 @@ faq:
 sources:
 - Wevolver — GD&T explained: symbols, datums and tolerances | https://www.wevolver.com/article/gdt-explained-symbols-datums-and-tolerances
 ---
-GD&T (geometric dimensioning and tolerancing) is a symbol language on engineering drawings that states how much a part's form, orientation, location and runout may vary while the part still works. Instead of a grid of ± dimensions, each feature gets a tolerance zone tied to datums — the surfaces the part is measured from — so the designer, machinist and inspector all read the same requirement.
+GD&T (geometric dimensioning and tolerancing) is a symbol language on engineering drawings that states how much a part's form, orientation, location and runout may vary while the part still works. Each feature gets a tolerance zone tied to datums, the surfaces the part is measured from.
+
+Instead of a grid of ± dimensions, this gives the designer, machinist and inspector one requirement that they all read the same way.
 
 Anyone who has drafted in AutoCAD or SolidWorks knows the problem GD&T solves: a hole dimensioned "50 ± 0.1 from the edge" says nothing about which edge is the reference, how square the edges are, or whether the hole may tilt. Two shops can make the "same" part differently, and both can pass inspection while the parts still do not fit.
 

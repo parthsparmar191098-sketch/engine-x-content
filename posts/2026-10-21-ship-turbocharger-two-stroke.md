@@ -1,6 +1,7 @@
 ---
 title: How a Ship's Turbocharger Keeps a Giant Two-Stroke Engine Breathing
 date: 2026-10-21
+updated: 2026-10-26
 category: guide
 summary: A ship's turbocharger turns waste exhaust heat into charge air for the main engine. How the turbine, compressor, cooler and blowers work together, and how crews keep it clean at sea.
 seo_title: How a Ship's Turbocharger Works on a Two-Stroke Engine
@@ -28,7 +29,7 @@ sources:
 - Marine Insight — How to clean blower and turbine sides of a turbocharger on ship | https://www.marineinsight.com/how-to-clean-blower-and-turbine-sides-of-a-turbocharger-on-ship/
 - Maritime Page — What is scavenging in marine engines? | https://maritimepage.com/what-is-scavenging-in-marine-engines/
 ---
-A ship's turbocharger is an exhaust-driven air pump: hot exhaust from the main engine spins a turbine, and that turbine drives a compressor on the same shaft, which forces dense air back into the engine. On a large two-stroke marine diesel, this air does two jobs at once — it pushes the burnt gas out of each cylinder and fills it with fresh air for the next stroke.
+A ship's turbocharger is an exhaust-driven air pump: exhaust from the main engine spins a turbine, which drives a compressor on the same shaft to force dense air back into the engine. On a large two-stroke marine diesel, this air also pushes burnt gas out of each cylinder and refills it for the next stroke.
 
 Turbochargers on modern container ships, tankers and bulk carriers are serious machines. Accelleron's [A100-L and A200-L series](https://accelleron.com/products/turbochargers/a100-l-and-a200-l), for example, is built for low-speed two-stroke engines from 3,000 kW to 28,000 kW, with turbocharger efficiency of up to 75%. If you want to see the basic parts first, the [Engine-X turbocharger guide](https://engx3d.com/turbocharger) shows them in 3D.
 
