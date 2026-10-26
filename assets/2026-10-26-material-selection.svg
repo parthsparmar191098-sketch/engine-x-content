@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="36" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">Four everyday materials compared</text>
+  <text x="400" y="58" text-anchor="middle" fill="#8fc4ff" font-size="14">More dots = better for that property (qualitative)</text>
+
+  <!-- header -->
+  <g fill="#eaf1ff" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="330" y="96">Mild steel</text><text x="450" y="96">SS304</text><text x="570" y="96">SS316</text><text x="690" y="96">Cast iron</text>
+  </g>
+  <g fill="#8fc4ff" font-size="11" text-anchor="middle">
+    <text x="330" y="112">≈0.05–0.25% C</text><text x="450" y="112">18Cr–8Ni</text><text x="570" y="112">+2–3% Mo</text><text x="690" y="112">≈2–4% C</text>
+  </g>
+  <line x1="30" y1="122" x2="770" y2="122" stroke="#2a3a5c"/>
+
+  <g fill="#eaf1ff" font-size="13">
+    <text x="40" y="156">Tensile strength / ductility</text>
+    <text x="40" y="200">General corrosion</text>
+    <text x="40" y="244">Chlorides / sea water</text>
+    <text x="40" y="288">Weldability</text>
+    <text x="40" y="332">Castability &amp; damping</text>
+    <text x="40" y="376">Low cost</text>
+  </g>
+  <g stroke="#2a3a5c"><line x1="30" y1="174" x2="770" y2="174"/><line x1="30" y1="218" x2="770" y2="218"/><line x1="30" y1="262" x2="770" y2="262"/><line x1="30" y1="306" x2="770" y2="306"/><line x1="30" y1="350" x2="770" y2="350"/><line x1="30" y1="394" x2="770" y2="394"/></g>
+
+  <!-- dots: rows y=152,196,240,284,328,372 ; cols 330,450,570,690 ; dot spacing 16 -->
+  <g fill="#5ea7ff">
+    <!-- strength -->
+    <circle cx="314" cy="152" r="6"/><circle cx="330" cy="152" r="6"/><circle cx="346" cy="152" r="6"/>
+    <circle cx="434" cy="152" r="6"/><circle cx="450" cy="152" r="6"/><circle cx="466" cy="152" r="6"/>
+    <circle cx="554" cy="152" r="6"/><circle cx="570" cy="152" r="6"/><circle cx="586" cy="152" r="6"/>
+    <circle cx="690" cy="152" r="6"/>
+    <!-- general corrosion -->
+    <circle cx="330" cy="196" r="6"/>
+    <circle cx="442" cy="196" r="6"/><circle cx="458" cy="196" r="6"/>
+    <circle cx="554" cy="196" r="6"/><circle cx="570" cy="196" r="6"/><circle cx="586" cy="196" r="6"/>
+    <circle cx="682" cy="196" r="6"/><circle cx="698" cy="196" r="6"/>
+    <!-- chlorides -->
+    <circle cx="330" cy="240" r="6"/>
+    <circle cx="450" cy="240" r="6"/>
+    <circle cx="554" cy="240" r="6"/><circle cx="570" cy="240" r="6"/><circle cx="586" cy="240" r="6"/>
+    <circle cx="682" cy="240" r="6"/><circle cx="698" cy="240" r="6"/>
+    <!-- weldability -->
+    <circle cx="314" cy="284" r="6"/><circle cx="330" cy="284" r="6"/><circle cx="346" cy="284" r="6"/>
+    <circle cx="442" cy="284" r="6"/><circle cx="458" cy="284" r="6"/>
+    <circle cx="562" cy="284" r="6"/><circle cx="578" cy="284" r="6"/>
+    <circle cx="690" cy="284" r="6"/>
+    <!-- castability -->
+    <circle cx="330" cy="328" r="6"/>
+    <circle cx="450" cy="328" r="6"/>
+    <circle cx="570" cy="328" r="6"/>
+    <circle cx="674" cy="328" r="6"/><circle cx="690" cy="328" r="6"/><circle cx="706" cy="328" r="6"/>
+    <!-- cost -->
+    <circle cx="314" cy="372" r="6"/><circle cx="330" cy="372" r="6"/><circle cx="346" cy="372" r="6"/>
+    <circle cx="442" cy="372" r="6"/><circle cx="458" cy="372" r="6"/>
+    <circle cx="570" cy="372" r="6"/>
+    <circle cx="682" cy="372" r="6"/><circle cx="698" cy="372" r="6"/>
+  </g>
+  <g fill="#8a6cff" font-size="11" text-anchor="middle">
+    <text x="330" y="420">Frames, supports</text><text x="450" y="420">Food, fresh water</text><text x="570" y="420">Sea water, marine</text><text x="690" y="420">Pump bodies, bases</text>
+  </g>
+  <text x="400" y="448" text-anchor="middle" fill="#8fc4ff" font-size="11">PREN: SS304 ≈ 19 · SS316 ≈ 26 · welded parts → use 304L / 316L</text>
+</svg>

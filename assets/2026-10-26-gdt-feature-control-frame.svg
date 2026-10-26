@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="36" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">Reading a GD&amp;T feature control frame</text>
+  <text x="400" y="58" text-anchor="middle" fill="#8fc4ff" font-size="14">Left to right: what · zone shape · how much · when · measured from</text>
+
+  <!-- Frame -->
+  <g stroke="#eaf1ff" stroke-width="2.5" fill="#111b30">
+    <rect x="130" y="100" width="70" height="60"/><rect x="200" y="100" width="170" height="60"/><rect x="370" y="100" width="70" height="60"/><rect x="440" y="100" width="70" height="60"/><rect x="510" y="100" width="70" height="60"/>
+  </g>
+  <!-- position symbol -->
+  <circle cx="165" cy="130" r="14" fill="none" stroke="#5ea7ff" stroke-width="2.5"/>
+  <line x1="165" y1="110" x2="165" y2="150" stroke="#5ea7ff" stroke-width="2.5"/><line x1="145" y1="130" x2="185" y2="130" stroke="#5ea7ff" stroke-width="2.5"/>
+  <text x="285" y="140" text-anchor="middle" fill="#eaf1ff" font-size="24">⌀0.2 Ⓜ</text>
+  <text x="405" y="141" text-anchor="middle" fill="#eaf1ff" font-size="24" font-weight="700">A</text>
+  <text x="475" y="141" text-anchor="middle" fill="#eaf1ff" font-size="24" font-weight="700">B</text>
+  <text x="545" y="141" text-anchor="middle" fill="#eaf1ff" font-size="24" font-weight="700">C</text>
+
+  <!-- Callouts -->
+  <g fill="#8fc4ff" font-size="12" text-anchor="middle">
+    <text x="165" y="186">1 Position</text>
+    <text x="240" y="186">2 Round zone</text>
+    <text x="300" y="204">3 Tolerance 0.2 mm</text>
+    <text x="340" y="186">4 at MMC</text>
+    <text x="475" y="186">5–7 Datums: primary → tertiary</text>
+  </g>
+  <text x="400" y="232" text-anchor="middle" fill="#eaf1ff" font-size="13">"Hole axis inside a ⌀0.2 cylinder at true position from A, B, C — at MMC"</text>
+
+  <!-- Square vs round -->
+  <rect x="40" y="258" width="350" height="186" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="215" y="282" text-anchor="middle" fill="#eaf1ff" font-size="14" font-weight="700">± square vs round zone</text>
+  <rect x="155" y="310" width="100" height="100" fill="#8a6cff" fill-opacity="0.25" stroke="#8a6cff" stroke-width="2"/>
+  <circle cx="205" cy="360" r="70.7" fill="none" stroke="#5ea7ff" stroke-width="2.5"/>
+  <circle cx="205" cy="360" r="3" fill="#eaf1ff"/>
+  <text x="290" y="330" fill="#8a6cff" font-size="12">± square</text>
+  <text x="290" y="400" fill="#5ea7ff" font-size="12">round: ≈57%</text>
+  <text x="290" y="416" fill="#5ea7ff" font-size="12">more area</text>
+
+  <!-- Bonus tolerance -->
+  <rect x="410" y="258" width="350" height="186" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="585" y="282" text-anchor="middle" fill="#eaf1ff" font-size="14" font-weight="700">Bonus tolerance at MMC</text>
+  <text x="430" y="312" fill="#8fc4ff" font-size="12">Hole ⌀10.0–10.2 · position ⌀0.2 Ⓜ</text>
+  <text x="430" y="342" fill="#eaf1ff" font-size="13">Made ⌀10.0 (MMC)</text><text x="740" y="342" text-anchor="end" fill="#eaf1ff" font-size="13">⌀0.2</text>
+  <text x="430" y="366" fill="#eaf1ff" font-size="13">Made ⌀10.1</text><text x="740" y="366" text-anchor="end" fill="#eaf1ff" font-size="13">⌀0.3</text>
+  <text x="430" y="390" fill="#eaf1ff" font-size="13">Made ⌀10.2 (LMC)</text><text x="740" y="390" text-anchor="end" fill="#5ea7ff" font-size="13" font-weight="700">⌀0.4</text>
+  <text x="585" y="424" text-anchor="middle" fill="#8a6cff" font-size="12">True position = 2 × √(ΔX² + ΔY²)</text>
+</svg>
