@@ -33,7 +33,7 @@ def main_site_urls():
     try:
         xml = urllib.request.urlopen(req, timeout=30).read().decode()
     except Exception as ex:  # Cloudflare may challenge CI runners; posts still get pinged
-        print(f"warning: could not read {MAIN}/sitemap.xml ({ex}); pinging blog posts only")
+        print(f"::warning::could not read {MAIN}/sitemap.xml ({ex}); pinging blog posts only")
         return []
     return re.findall(r"<loc>([^<]+)</loc>", xml)
 
@@ -59,9 +59,10 @@ def main(args):
                                  headers={"Content-Type": "application/json; charset=utf-8"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
-            print(f"indexnow: {r.status} for {len(urls)} URLs")
+            print(f"::notice::indexnow: {r.status} for {len(urls)} URLs")
     except urllib.error.HTTPError as ex:  # print IndexNow's reason, then fail the job
-        sys.exit(f"indexnow: HTTP {ex.code} {ex.read().decode(errors='replace')[:300]}")
+        print(f"::error::indexnow: HTTP {ex.code} {ex.read().decode(errors='replace')[:300]}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
