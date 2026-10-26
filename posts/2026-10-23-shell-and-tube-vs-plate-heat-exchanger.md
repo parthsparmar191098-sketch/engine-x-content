@@ -1,6 +1,7 @@
 ---
 title: Shell and Tube vs Plate Heat Exchanger — How Each Works and When to Use It
 date: 2026-10-23
+updated: 2026-10-26
 category: guide
 summary: Shell-and-tube and plate heat exchangers both move heat between two fluids without mixing them. How each one works, how they compare, and why ships use both.
 image: assets/2026-10-23-heat-exchangers.svg
@@ -24,7 +25,9 @@ sources:
 - Alfa Laval — Heating and cooling in the engine room | https://www.alfalaval.com/industries/marine-transportation/marine/heating-and-cooling/heating-and-cooling-in-the-engine-room/
 - Inzonex — Plate vs shell-and-tube heat exchanger | https://inzonex.co.uk/ai/comparisons/plate-vs-shell-and-tube-heat-exchanger
 ---
-A shell-and-tube heat exchanger passes one fluid through a bundle of tubes inside a large shell, while a plate heat exchanger passes both fluids through thin channels between stacked, corrugated metal plates. Both move heat from a hot fluid to a cold one through a metal wall without mixing them; plates are far more compact and efficient, and shell-and-tube units cope better with high pressure, high temperature and dirty fluids.
+A shell-and-tube heat exchanger passes one fluid through tubes inside a large shell, while a plate heat exchanger passes both fluids between thin, corrugated metal plates. Plates are more compact and efficient; shell-and-tube units cope better with high pressure, high temperature and dirty fluids.
+
+Both types move heat from a hot fluid to a cold one through a metal wall without mixing them.
 
 Heat exchangers are everywhere in industry — refineries, power plants, food factories, HVAC — and a ship's engine room is full of them. Alfa Laval lists the [main engine-room heat loads](https://www.alfalaval.com/industries/marine-transportation/marine/heating-and-cooling/heating-and-cooling-in-the-engine-room/) as the jacket water cooler, lube oil cooler, diesel oil cooler and charge air cooler, plus the auxiliary engines. All of that heat has to go somewhere.
 

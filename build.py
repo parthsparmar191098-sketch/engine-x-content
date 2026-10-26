@@ -136,6 +136,8 @@ def parse(path):
     meta["toc"] = [(t["id"], t["name"]) for t in md.toc_tokens]
     text = re.sub(r"<[^>]+>", " ", meta["body_html"])
     meta["words"] = len(text.split())
+    first = re.search(r"<p>(.*?)</p>", meta["body_html"], re.S)
+    meta["lede_words"] = len(re.sub(r"<[^>]+>", " ", first.group(1)).split()) if first else 0
     meta["minutes"] = max(1, round(meta["words"] / WORDS_PER_MIN))
     meta["draft"] = meta.get("draft", "false").lower() == "true"
     return meta
@@ -292,6 +294,7 @@ def post_schema(p, image_url):
         "wordCount": p["words"],
         "timeRequired": f"PT{p['minutes']}M",
         "inLanguage": "en",
+        "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["article > p:first-of-type", ".tldr"]},
     }
     if p.get("keywords"):
         article["keywords"] = [k.strip() for k in p["keywords"].split(",") if k.strip()]
@@ -511,6 +514,30 @@ def render_sitemap(posts):
             + "".join(urls) + "</urlset>\n")
 
 
+def render_llms(posts):
+    lines = [f"# {SITE['title']}", "", f"> {SITE['description']}", "",
+             f"Every post on {BASE}/ with a one-line answer. Main site guide: {MAIN}/llms.txt", "", "## Posts", ""]
+    for p in posts:
+        lines.append(f"- [{p['title']}]({p['url']}): {p.get('tldr') or p['summary']}")
+    lines += ["", "## Optional", "", f"- [Full text of key facts and FAQ answers]({BASE}/llms-full.txt)", ""]
+    return "\n".join(lines)
+
+
+def render_llms_full(posts):
+    out = [f"# {SITE['title']} - key facts and answers", "",
+           f"> Author: Parth Parmar, Engine-X ({MAIN}). Each post: answer, key facts, FAQ.", ""]
+    for p in posts:
+        out += [f"## {p['title']}", "", f"URL: {p['url']}", f"Published: {p['date']}"
+                + (f" (updated {p['updated']})" if p.get("updated") else ""), "",
+                p.get("tldr") or p["summary"], ""]
+        out += [f"- {t}" for t in p["takeaways"]]
+        if p["takeaways"]:
+            out.append("")
+        for q, a in p["faq"]:
+            out += [f"Q: {q}", f"A: {a}", ""]
+    return "\n".join(out)
+
+
 def main():
     posts = []
     for path in sorted((ROOT / "posts").glob("*.md")):
@@ -531,6 +558,8 @@ def main():
     (OUT / "index.html").write_text(render_index(posts), encoding="utf-8")
     (OUT / "rss.xml").write_text(render_rss(posts), encoding="utf-8")
     (OUT / "sitemap.xml").write_text(render_sitemap(posts), encoding="utf-8")
+    (OUT / "llms.txt").write_text(render_llms(posts), encoding="utf-8")
+    (OUT / "llms-full.txt").write_text(render_llms_full(posts), encoding="utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
     feed = [{"title": p["title"], "url": p["url"], "date": p["date"], "category": p["category"],
              "category_label": CATEGORIES[p["category"]], "tag": p.get("tag", ""),
@@ -540,6 +569,9 @@ def main():
     (OUT / ".nojekyll").write_text("")
     if SITE.get("custom_domain"):
         (OUT / "CNAME").write_text(SITE["custom_domain"] + "\n")
+    for p in posts:
+        if p["lede_words"] > 60:  # WRITING_GUIDE: answer-first paragraph is 40-60 words
+            print(f"warning: {p['slug']}: first paragraph is {p['lede_words']} words, keep it to 40-60")
     print(f"built {len(posts)} posts -> {OUT}")
 
 

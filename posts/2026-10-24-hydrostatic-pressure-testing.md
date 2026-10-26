@@ -1,6 +1,7 @@
 ---
 title: Hydrostatic Testing Explained — How Pipelines Are Pressure-Tested for Leaks
 date: 2026-10-24
+updated: 2026-10-26
 category: guide
 summary: A hydrostatic test fills a pipe or vessel with water and raises it above design pressure to prove it is strong and leak-tight. Test pressure, hold time, step-by-step procedure and why water beats air.
 image: assets/2026-10-24-hydrostatic-test.svg
@@ -23,7 +24,9 @@ sources:
 - Project Materials — Hydrostatic test: vessels & piping | https://blog.projectmaterials.com/epc-projects/testing-inspection/hydrostatic-test
 - Araner — Pressure test: hydrostatic and pneumatic test requirements | https://www.araner.com/blog/pressure-test-hydrostatic-pneumatic-requirements
 ---
-A hydrostatic test is a pressure test in which a pipe system, vessel or valve is filled with water and pressurised above its design pressure to prove it is strong enough and does not leak. For process piping built to ASME B31.3, the test pressure is about 1.5 times the design pressure, held for at least 10 minutes while every weld, flange and joint is inspected.
+A hydrostatic test is a pressure test in which a pipe system, vessel or valve is filled with water and pressurised above its design pressure to prove it is strong enough and does not leak. For ASME B31.3 process piping, the test pressure is about 1.5 times the design pressure.
+
+The pressure is held for at least 10 minutes while every weld, flange and joint is inspected.
 
 Hydrotesting is the last check before new or repaired piping goes into service — in refineries, power plants, water lines and ship systems alike. It catches bad welds, loose flanges, cracked fittings and wrong gaskets while the system is full of harmless water, instead of oil, steam or gas.
 

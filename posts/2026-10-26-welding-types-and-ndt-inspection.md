@@ -1,6 +1,7 @@
 ---
 title: Stick, MIG or TIG? Welding Types Explained, and How Welds Are Inspected
 date: 2026-10-26
+updated: 2026-10-26
 category: learn
 summary: SMAW, MIG and TIG welding each protect the molten weld in a different way, which decides where they work best. How each process works, common weld defects, and the NDT methods that find them.
 image: assets/2026-10-26-welding-ndt.svg
@@ -24,7 +25,9 @@ sources:
 - Accendo Reliability — Non-destructive testing of welds | https://accendoreliability.com/non-destructive-testing-welds/
 - Project Materials — 304 vs 316 stainless steel | https://blog.projectmaterials.com/quick-answers/materials/304-vs-316-stainless-steel/
 ---
-Stick, MIG and TIG welding all melt metal with an electric arc, but each protects the molten weld from the air in a different way — a flux coating, a shielding gas, or an inert gas with a separate filler rod — and that decides where each works best. After welding, non-destructive testing (NDT) checks the weld for defects without damaging it: some methods look at the surface, others see inside the metal.
+Stick, MIG and TIG welding all melt metal with an electric arc, but each protects the molten weld from the air in a different way — a flux coating, a shielding gas, or an inert gas with a separate filler rod — and that decides where each works best.
+
+After welding, non-destructive testing (NDT) checks the weld for defects without damaging it: some methods look at the surface, others see inside the metal.
 
 In fabrication and repair, the two go together. Choosing the process sets how likely defects are; inspection proves the weld is fit for service before the system is [pressure-tested](https://engx3d.com/blog/posts/2026-10-24-hydrostatic-pressure-testing.html) and put to work.
 

@@ -1,6 +1,7 @@
 ---
 title: How a Cooling Tower Works — Evaporation, Range, Approach and Water Loss
 date: 2026-10-24
+updated: 2026-10-26
 category: guide
 summary: A cooling tower cools water by evaporating a small part of it into moving air. How the fill, fans and drift eliminators work, what range and approach mean, and how much water a tower uses.
 image: assets/2026-10-24-cooling-tower.svg
@@ -24,7 +25,9 @@ sources:
 - Chem-Casts — What is a cooling tower and how does it work? | https://chem-casts.com/knowledge/what-is-a-cooling-tower-and-how-does-it-work
 - US EPA — WaterSense at Work, Section 6.3: Cooling towers | https://www.epa.gov/system/files/documents/2023-05/ws-commercial-watersense-at-work_Section_6.3_Cooling_Towers.pdf
 ---
-A cooling tower is a heat exchanger that cools warm water by letting a small part of it evaporate into a stream of air. The evaporating water takes heat from the water around it, so the rest falls into the basin cooler and goes back to the plant. Because the cooling comes from evaporation, a cooling tower can cool water below the air temperature — down towards the air's wet-bulb temperature, but never below it.
+A cooling tower is a heat exchanger that cools warm water by letting a small part of it evaporate into a stream of air. The evaporating water takes heat from the water around it, so the rest falls into the basin cooler and goes back to the plant.
+
+Because the cooling comes from evaporation, a cooling tower can cool water below the air temperature — down towards the air's wet-bulb temperature, but never below it.
 
 Cooling towers sit beside almost every large refinery, power station, chemical plant and air-conditioning system. They take the heat that condensers and process coolers pick up and dump it into the atmosphere. Without them, those plants would need a river's worth of once-through cooling water.
 

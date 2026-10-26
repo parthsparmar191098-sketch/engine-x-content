@@ -1,6 +1,7 @@
 ---
 title: What Is Dry Docking? How a Ship Is Taken Out of the Water, Step by Step
 date: 2026-10-23
+updated: 2026-10-26
 category: guide
 summary: Dry docking lifts a ship out of the water so its hull, propeller, rudder and sea valves can be inspected and repaired. How a docking works, why the critical period matters, and what work gets done.
 image: assets/2026-10-23-dry-docking.svg
@@ -24,7 +25,9 @@ sources:
 - Marine Insight — Dry docking of ships: understanding stability and docking plan | https://www.marineinsight.com/naval-architecture/dry-docking-ships-understanding-stability-docking-plan/
 - Maritime Page — How are ships prepared for drydocking? | https://maritimepage.com/how-are-ships-prepared-for-drydocking/
 ---
-Dry docking is the process of bringing a ship into a dock, landing it on keel blocks and removing the water, so the hull below the waterline can be inspected, cleaned, painted and repaired. It is the only time the whole underwater body of the ship — propeller, rudder, sea valves, stern tube and bottom plating — can be reached directly, so every merchant ship goes through it on a fixed schedule.
+Dry docking is the process of bringing a ship into a dock, landing it on keel blocks and removing the water, so the hull below the waterline can be inspected, cleaned, painted and repaired. Every merchant ship goes through it on a fixed schedule.
+
+It is the only time the whole underwater body of the ship — propeller, rudder, sea valves, stern tube and bottom plating — can be reached directly.
 
 Anyone who works in a dry dock learns one thing quickly: the ship is costing its owner money every day it sits on the blocks. That is why the docking itself is planned to the centimetre and the repair list is fixed before the ship arrives.
 

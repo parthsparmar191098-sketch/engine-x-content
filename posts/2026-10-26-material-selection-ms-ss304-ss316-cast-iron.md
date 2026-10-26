@@ -1,6 +1,7 @@
 ---
 title: Mild Steel, SS304, SS316 or Cast Iron? A Practical Material Selection Guide
 date: 2026-10-26
+updated: 2026-10-26
 category: learn
 summary: Mild steel, SS304, SS316 and cast iron cover most everyday mechanical jobs. How their composition drives strength, corrosion resistance and weldability, and where each one belongs.
 image: assets/2026-10-26-material-selection.svg
@@ -24,7 +25,9 @@ sources:
 - MachineMFG — Mild steel vs cast iron: what's the difference? | https://shop.machinemfg.com/mild-steel-vs-cast-iron-whats-the-difference/
 - Tata Steel — IS 2062 E250, E350, E410 steel grades guide | https://digeca.tatasteel.com/blogs/is-2062-e250-e350-e410-steel-grades-guide
 ---
-Mild steel, SS304, SS316 and cast iron are chosen by matching their composition to the job: mild steel for strong, cheap, weldable structures; SS304 for clean or mildly corrosive service; SS316 wherever chlorides or sea water are present; and cast iron for complex, rigid castings that need to damp vibration. Getting the choice wrong usually shows up later as rust, pitting, a cracked weld or a brittle failure.
+Mild steel, SS304, SS316 and cast iron are chosen by matching their composition to the job: mild steel for strong, cheap, weldable structures; SS304 for clean or mildly corrosive service; SS316 wherever chlorides or sea water are present; and cast iron for complex, rigid castings that need to damp vibration.
+
+Getting the choice wrong usually shows up later as rust, pitting, a cracked weld or a brittle failure.
 
 These four materials cover most of what passes through a workshop or a ship-repair yard: frames and brackets, pipes and flanges, pump casings, valve bodies and machine bases. Here is what makes each one behave the way it does.
 
