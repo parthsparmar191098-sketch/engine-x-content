@@ -11,6 +11,7 @@ image_alt: Diagram of a pipeline hydrostatic test with a test pump at the low po
 image_credit: Diagram: Engine-X
 keywords: what is hydrostatic testing, hydro test pressure for piping, ASME B31.3 hydrotest, hydrostatic vs pneumatic test, how to do a pipeline pressure test
 tldr: A hydrostatic test proves a pipe system by filling it with water, venting all air, raising pressure in steps to about 1.5 times design and holding it while every joint is checked.
+field_note: I have carried out pipeline pressure and leak tests in marine engineering work; on site, the test is only as good as the inspection of every weld, flange and joint while the pressure is held.
 takeaways:
 - A hydrostatic test proves strength and leak-tightness by pressurising a system with water above its design pressure.
 - Under ASME B31.3, process piping is tested at 1.5 × design pressure (corrected for temperature), held for at least 10 minutes.

@@ -105,3 +105,5 @@ article h2{ scroll-margin-top:24px; }
 .mini .kicker{ display:block; margin-bottom:6px; font-size:10.5px; }
 .mini-title{ display:block; color:var(--ink); font-weight:600; line-height:1.35; font-size:15.5px; }
 .mini-date{ display:block; color:var(--ink-dim); font-size:12.5px; margin-top:6px; }
+.field-note{ margin:30px 0 0; padding:16px 20px; border-left:3px solid var(--accent-hi); border-radius:0 12px 12px 0; background:rgba(94,167,255,0.07); color:var(--ink); line-height:1.65; font-size:15.5px; }
+.field-note span{ display:block; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.1em; color:var(--accent-hi); margin-bottom:6px; text-transform:uppercase; }

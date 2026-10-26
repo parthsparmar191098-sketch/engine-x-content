@@ -11,6 +11,7 @@ image_alt: Diagram comparing AutoCAD's 2D drafting workflow with SolidWorks' par
 image_credit: Diagram: Engine-X
 keywords: AutoCAD vs SolidWorks, which CAD software to learn mechanical engineering, parametric modeling explained, 2D drafting vs 3D modeling, SolidWorks for beginners
 tldr: Use AutoCAD when the deliverable is a 2D drawing or layout, and SolidWorks when you are designing parts and assemblies in 3D; most mechanical engineers end up needing both.
+field_note: I use both in my own work: AutoCAD for 2D drafting and layouts, and SolidWorks for 3D design of marine engineering parts and their drawings.
 takeaways:
 - AutoCAD (Autodesk) is a general CAD tool strongest at 2D drafting; files are DWG.
 - SolidWorks (Dassault Systèmes) is a parametric 3D modeller for parts, assemblies and drawings.
