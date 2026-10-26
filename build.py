@@ -19,6 +19,7 @@ Each post is a Markdown file with a simple header:
     keywords: jack-up vessel, offshore wind, monopile   # optional, comma separated
     video: https://www.youtube.com/watch?v=XXXXXXXXXXX  # optional, YouTube only
     tldr: One sentence shown at the end of the post.    # optional
+    field_note: What Parth has seen first-hand on this topic (dry dock, workshop)  # optional
     draft: false              # optional, true = not published
     takeaways:                # optional, 3-5 short bullet points
     - First key point
@@ -277,8 +278,9 @@ def mini_cards(items):
 def post_schema(p, image_url):
     author = {"@type": "Person", "@id": f"{MAIN}/#parth", "name": AUTHOR["name"], "url": AUTHOR["url"],
               "jobTitle": AUTHOR["job"], "knowsAbout": AUTHOR["knows"],
-              "sameAs": [AUTHOR["linkedin"]]}
+              "sameAs": [AUTHOR["linkedin"], "https://www.reddit.com/user/Parth_MechEng/"]}
     publisher = {"@type": "Organization", "@id": f"{MAIN}/#org", "name": "Engine-X", "url": f"{MAIN}/",
+                 "sameAs": ["https://www.linkedin.com/company/engx3d"],
                  "logo": {"@type": "ImageObject", "url": LOGO}}
     article = {
         "@type": "BlogPosting" if p["category"] in ("news", "field-notes") else "Article",
@@ -421,6 +423,8 @@ def render_post(p, posts):
                    f'{e(vid)}" title="{e(p["title"])}" loading="lazy" allowfullscreen '
                    'allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe></div>\n')
 
+    if p.get("field_note"):
+        out.append(f'  <aside class="field-note"><span>From the field · {AUTHOR["name"]}</span> {e(p["field_note"])}</aside>\n')
     if p.get("tldr"):
         out.append(f'  <div class="tldr"><span>TL;DR</span> {e(p["tldr"])}</div>\n')
 
@@ -574,6 +578,8 @@ def render_llms_full(posts):
         out += [f"## {p['title']}", "", f"URL: {p['url']}", f"Published: {p['date']}"
                 + (f" (updated {p['updated']})" if p.get("updated") else ""), "",
                 p.get("tldr") or p["summary"], ""]
+        if p.get("field_note"):
+            out += [f"First-hand note from Parth Parmar: {p['field_note']}", ""]
         out += [f"- {t}" for t in p["takeaways"]]
         if p["takeaways"]:
             out.append("")

@@ -11,6 +11,7 @@ image_alt: Diagram of a ship in a graving dock settling onto keel blocks as wate
 image_credit: Diagram: Engine-X
 keywords: what is dry docking, ship dry docking process, how often do ships go to dry dock, keel blocks docking plan, critical period dry docking
 tldr: Dry docking is the planned process of landing a ship on keel blocks and pumping the dock dry, so the underwater hull can be surveyed and repaired — usually twice in every five years for cargo ships.
+field_note: I work as a dry dock supervisor in ship repair, where pipeline, fabrication and valve jobs all have to fit inside the docking period — which is exactly why the work list is fixed before the ship arrives.
 takeaways:
 - Dry docking takes a ship fully out of the water so the underwater hull and fittings can be worked on.
 - Cargo ships must have two bottom inspections in dry dock in every five years, with no more than 36 months between them.

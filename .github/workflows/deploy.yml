@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      ping_all:
+        description: "Ping every page to IndexNow (Bing / ChatGPT search)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -37,3 +42,24 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # After publishing, tell Bing/IndexNow which posts are new or changed.
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Ping IndexNow
+        env:
+          BEFORE: ${{ github.event.before }}
+          PING_ALL: ${{ inputs.ping_all }}
+        run: |
+          if [ "$PING_ALL" = "true" ]; then
+            python indexnow.py --all
+          elif [ -n "$BEFORE" ] && git cat-file -e "$BEFORE" 2>/dev/null; then
+            python indexnow.py $(git diff --name-only "$BEFORE" HEAD -- posts/)
+          else
+            echo "No previous commit to compare; run the workflow by hand with ping_all to ping everything."
+          fi

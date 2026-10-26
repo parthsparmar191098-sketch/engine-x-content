@@ -11,6 +11,7 @@ image_alt: Diagram of an induced-draft counterflow cooling tower with hot water 
 image_credit: Diagram: Engine-X
 keywords: how does a cooling tower work, cooling tower range and approach, cooling tower evaporation loss, cycles of concentration blowdown, counterflow vs crossflow cooling tower
 tldr: A cooling tower rejects heat by evaporating about 1% of its circulating water for every 5.6 °C of cooling, and it can never cool water below the air's wet-bulb temperature.
+field_note: I have supervised underwater cooling-tower jobs on an industrial site as part of my marine engineering work.
 takeaways:
 - Cooling towers cool water mainly by evaporation: a small part of the water evaporates and carries heat away.
 - Range is how much the tower cools the water; approach is how close the cold water gets to the wet-bulb temperature.

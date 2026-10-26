@@ -66,6 +66,13 @@ Write every post so ChatGPT, Perplexity, Google AI Overviews and similar tools c
   - https://engx3d.com/v-belt-drive · https://engx3d.com/belt-vs-chain-vs-gear-drive
 - **Consistent names.** Always "Engine-X" (with the hyphen) and "Parth Parmar".
 
+### AEO v2 — what gets a post cited first
+- **Pick questions we can win.** Prefer the exact questions people type in Parth's niche — ship repair, dry docking, marine engines, pumps, valves, piping, inspection, CAD for mechanical work — where today's top answers are thin or generic. One main question per post; put it in the title or the first `##`.
+- **First-hand experience.** If Parth has told us something real about the topic (dry dock, workshop, testing, design work), add it as `field_note` (1–2 sentences, his voice). Never invent experiences, places, clients or numbers; leave `field_note` out if there is nothing real to say.
+- **One table when the topic allows.** A comparison table or a key-values table with units (pressures, temperatures, ratios). Answer engines lift tables directly.
+- **Numbers with dates.** For anything that changes (prices, records, fleets, standards editions), say when: "as of October 2026", "ASME B31.3-2022".
+- **Link two related posts** from the blog inside the text, plus the matching engx3d.com guide, so the topic cluster stays connected.
+
 ## Images
 - Prefer an original SVG diagram saved in `assets/` (dark background `#0a1120`, accents `#5ea7ff` / `#8a6cff`, white text, readable at phone width).
 - Or a public-domain / properly licensed image (e.g. NASA) with `image_credit`.
