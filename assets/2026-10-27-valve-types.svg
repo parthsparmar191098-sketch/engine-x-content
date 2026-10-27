@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5ea7ff"/></marker>
+  </defs>
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="36" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">Four valves, four ways to meet the flow</text>
+  <text x="400" y="58" text-anchor="middle" fill="#8fc4ff" font-size="14">Simplified sections · flow left to right</text>
+
+  <!-- Panel template: pipe y 190-250 -->
+  <!-- GATE -->
+  <rect x="16" y="76" width="182" height="370" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="107" y="102" text-anchor="middle" fill="#eaf1ff" font-size="16" font-weight="700">Gate</text>
+  <line x1="107" y1="112" x2="107" y2="170" stroke="#eaf1ff" stroke-width="4"/>
+  <rect x="91" y="150" width="32" height="34" fill="#8a6cff"/>
+  <rect x="28" y="190" width="158" height="60" fill="none" stroke="#8fc4ff" stroke-width="2.5"/>
+  <path d="M36,220 L176,220" stroke="#5ea7ff" stroke-width="3" marker-end="url(#ab)"/>
+  <text x="107" y="282" text-anchor="middle" fill="#8fc4ff" font-size="12">wedge lifted clear</text>
+  <text x="107" y="318" text-anchor="middle" fill="#eaf1ff" font-size="13">Isolation (on/off)</text>
+  <text x="107" y="340" text-anchor="middle" fill="#eaf1ff" font-size="13">Very low ΔP</text>
+  <text x="107" y="362" text-anchor="middle" fill="#eaf1ff" font-size="13">Multi-turn</text>
+  <text x="107" y="420" text-anchor="middle" fill="#8a6cff" font-size="12">Never throttle</text>
+
+  <!-- GLOBE -->
+  <rect x="210" y="76" width="182" height="370" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="301" y="102" text-anchor="middle" fill="#eaf1ff" font-size="16" font-weight="700">Globe</text>
+  <line x1="301" y1="112" x2="301" y2="200" stroke="#eaf1ff" stroke-width="4"/>
+  <rect x="285" y="198" width="32" height="10" fill="#8a6cff"/>
+  <rect x="222" y="190" width="158" height="60" fill="none" stroke="#8fc4ff" stroke-width="2.5"/>
+  <path d="M281,250 L281,214 L321,214 L321,190" fill="none" stroke="#8fc4ff" stroke-width="2.5"/>
+  <path d="M230,236 L268,236 L268,224 L300,224 L332,224 L332,204 L372,204" fill="none" stroke="#5ea7ff" stroke-width="3" marker-end="url(#ab)"/>
+  <text x="301" y="282" text-anchor="middle" fill="#8fc4ff" font-size="12">disc onto seat, Z-path</text>
+  <text x="301" y="318" text-anchor="middle" fill="#eaf1ff" font-size="13">Throttling, control</text>
+  <text x="301" y="340" text-anchor="middle" fill="#eaf1ff" font-size="13">Higher ΔP</text>
+  <text x="301" y="362" text-anchor="middle" fill="#eaf1ff" font-size="13">Directional (arrow)</text>
+  <text x="301" y="420" text-anchor="middle" fill="#8a6cff" font-size="12">Check the flow arrow</text>
+
+  <!-- BUTTERFLY -->
+  <rect x="404" y="76" width="182" height="370" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="495" y="102" text-anchor="middle" fill="#eaf1ff" font-size="16" font-weight="700">Butterfly</text>
+  <line x1="495" y1="150" x2="495" y2="190" stroke="#eaf1ff" stroke-width="4"/>
+  <rect x="470" y="140" width="50" height="12" rx="3" fill="#eaf1ff"/>
+  <rect x="416" y="190" width="158" height="60" fill="none" stroke="#8fc4ff" stroke-width="2.5"/>
+  <ellipse cx="495" cy="220" rx="6" ry="28" fill="#8a6cff" transform="rotate(60 495 220)"/>
+  <path d="M424,206 L566,206" stroke="#5ea7ff" stroke-width="3" marker-end="url(#ab)"/>
+  <path d="M424,236 L566,236" stroke="#5ea7ff" stroke-width="3" marker-end="url(#ab)"/>
+  <text x="495" y="282" text-anchor="middle" fill="#8fc4ff" font-size="12">disc turns 90°</text>
+  <text x="495" y="318" text-anchor="middle" fill="#eaf1ff" font-size="13">Compact, light</text>
+  <text x="495" y="340" text-anchor="middle" fill="#eaf1ff" font-size="13">Quarter-turn, fast</text>
+  <text x="495" y="362" text-anchor="middle" fill="#eaf1ff" font-size="13">Disc stays in flow</text>
+  <text x="495" y="420" text-anchor="middle" fill="#8a6cff" font-size="12">Big water lines</text>
+
+  <!-- CHECK -->
+  <rect x="598" y="76" width="186" height="370" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+  <text x="691" y="102" text-anchor="middle" fill="#eaf1ff" font-size="16" font-weight="700">Swing check</text>
+  <rect x="610" y="190" width="162" height="60" fill="none" stroke="#8fc4ff" stroke-width="2.5"/>
+  <circle cx="676" cy="194" r="4" fill="#eaf1ff"/>
+  <line x1="676" y1="194" x2="706" y2="228" stroke="#8a6cff" stroke-width="7" stroke-linecap="round"/>
+  <line x1="666" y1="216" x2="666" y2="250" stroke="#8fc4ff" stroke-width="2.5"/>
+  <path d="M618,236 L760,236" stroke="#5ea7ff" stroke-width="3" marker-end="url(#ab)"/>
+  <text x="691" y="282" text-anchor="middle" fill="#8fc4ff" font-size="12">flow pushes disc open</text>
+  <text x="691" y="318" text-anchor="middle" fill="#eaf1ff" font-size="13">Stops backflow</text>
+  <text x="691" y="340" text-anchor="middle" fill="#eaf1ff" font-size="13">Automatic</text>
+  <text x="691" y="362" text-anchor="middle" fill="#eaf1ff" font-size="13">Horizontal lines</text>
+  <text x="691" y="420" text-anchor="middle" fill="#8a6cff" font-size="12">Dual-plate slams less</text>
+
+  <text x="400" y="454" text-anchor="middle" fill="#8fc4ff" font-size="11">API 598: shell test 1.5 × CWP (water) · seat test 1.1 × CWP</text>
+</svg>
