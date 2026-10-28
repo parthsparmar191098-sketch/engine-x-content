@@ -588,6 +588,20 @@ def render_llms_full(posts):
     return "\n".join(out)
 
 
+def long_answers(body_html, limit=60):
+    """(question, words) for question headings whose first paragraph is longer
+    than `limit` words. Answer engines quote 40-60 word answers."""
+    out = []
+    for m in re.finditer(r"<h([23])[^>]*>((?:(?!</?h[1-6]).)*?)</h\1>\s*<p>(.*?)</p>", body_html, re.S):
+        q = re.sub(r"<[^>]+>", "", m.group(2)).strip()
+        if not q.endswith("?"):
+            continue
+        n = len(re.sub(r"<[^>]+>", " ", m.group(3)).split())
+        if n > limit:
+            out.append((q, n))
+    return out
+
+
 def main():
     posts = []
     for path in sorted((ROOT / "posts").glob("*.md")):
@@ -622,6 +636,12 @@ def main():
     for p in posts:
         if p["lede_words"] > 60:  # WRITING_GUIDE: answer-first paragraph is 40-60 words
             print(f"warning: {p['slug']}: first paragraph is {p['lede_words']} words, keep it to 40-60")
+        if not p.get("seo_title") or not p.get("seo_description"):
+            print(f"warning: {p['slug']}: add seo_title (max 60) and seo_description (120-155), see WRITING_GUIDE.md")
+        elif len(seo_title(p)) > TITLE_MAX or len(p["seo_description"]) > DESC_MAX:
+            print(f"warning: {p['slug']}: seo_title is {len(seo_title(p))} chars / seo_description {len(p['seo_description'])} chars, keep to 60 / 155")
+        for q, n in long_answers(p["body_html"]):
+            print(f"warning: {p['slug']}: answer under '{q}' is {n} words, keep the first paragraph to 40-60")
     print(f"built {len(posts)} posts -> {OUT}")
 
 

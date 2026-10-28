@@ -35,7 +35,9 @@ These four materials cover most of what passes through a workshop or a ship-repa
 
 ## What is mild steel, and when should you use it?
 
-Mild steel is low-carbon steel, with roughly 0.05–0.25% carbon according to [MachineMFG](https://shop.machinemfg.com/mild-steel-vs-cast-iron-whats-the-difference/). The low carbon makes it ductile — it bends before it breaks — and easy to weld, cut and machine. In India, the everyday structural grade is **IS 2062 E250**. [Tata Steel](https://digeca.tatasteel.com/blogs/is-2062-e250-e350-e410-steel-grades-guide) lists its minimums as 250 MPa yield, 410 MPa tensile, 23% elongation and 0.23% maximum carbon, with stronger E350 and E410 grades for heavier work.
+Mild steel is low-carbon steel, with roughly 0.05–0.25% carbon according to [MachineMFG](https://shop.machinemfg.com/mild-steel-vs-cast-iron-whats-the-difference/). The low carbon makes it ductile — it bends before it breaks — and easy to weld, cut and machine.
+
+In India, the everyday structural grade is **IS 2062 E250**. [Tata Steel](https://digeca.tatasteel.com/blogs/is-2062-e250-e350-e410-steel-grades-guide) lists its minimums as 250 MPa yield, 410 MPa tensile, 23% elongation and 0.23% maximum carbon, with stronger E350 and E410 grades for heavier work.
 
 Tata Steel also explains the sub-grades A, BR, B0 and C: same chemistry and strength, but different Charpy impact requirements (27 J at room temperature, 0 °C or −20 °C). For anything loaded in cold conditions or by impact, the sub-grade matters as much as the strength.
 

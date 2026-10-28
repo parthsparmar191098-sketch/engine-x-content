@@ -46,13 +46,17 @@ The design is strong and simple. Thick round tubes and a round shell hold pressu
 
 ## How does a plate heat exchanger work?
 
-A plate heat exchanger works by stacking thin, pressed metal plates in a frame so that the gaps between them form channels, with hot and cold fluids flowing in alternate channels. Each plate has a corrugated pattern and a gasket that decides which fluid flows across it. Every plate therefore has hot fluid on one side and cold fluid on the other, separated by a very thin wall.
+A plate heat exchanger works by stacking thin, pressed metal plates in a frame so that the gaps between them form channels, with hot and cold fluids flowing in alternate channels. Each plate has a corrugated pattern and a gasket that decides which fluid flows across it.
+
+Every plate therefore has hot fluid on one side and cold fluid on the other, separated by a very thin wall.
 
 The corrugations are the key. They make the fluid swirl even at low flow rates, and that turbulence strips away the slow boundary layer next to the metal, where most resistance to heat flow sits. [Alfa Laval](https://www.alfalaval.com/microsites/gphe/tools/gphe-vs-shell-and-tube/) says the turbulence across the whole plate also reduces fouling. Plate units are usually arranged in **counter-flow**: the two fluids run in opposite directions, so a temperature difference is kept along the whole length and the cold fluid can leave almost as hot as the hot fluid enters.
 
 ## Why is a plate heat exchanger smaller than a shell and tube?
 
-A plate heat exchanger is smaller because it packs a huge heat-transfer area into a small volume and moves heat faster across each square metre. Alfa Laval, which makes both types, claims its gasketed plate units can be up to five times more efficient than shell-and-tube designs, use about one-tenth of the floor space and weigh less than one-sixteenth as much. Those are maker's figures, but the direction is widely accepted.
+A plate heat exchanger is smaller because it packs a huge heat-transfer area into a small volume and moves heat faster across each square metre.
+
+Alfa Laval, which makes both types, claims its gasketed plate units can be up to five times more efficient than shell-and-tube designs, use about one-tenth of the floor space and weigh less than one-sixteenth as much. Those are maker's figures, but the direction is widely accepted.
 
 Plates also make capacity easy to change: add or remove plates in the same frame. A shell-and-tube unit's capacity is fixed when it is built.
 
@@ -72,7 +76,9 @@ Inzonex puts the risk plainly: on a dirty duty, a plate unit can foul solid in w
 
 ## Why do ships use plate heat exchangers for central cooling?
 
-Ships use plate heat exchangers for central cooling because they keep sea water out of most of the engine room. In a central cooling system, described by Alfa Laval, sea water is pumped from a **sea chest** through a coarse strainer, passes through **titanium central coolers** and goes back overboard. Fresh water on the other side of those coolers then circulates round the ship to cool the engines and other equipment.
+Ships use plate heat exchangers for central cooling because they keep sea water out of most of the engine room. In a central cooling system, described by Alfa Laval, sea water is pumped from a **sea chest** through a coarse strainer, passes through **titanium central coolers** and goes back overboard.
+
+Fresh water on the other side of those coolers then circulates round the ship to cool the engines and other equipment.
 
 This layout means only the central coolers and a short sea-water line need corrosion-resistant materials. Titanium resists sea-water corrosion, and thin titanium plates make it affordable. A bypass valve on the fresh-water side holds the low-temperature circuit at a steady temperature. Shell-and-tube units still appear on board where pressure or fluid type demand them. The same engine-room heat loads include the charge air cooler that feeds a [two-stroke engine's scavenge air](https://engx3d.com/blog/posts/2026-10-21-ship-turbocharger-two-stroke.html).
 

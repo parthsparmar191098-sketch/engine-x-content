@@ -91,7 +91,9 @@ A cooling tower uses water in three ways: evaporation, drift and blowdown. The [
 
 ## What goes wrong with cooling towers?
 
-Cooling towers mostly lose performance through water and airflow problems. Chem-Casts lists the usual ones: **scaling** from high dissolved solids and poor blowdown control, **biological fouling** in warm, stagnant water (controlled with biocides), **dirty or damaged fill** that raises the cold-water temperature, **damaged drift eliminators** that increase drift, and **fan imbalance** that causes vibration. The EPA recommends monitoring pH, conductivity, hardness, microbial growth and inhibitor levels, and metering make-up and blowdown so leaks and overflows show up early.
+Cooling towers mostly lose performance through water and airflow problems. Chem-Casts lists the usual ones: **scaling** from high dissolved solids and poor blowdown control, **biological fouling** in warm, stagnant water (controlled with biocides), **dirty or damaged fill** that raises the cold-water temperature, **damaged drift eliminators** that increase drift, and **fan imbalance** that causes vibration.
+
+The EPA recommends monitoring pH, conductivity, hardness, microbial growth and inhibitor levels, and metering make-up and blowdown so leaks and overflows show up early.
 
 ## The engineering takeaway
 

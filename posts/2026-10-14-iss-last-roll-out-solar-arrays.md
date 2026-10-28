@@ -34,7 +34,9 @@ The interesting part is not the cargo run, it is how those arrays work. They fol
 
 ## Why does the ISS need new solar arrays?
 
-The ISS's original solar wings are large rigid structures that have been in orbit for a long time, and their output has dropped with age. The new arrays are not replacements. They are fitted in front of the old wings, so the old cells keep producing wherever they are not shaded. NASA's description of the first pair, installed in June 2021, said the station's total power then rose by more than 30% ([NASA](https://www.nasa.gov/directorates/spacetech/Rolling_Out_a_Path_to_Future_Space_Travel)).
+The ISS's original solar wings are large rigid structures that have been in orbit for a long time, and their output has dropped with age. The new arrays are not replacements. They are fitted in front of the old wings, so the old cells keep producing wherever they are not shaded.
+
+NASA's description of the first pair, installed in June 2021, said the station's total power then rose by more than 30% ([NASA](https://www.nasa.gov/directorates/spacetech/Rolling_Out_a_Path_to_Future_Space_Travel)).
 
 Spaceflight Now reports that each new wing should deliver more than 20 kW for over ten years. That is a reported figure, and earlier units were quoted by NASA at more than 28 kW when new, so treat the exact number as approximate.
 
@@ -49,7 +51,9 @@ A roll-out solar array deploys itself with springy composite booms that unroll s
 
 ## Why are fewer moving parts better in space?
 
-Fewer moving parts means fewer things that can fail where nobody can fix them. In my work with valves and piping, the parts that fail are usually the ones that move: stems, seats, packing, actuators. A motorised deployment mechanism has gears, bearings and drive electronics that must work once, perfectly, in vacuum, with nobody nearby to fix them. A boom that is both structure and actuator removes that whole chain of things that can jam. NASA lists fewer moving parts and reduced jamming risk as a main benefit of the design.
+Fewer moving parts means fewer things that can fail where nobody can fix them. In my work with valves and piping, the parts that fail are usually the ones that move: stems, seats, packing, actuators. A motorised deployment mechanism has gears, bearings and drive electronics that must work once, perfectly, in vacuum, with nobody nearby to fix them.
+
+A boom that is both structure and actuator removes that whole chain of things that can jam. NASA lists fewer moving parts and reduced jamming risk as a main benefit of the design.
 
 The trade-off is that deployment is essentially a one-shot event: the stored energy is spent once, so the design has to get the release right the first time.
 

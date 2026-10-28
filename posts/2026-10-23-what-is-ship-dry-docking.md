@@ -36,7 +36,9 @@ Anyone who works in a dry dock learns one thing quickly: the ship is costing its
 
 ## Why do ships need dry docking?
 
-Ships need dry docking because the underwater hull and its fittings wear, corrode and foul, and the rules require them to be inspected out of the water. According to [AM Nautical](https://www.amnautical.com/blogs/the-mariners-blog/what-is-dry-docking), SOLAS requires cargo ships to have two inspections of the outside of the bottom in dry dock in every five-year period, with no more than 36 months between them. Passenger ships need an annual bottom inspection, with at least two in dry dock in any five years. Some class societies allow younger ships (under 15 years) to replace one dry docking with an in-water survey.
+Ships need dry docking because the underwater hull and its fittings wear, corrode and foul, and rules require inspecting them out of the water. According to [AM Nautical](https://www.amnautical.com/blogs/the-mariners-blog/what-is-dry-docking), SOLAS requires cargo ships to have two inspections of the outside of the bottom in dry dock in every five-year period, with no more than 36 months between them.
+
+Passenger ships need an annual bottom inspection, with at least two in dry dock in any five years. Some class societies allow younger ships (under 15 years) to replace one dry docking with an in-water survey.
 
 Beyond the rules, there is a commercial reason. Marine growth on the hull adds drag and fuel cost, and a worn propeller or leaking stern tube seal can stop the ship. Dry docking is when all of that is put right at once.
 
@@ -75,7 +77,9 @@ A ship is dry docked in a fixed sequence, described by Marine Insight and Mariti
 
 ## Why is the critical period dangerous?
 
-The critical period is dangerous because the ship's stability falls just as it lands on the blocks. Marine Insight explains that the keel blocks push up on the stern with a force (the upthrust, P) that grows as the water level drops. That upthrust acts like removing weight from the bottom of the ship, which effectively raises the centre of gravity and reduces the metacentric height (GM) — the measure of how strongly the ship returns upright.
+The critical period is dangerous because the ship's stability falls just as it lands on the blocks. Marine Insight explains that the keel blocks push up on the stern with a force (the upthrust, P) that grows as the water level drops.
+
+That upthrust acts like removing weight from the bottom of the ship, which effectively raises the centre of gravity and reduces the metacentric height (GM) — the measure of how strongly the ship returns upright.
 
 If the ship enters the dock with too little GM, the loss during the critical period can leave it unstable, and it can heel over or slide off the blocks. The worst moment is just before the keel touches along its whole length, when the upthrust is largest. That is why the stability check is done before the ship enters, not during the docking.
 

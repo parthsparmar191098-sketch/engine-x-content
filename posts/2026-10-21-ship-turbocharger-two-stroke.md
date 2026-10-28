@@ -59,7 +59,9 @@ Maritime Page notes that the cooling water pressure should be watched to protect
 
 ## Why do marine engines need auxiliary blowers?
 
-Marine engines need auxiliary blowers because a turbocharger only gives as much air as the exhaust can pay for. At starting, manoeuvring and low load, the exhaust is too weak, so electric auxiliary blowers push extra air into the scavenge receiver. According to Maritime Page, the blowers typically cut in at about 0.35 bar scavenge pressure and stop at about 0.45 bar, when the turbocharger can hold pressure alone. Non-return flaps stop the air flowing backwards through the stopped blowers.
+Marine engines need auxiliary blowers because a turbocharger only gives as much air as the exhaust can pay for. At starting, manoeuvring and low load, the exhaust is too weak, so electric auxiliary blowers push extra air into the scavenge receiver.
+
+According to Maritime Page, the blowers typically cut in at about 0.35 bar scavenge pressure and stop at about 0.45 bar, when the turbocharger can hold pressure alone. Non-return flaps stop the air flowing backwards through the stopped blowers.
 
 | Engine condition | Who supplies scavenge air |
 |---|---|
@@ -69,7 +71,9 @@ Marine engines need auxiliary blowers because a turbocharger only gives as much 
 
 ## How do crews keep a marine turbocharger clean?
 
-Crews keep a marine turbocharger clean by washing it while the engine runs, because both sides foul in service. The turbine side collects soot and carbon from combustion, and the compressor side collects oil mist and dirt from engine-room air. A fouled turbocharger gives less scavenge air, which raises exhaust temperatures and fuel consumption and, in bad cases, can lead to surging.
+Crews keep a marine turbocharger clean by washing it while the engine runs, because both sides foul in service. The turbine side collects soot and carbon from combustion, and the compressor side collects oil mist and dirt from engine-room air.
+
+A fouled turbocharger gives less scavenge air, which raises exhaust temperatures and fuel consumption and, in bad cases, can lead to surging.
 
 Accelleron's [cleaning guidance](https://accelleron.com/charge-magazine/fundamentals-of-turbocharging-cleaning-in-operation-for-two-and-four-stroke-engines) gives typical intervals:
 

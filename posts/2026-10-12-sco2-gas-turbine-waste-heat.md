@@ -36,11 +36,15 @@ Those are the company's own claims, and I could not find published operating dat
 
 ## Where does a gas turbine waste heat?
 
-A gas turbine wastes heat in its hot exhaust. A simple-cycle gas turbine sucks in air, compresses it, burns fuel and expands the hot gas through a turbine. After the turbine, the exhaust still leaves at several hundred degrees Celsius. In a combined-cycle plant, that heat is captured by a heat recovery steam generator (HRSG), which boils water to drive a second, steam turbine. Simple-cycle units skip all that, so the heat goes up the stack. The company says about 140 GW of such turbines operate in the US.
+A gas turbine wastes heat in its hot exhaust. A simple-cycle gas turbine sucks in air, compresses it, burns fuel and expands the hot gas through a turbine. After the turbine, the exhaust still leaves at several hundred degrees Celsius.
+
+In a combined-cycle plant, that heat is captured by a heat recovery steam generator (HRSG), which boils water to drive a second, steam turbine. Simple-cycle units skip all that, so the heat goes up the stack. The company says about 140 GW of such turbines operate in the US.
 
 ## What is supercritical CO₂?
 
-Supercritical CO₂ is CO₂ held above its critical point, where it is neither a clean liquid nor a gas. Every fluid has a critical point. For CO₂ it is roughly **31 °C and 7.4 MPa** (about 74 bar). Above both, CO₂ is no longer cleanly a liquid or a gas. It is a dense, compressible fluid that flows like a gas but is far denser than any gas.
+Supercritical CO₂ is CO₂ held above its critical point, where it is neither a clean liquid nor a gas. Every fluid has a critical point. For CO₂ it is roughly **31 °C and 7.4 MPa** (about 74 bar). Above both, CO₂ is no longer cleanly a liquid or a gas.
+
+It is a dense, compressible fluid that flows like a gas but is far denser than any gas.
 
 That density is the trick. Steam at low pressure is very thin, so steam turbines and condensers must be huge. Dense CO₂ packs a lot of energy into a small volume, so the turbine, heat exchangers and piping shrink. American Supercritical says its block needs about one-tenth the space of a comparable steam system.
 
@@ -58,7 +62,9 @@ Because the loop only borrows heat from the exhaust stream through a heat exchan
 
 ## Has sCO₂ power worked at pilot scale?
 
-Yes. The best public evidence is not from the startup. The STEP Demo, a 10 MWe pilot led by GTI Energy at Southwest Research Institute in San Antonio, ran a simple sCO₂ cycle in 2024. Its turbine reached 27,000 rpm at 500 °C and about 250 bar and delivered around 4 MWe to the grid. The next phase was planned to move to a more efficient recompression cycle at 715 °C. That shows the turbomachinery is real; it does not prove the startup's 50% number.
+Yes. The best public evidence is not from the startup. The STEP Demo, a 10 MWe pilot led by GTI Energy at Southwest Research Institute in San Antonio, ran a simple sCO₂ cycle in 2024. Its turbine reached 27,000 rpm at 500 °C and about 250 bar and delivered around 4 MWe to the grid.
+
+The next phase was planned to move to a more efficient recompression cycle at 715 °C. That shows the turbomachinery is real; it does not prove the startup's 50% number.
 
 ## The engineering takeaway
 

@@ -55,7 +55,9 @@ A **CSOV** (commissioning service operation vessel) is a ship that carries techn
 
 ## What is a motion-compensated gangway?
 
-A motion-compensated gangway is a walkway from the ship to the turbine that stays still while the ship moves under it. Sensors measure the vessel's heave, roll and pitch many times per second, and hydraulic or electric actuators move the gangway in the opposite direction. The result: a technician can walk from a rolling ship onto a turbine platform as if crossing a bridge.
+A motion-compensated gangway is a walkway from the ship to the turbine that stays still while the ship moves under it. Sensors measure the vessel's heave, roll and pitch many times per second, and hydraulic or electric actuators move the gangway in the opposite direction.
+
+The result: a technician can walk from a rolling ship onto a turbine platform as if crossing a bridge.
 
 > It's the same idea as noise-cancelling headphones — measure the disturbance, then apply an equal and opposite motion.
 
