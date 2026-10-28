@@ -34,7 +34,9 @@ The warning signs are hard to miss. [Atlas Copco](https://atlascopco.com/en-us/c
 
 ## Why does a centrifugal pump cavitate?
 
-A centrifugal pump cavitates because the lowest pressure in the whole system sits right at the impeller eye, where the liquid enters the vanes. Liquid speeds up as it enters the impeller, and faster liquid has lower static pressure. If that pressure drops below the liquid's vapour pressure at its temperature, the liquid boils — even if it is only cold water.
+A centrifugal pump cavitates because the lowest pressure in the whole system sits right at the impeller eye, where the liquid enters the vanes. Liquid speeds up as it enters the impeller, and faster liquid has lower static pressure.
+
+If that pressure drops below the liquid's vapour pressure at its temperature, the liquid boils — even if it is only cold water.
 
 The damage happens a moment later. The impeller then raises the pressure, and the vapour bubbles collapse almost instantly. Each collapse sends a small, sharp pressure shock into the nearby metal. Repeated millions of times, those jets cause pitting, cracking and chipping of the impeller, and the vibration that comes with them wears seals and bearings early, as Atlas Copco notes.
 
@@ -50,7 +52,9 @@ NPSH available (NPSHa) is the total head at the pump suction, in absolute terms,
 
 ## What is NPSH required (NPSHr) and NPSH3?
 
-NPSH required (NPSHr) is the minimum suction head a pump needs to run at a given flow and speed, set by the manufacturer from test data. In practice, pump curves usually plot **NPSH3**: the NPSHa at which the pump's head drops by 3% because of cavitation. According to the [Hydraulic Institute](https://www.pumps.org/2022/12/07/the-basics-of-npsh-pump-operating-regions/), this definition dates from 1932, when a 3% drop was the smallest change that could be measured reliably.
+NPSH required (NPSHr) is the minimum suction head a pump needs to run at a given flow and speed, set by the manufacturer from test data. In practice, pump curves usually plot **NPSH3**: the NPSHa at which the pump's head drops by 3% because of cavitation.
+
+According to the [Hydraulic Institute](https://www.pumps.org/2022/12/07/the-basics-of-npsh-pump-operating-regions/), this definition dates from 1932, when a 3% drop was the smallest change that could be measured reliably.
 
 The key point engineers miss is that NPSH3 is *not* a cavitation-free point. At NPSH3 the pump is already cavitating enough to lose 3% of its head, and bubbles start forming at higher suction pressures than that. The Hydraulic Institute adds that today's faster, higher-energy pumps often need a bigger margin above NPSH3 to reach an acceptable life.
 

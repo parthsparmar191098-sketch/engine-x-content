@@ -37,7 +37,9 @@ Gears do the same job as belts and chains — carry power from one shaft to anot
 
 ## How does a gear change speed and torque?
 
-A gear pair changes speed and torque through its tooth ratio. When a small gear (the pinion) drives a larger gear, the larger gear turns slower and with more torque, because the teeth must pass the contact point at the same rate on both. A 20-tooth pinion driving a 60-tooth gear gives a 3:1 reduction: one-third the speed, about three times the torque (minus losses).
+A gear pair changes speed and torque through its tooth ratio. When a small gear (the pinion) drives a larger gear, the larger gear turns slower and with more torque, because the teeth must pass the contact point at the same rate on both.
+
+A 20-tooth pinion driving a 60-tooth gear gives a 3:1 reduction: one-third the speed, about three times the torque (minus losses).
 
 Every gear type below follows this rule. What changes is the shape of the teeth and the direction the shafts point.
 
@@ -51,7 +53,9 @@ The weakness is noise. Each spur tooth comes into contact across its whole width
 
 ## Why are helical gears quieter than spur gears?
 
-Helical gears are quieter than spur gears because their teeth are cut at an angle to the shaft, so each tooth enters contact gradually, from one end to the other, instead of all at once. More than one tooth also shares the load at any moment. [Gear Solutions](https://gearsolutions.com/features/comparative-analysis-of-spur-and-helical-gears/) explains this as an extra "overlap" contact ratio that spur gears do not have, which gives helical gears lower noise and vibration and higher load capacity.
+Helical gears are quieter than spur gears because their teeth are cut at an angle to the shaft, so each tooth enters contact gradually, from one end to the other, instead of all at once.
+
+More than one tooth also shares the load at any moment. [Gear Solutions](https://gearsolutions.com/features/comparative-analysis-of-spur-and-helical-gears/) explains this as an extra "overlap" contact ratio that spur gears do not have, which gives helical gears lower noise and vibration and higher load capacity.
 
 The price is **axial thrust**. Because the teeth are angled, they push the shaft sideways along its axis as well as turning it. Interesting Engineering notes that helical gears therefore need thrust bearings, and MISUMI adds that sliding along the angled teeth makes them slightly less efficient than spur gears. Double-helical (herringbone) gears cancel this thrust by using two opposite helices side by side.
 
@@ -67,7 +71,9 @@ Straight bevel gears behave like spur gears — simple but noisy. **Spiral bevel
 
 ## How does a worm gear work, and why is it self-locking?
 
-A worm gear works like a screw turning a toothed wheel: the worm (a threaded shaft) meshes with the worm wheel at right angles. Each turn of a single-start worm moves the wheel by just one tooth, so the [ratio](https://www.firgelliauto.com/blogs/engineering-calculators/worm-gear-reduction-self-locking-calculator) is simply wheel teeth ÷ worm starts. A 40-tooth wheel with a single-start worm gives **40:1** in one compact stage. FIRGELLI notes single pairs ranging from about 5:1 to well over 300:1.
+A worm gear works like a screw turning a toothed wheel: the worm (a threaded shaft) meshes with the worm wheel at right angles. Each turn of a single-start worm moves the wheel by just one tooth, so the [ratio](https://www.firgelliauto.com/blogs/engineering-calculators/worm-gear-reduction-self-locking-calculator) is simply wheel teeth ÷ worm starts. A 40-tooth wheel with a single-start worm gives **40:1** in one compact stage.
+
+FIRGELLI notes single pairs ranging from about 5:1 to well over 300:1.
 
 The worm slides across the wheel teeth rather than rolling, and sliding means friction. That gives worm gears two linked properties:
 

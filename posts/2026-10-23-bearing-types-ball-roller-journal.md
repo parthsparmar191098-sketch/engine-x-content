@@ -51,7 +51,9 @@ The small contact is also the limit: the load is concentrated on tiny areas, so 
 
 ## How do roller bearings work, and which type takes which load?
 
-Roller bearings work the same way as ball bearings but use cylinders, cones or barrels instead of balls, so each roller touches the race along a line. [Acorn Industrial](https://www.acorn-ind.co.uk/skf/bearings/roller-bearings/) notes that this line contact gives higher radial load capacity than ball bearings of a similar size, plus more stiffness and shock resistance. The roller shape decides which loads the bearing can take:
+Roller bearings work the same way as ball bearings but use cylinders, cones or barrels instead of balls, so each roller touches the race along a line. [Acorn Industrial](https://www.acorn-ind.co.uk/skf/bearings/roller-bearings/) notes that this line contact gives higher radial load capacity than ball bearings of a similar size, plus more stiffness and shock resistance.
+
+The roller shape decides which loads the bearing can take:
 
 | Roller bearing type | Loads | Special feature | Typical uses |
 |---|---|---|---|
@@ -64,7 +66,9 @@ Spherical roller bearings deserve a special note. Their outer race is part of a 
 
 ## How does a journal bearing work?
 
-A journal bearing works by letting the shaft (the journal) turn inside a smooth sleeve with a thin gap filled with oil. As the shaft spins, it drags oil into the narrowing part of the gap, and [Savree](https://savree.com/en/product/plain-bearing/) describes how this forms an **oil wedge** between the surfaces. The wedge builds enough pressure to lift the shaft, so once it is running the metal parts are separated by oil and do not touch.
+A journal bearing works by letting the shaft (the journal) turn inside a smooth sleeve with a thin gap filled with oil. As the shaft spins, it drags oil into the narrowing part of the gap, and [Savree](https://savree.com/en/product/plain-bearing/) describes how this forms an **oil wedge** between the surfaces.
+
+The wedge builds enough pressure to lift the shaft, so once it is running the metal parts are separated by oil and do not touch.
 
 Journal bearings have no rolling parts, so they run quietly, and they can be made in two halves, which is the only practical way to fit a bearing around a crankshaft. Savree notes they are used in large machinery such as steam turbines and large marine two-stroke engines, as well as almost all internal combustion engines. The lining is usually a soft white metal (Babbitt) that is designed to wear before the expensive shaft does.
 

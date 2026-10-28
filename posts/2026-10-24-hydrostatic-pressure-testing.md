@@ -83,7 +83,9 @@ Temperature matters more than people expect. Project Materials notes that a 1 °
 
 ## Why is water used instead of air for pressure testing?
 
-Water is used instead of air because it is almost incompressible, so it stores very little energy under pressure. If a weld fails during a hydrotest, the result is a drip or a spray. Compressed air or gas stores a large amount of energy, and [Araner](https://www.araner.com/blog/pressure-test-hydrostatic-pneumatic-requirements) notes that pneumatic testing carries the hazard of that energy being released suddenly — a failure can throw fragments.
+Water is used instead of air because it is almost incompressible, so it stores very little energy under pressure. If a weld fails during a hydrotest, the result is a drip or a spray.
+
+Compressed air or gas stores a large amount of energy, and [Araner](https://www.araner.com/blog/pressure-test-hydrostatic-pneumatic-requirements) notes that pneumatic testing carries the hazard of that energy being released suddenly — a failure can throw fragments.
 
 For that reason, pneumatic testing is used only where water cannot be — for example, systems that must stay completely dry. Under B31.3 it runs at a lower **1.1 × design pressure**, with a relief valve and extra safety distance.
 

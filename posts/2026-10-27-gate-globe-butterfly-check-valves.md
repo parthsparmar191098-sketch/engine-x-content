@@ -3,6 +3,8 @@ title: Gate, Globe, Butterfly or Check Valve? How Each Works and When to Use It
 date: 2026-10-27
 category: learn
 summary: Gate valves isolate, globe valves throttle, butterfly valves are compact quarter-turn all-rounders, and check valves stop backflow. How each one works inside, and how valves are pressure-tested.
+seo_title: Gate vs Globe vs Butterfly vs Check Valve: Which to Use?
+seo_description: How gate, globe, butterfly and check valves work inside, which job each one suits, and how valves are pressure-tested to API 598.
 image: assets/2026-10-27-valve-types.svg
 image_alt: Cross-section diagram of a gate valve, globe valve, butterfly valve and swing check valve showing how each closing element meets the flow
 image_credit: Diagram: Engine-X
@@ -25,7 +27,9 @@ sources:
 - Project Materials — Check valves: swing, lift & dual plate | https://blog.projectmaterials.com/valves/bs-api-check-valves
 - Project Materials — What is API 598? | https://www.blog.projectmaterials.com/quick-answers/valves/what-is-api-598/
 ---
-Gate, globe, butterfly and check valves differ in how their closing element meets the flow: a gate valve lifts a wedge completely out of the pipe, a globe valve lowers a disc onto a seat across the flow, a butterfly valve turns a disc a quarter turn, and a check valve opens and closes by itself with the flow. That one difference decides whether a valve is best for isolation, throttling, compact large-bore service or stopping backflow.
+Gate, globe, butterfly and check valves differ in how their closing element meets the flow: a gate valve lifts a wedge completely out of the pipe, a globe valve lowers a disc onto a seat across the flow, a butterfly valve turns a disc a quarter turn, and a check valve opens and closes by itself with the flow.
+
+That one difference decides whether a valve is best for isolation, throttling, compact large-bore service or stopping backflow.
 
 Valves are some of the most common parts I inspect and handle in marine and pipeline work, and most valve trouble comes from using the right valve in the wrong job — a gate valve left half-open to "control" flow, or a check valve fitted where it cannot close properly.
 

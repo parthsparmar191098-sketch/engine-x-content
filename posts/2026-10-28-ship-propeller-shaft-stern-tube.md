@@ -3,6 +3,8 @@ title: Propeller, Tailshaft and Stern Tube — How a Ship's Shaft Line Is Inspec
 date: 2026-10-28
 category: learn
 summary: The stern tube carries a ship's propeller shaft through the hull and keeps the sea out. How the shaft line works, what gets checked in dry dock — wear-down, seals, cracks, the propeller — and why.
+seo_title: Ship Stern Tube and Propeller Shaft: How They're Inspected
+seo_description: How a ship's shaft line and stern tube work, and what gets checked in dry dock: poker gauge wear-down, seals, shaft cracks and the propeller.
 image: assets/2026-10-28-stern-tube.svg
 image_alt: Section diagram of a ship's stern showing the propeller, tailshaft, stern tube with aft and forward bearings, aft and forward seals, and a poker gauge wear-down check
 image_credit: Diagram: Engine-X
@@ -24,7 +26,9 @@ sources:
 - Marine Inspection — Ship propeller shaft maintenance, inspection, polishing and alignment | https://marineinspection.app/article/ship-propeller-shaft-maintenance-inspection-polishing-alignment
 - Australian Maritime Safety Authority — Shaft surveys | https://amsa.gov.au/node/12994/printable/print
 ---
-A ship's stern tube is the tube through the hull at the stern that carries the propeller shaft on bearings, holds the lubricant around them, and seals the sea out. Together with the propeller and the tailshaft (the aftmost length of propeller shaft), it forms the shaft line that turns the engine's power into thrust — and it is one of the most important things inspected when a ship comes into dry dock.
+A ship's stern tube is the tube through the hull at the stern that carries the propeller shaft on bearings, holds the lubricant around them, and seals the sea out.
+
+Together with the propeller and the tailshaft (the aftmost length of propeller shaft), it forms the shaft line that turns the engine's power into thrust — and it is one of the most important things inspected when a ship comes into dry dock.
 
 The shaft line can only be fully reached with the ship out of the water, so its checks are planned into every [dry docking](https://engx3d.com/blog/posts/2026-10-23-what-is-ship-dry-docking.html). On a large ship the propeller is driven directly by a slow [two-stroke engine](https://engx3d.com/blog/posts/2026-10-23-why-ship-engines-are-two-stroke.html), so every horsepower of that engine passes through this one shaft.
 
@@ -43,19 +47,25 @@ A ship's shaft line runs from the engine to the propeller. Working from aft to f
 
 ## Why is the aft stern tube bearing so important?
 
-The aft stern tube bearing is the most heavily loaded bearing in the shaft line, because it carries the overhung weight of the propeller hanging off the end of the shaft. The propeller on a large ship can weigh many tonnes, and it sits just aft of this bearing, so the bearing sees both the static weight and the fluctuating loads from the blades as they turn through the uneven flow behind the hull.
+The aft stern tube bearing is the most heavily loaded bearing in the shaft line, because it carries the overhung weight of the propeller hanging off the end of the shaft.
+
+The propeller on a large ship can weigh many tonnes, and it sits just aft of this bearing, so the bearing sees both the static weight and the fluctuating loads from the blades as they turn through the uneven flow behind the hull.
 
 If the shaft is misaligned, the load concentrates on one edge of the bearing. [Marine Inspection](https://marineinspection.app/article/ship-propeller-shaft-maintenance-inspection-polishing-alignment) lists the result: uneven bearing loads, local heating and faster wear. Uneven wear in the bush or seal area is itself a sign of misalignment.
 
 ## How is stern tube bearing wear measured?
 
-Stern tube bearing wear is measured as **wear-down**: how far the shaft has dropped at the aft bearing as the bearing lining wears. The usual tool is a **poker gauge** — a calibrated rod passed through a fitting to measure the gap between the shaft and a fixed reference point. Marine Inspection explains that the reading is meaningful mainly as a trend: each reading is compared with earlier ones, and with the original value, to see how fast the bearing is wearing.
+Stern tube bearing wear is measured as **wear-down**: how far the shaft has dropped at the aft bearing as the bearing lining wears. The usual tool is a **poker gauge** — a calibrated rod passed through a fitting to measure the gap between the shaft and a fixed reference point.
+
+Marine Inspection explains that the reading is meaningful mainly as a trend: each reading is compared with earlier ones, and with the original value, to see how fast the bearing is wearing.
 
 When the bearing is exposed, clearances are also checked directly with feeler gauges and compared with the maker's original clearance and the maximum wear allowed by class rules. A sudden jump in wear-down, or a clearance near the limit, means the bearing needs attention before the ship sails again.
 
 ## What is checked in a tailshaft survey?
 
-A tailshaft survey checks that the shaft, its bearings, seals and propeller fit are sound. Marine Inspection notes that class rules have historically required the tailshaft to be withdrawn every **5 years**, and that condition-monitoring notations — using sensors, lubricant analysis and alignment monitoring — can extend or replace the fixed withdrawal interval. The [Australian Maritime Safety Authority](https://amsa.gov.au/node/12994/printable/print) lists the core checks for shaft surveys on vessels it regulates:
+A tailshaft survey checks that the shaft, its bearings, seals and propeller fit are sound. Marine Inspection notes that class rules have historically required the tailshaft to be withdrawn every **5 years**, and that condition-monitoring notations — using sensors, lubricant analysis and alignment monitoring — can extend or replace the fixed withdrawal interval.
+
+The [Australian Maritime Safety Authority](https://amsa.gov.au/node/12994/printable/print) lists the core checks for shaft surveys on vessels it regulates:
 
 1. **Visual inspection**, followed by **dye penetrant or magnetic particle testing** of suspicious areas such as the keyway and taper, where fatigue cracks start.
 2. **Precision measurement** of diameter, taper and straightness.
@@ -67,7 +77,9 @@ Marine Inspection adds that class rules allow a limited reduction in shaft diame
 
 ## Why are stern tube seals renewed in dry dock?
 
-Stern tube seals are renewed in dry dock because they wear continuously against a turning shaft liner, and the aft seal can only be fully reached with the ship out of the water. Marine Inspection gives a typical seal service life of 2–5 years and notes that seals are usually replaced at each docking. A failing aft seal lets sea water into the oil, which damages the bearings; a failing seal can also let oil out into the sea, which is both an environmental and a regulatory problem.
+Stern tube seals are renewed in dry dock because they wear continuously against a turning shaft liner, and the aft seal can only be fully reached with the ship out of the water. Marine Inspection gives a typical seal service life of 2–5 years and notes that seals are usually replaced at each docking.
+
+A failing aft seal lets sea water into the oil, which damages the bearings; a failing seal can also let oil out into the sea, which is both an environmental and a regulatory problem.
 
 During the job, the shaft liner under the seal lips is inspected for grooves and cracks. Marine Inspection notes that a liner crack that goes right through needs the liner renewed, while surface cracks can be machined out if the liner stays within wear limits.
 

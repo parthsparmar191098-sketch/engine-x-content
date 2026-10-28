@@ -35,11 +35,15 @@ In fabrication and repair, the two go together. Choosing the process sets how li
 
 ## Why does a weld need shielding?
 
-A weld needs shielding because molten steel reacts with oxygen and nitrogen in the air. Without protection, the weld pool absorbs gas and forms pores (porosity), oxides and brittle nitrides. Every arc welding process therefore wraps the pool in something that keeps air out: a **flux** that melts into a protective gas and slag, a **shielding gas** blown from the torch, or both. How that shielding is delivered is the main difference between the processes.
+A weld needs shielding because molten steel reacts with oxygen and nitrogen in the air. Without protection, the weld pool absorbs gas and forms pores (porosity), oxides and brittle nitrides.
+
+Every arc welding process therefore wraps the pool in something that keeps air out: a **flux** that melts into a protective gas and slag, a **shielding gas** blown from the torch, or both. How that shielding is delivered is the main difference between the processes.
 
 ## How does stick welding (SMAW) work?
 
-Stick welding — shielded metal arc welding (SMAW) — uses a consumable rod coated in flux. The arc melts the rod, which becomes filler metal, while the coating burns to produce a shielding gas and a layer of slag over the hot weld. [Tulsa Welding School](https://www.tws.edu/blog/welding/most-popular-types-of-welding) describes it as rugged, suited to outdoor work, and more forgiving of painted or rusty surfaces — which is why it is the classic process for field repair.
+Stick welding — shielded metal arc welding (SMAW) — uses a consumable rod coated in flux. The arc melts the rod, which becomes filler metal, while the coating burns to produce a shielding gas and a layer of slag over the hot weld.
+
+[Tulsa Welding School](https://www.tws.edu/blog/welding/most-popular-types-of-welding) describes it as rugged, suited to outdoor work, and more forgiving of painted or rusty surfaces — which is why it is the classic process for field repair.
 
 The drawbacks are slag that must be chipped off after every pass, and poor results on thin metal (TWS gives under about 1/8 inch, ≈3 mm, as difficult). Slag left between passes is a common defect source.
 
@@ -51,7 +55,9 @@ Its weakness is the gas: wind blows the shield away, so MIG needs still air and 
 
 ## How does TIG welding (GTAW) work?
 
-TIG welding — gas tungsten arc welding (GTAW) — uses a **non-consumable tungsten electrode** to make the arc, inert shielding gas to protect it, and a filler rod fed separately by hand. Because heat input and filler are controlled independently, TWS describes TIG as producing very high-quality, precise welds on a wide range of metals, including thin aluminium — but it is slower and takes longer to master.
+TIG welding — gas tungsten arc welding (GTAW) — uses a **non-consumable tungsten electrode** to make the arc, inert shielding gas to protect it, and a filler rod fed separately by hand.
+
+Because heat input and filler are controlled independently, TWS describes TIG as producing very high-quality, precise welds on a wide range of metals, including thin aluminium — but it is slower and takes longer to master.
 
 TIG is the usual choice for stainless steel and for the **root pass** of critical pipe joints, where a clean, fully penetrated first pass matters most.
 

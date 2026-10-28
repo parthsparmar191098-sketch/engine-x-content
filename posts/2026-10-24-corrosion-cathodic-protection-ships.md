@@ -56,7 +56,9 @@ Both rely on the same principle. The [EPA's vessel discharge report](https://19j
 
 ## How do sacrificial anodes work on a ship?
 
-Sacrificial anodes work by being deliberately more active than steel. A block of zinc or aluminium alloy is welded or bolted to the hull; with the hull as cathode and sea water as electrolyte, the anode corrodes first and sends electrons to the steel. [Evac](https://evac.com/article/what-is-a-sacrificial-anode-and-why-iccp-systems-are-a-better-solution/) describes this as the anode, hull and sea water forming a galvanic cell in which the anode is consumed so the hull corrodes less.
+Sacrificial anodes work by being deliberately more active than steel. A block of zinc or aluminium alloy is welded or bolted to the hull; with the hull as cathode and sea water as electrolyte, the anode corrodes first and sends electrons to the steel.
+
+[Evac](https://evac.com/article/what-is-a-sacrificial-anode-and-why-iccp-systems-are-a-better-solution/) describes this as the anode, hull and sea water forming a galvanic cell in which the anode is consumed so the hull corrodes less.
 
 The EPA report gives the key material numbers:
 
@@ -71,7 +73,9 @@ Anodes are fitted where corrosion risk is highest: along the hull, around the st
 
 ## How does an impressed current (ICCP) system work?
 
-An impressed current cathodic protection (ICCP) system works by pushing DC current from the ship's power supply through inert anodes into the sea water and back to the hull. The EPA report describes the anodes as platinum-plated tantalum designed for a 20-year service life, with a silver/silver chloride reference electrode measuring the hull's potential so the system can adjust its output.
+An impressed current cathodic protection (ICCP) system works by pushing DC current from the ship's power supply through inert anodes into the sea water and back to the hull.
+
+The EPA report describes the anodes as platinum-plated tantalum designed for a 20-year service life, with a silver/silver chloride reference electrode measuring the hull's potential so the system can adjust its output.
 
 An ICCP system has three main parts:
 

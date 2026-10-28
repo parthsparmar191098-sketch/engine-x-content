@@ -33,7 +33,7 @@ Anyone who has drafted in AutoCAD or SolidWorks knows the problem GD&T solves: a
 
 ## What is GD&T and which standards define it?
 
-GD&T is defined in the US by **ASME Y14.5-2018** (reaffirmed in 2024) and internationally by **ISO 1101:2017**, part of the ISO GPS (geometrical product specification) family. [Wevolver](https://www.wevolver.com/article/gdt-explained-symbols-datums-and-tolerances) traces the idea back to Stanley Parker at the Royal Torpedo Factory, who published it in 1940 after noticing that round tolerance zones accepted parts that square ones rejected, even though they worked.
+GD&T is defined in the US by **ASME Y14.5-2018** (reaffirmed in 2024) and internationally by **ISO 1101:2017**, part of the ISO GPS (geometrical product specification) family. [Wevolver](https://www.wevolver.com/article/gdt-explained-symbols-datums-and-tolerances) traces the idea back to Stanley Parker at the Royal Torpedo Factory, who published it in 1940 after noticing that round tolerance zones accepted working parts that square ones rejected.
 
 The two standards use the same symbols for most things but differ in some rules, so a drawing should always state which one it follows.
 
@@ -67,7 +67,9 @@ So **⌖ | ⌀0.2 Ⓜ | A | B | C** reads: "The axis of this hole must lie insid
 
 ## What are datums, and why does their order matter?
 
-Datums are the theoretically exact planes, axes or points that every measurement starts from. A **datum feature** is the real surface on the part (marked with a datum triangle and a letter); the inspection setup simulates a perfect version of it. Wevolver explains that datums are applied in order, each removing more of the part's six degrees of freedom until it is fully located:
+Datums are the theoretically exact planes, axes or points that every measurement starts from. A **datum feature** is the real surface on the part (marked with a datum triangle and a letter); the inspection setup simulates a perfect version of it.
+
+Wevolver explains that datums are applied in order, each removing more of the part's six degrees of freedom until it is fully located:
 
 - **Primary datum (A)** — usually a large, stable face the part sits on. It stops the part moving into it and tilting about two axes.
 - **Secondary datum (B)** — usually an edge or a hole perpendicular to A. It stops further movement and rotation.
@@ -87,7 +89,9 @@ When a feature is called out at MMC and is made away from MMC, it gets **bonus t
 
 ## Why is a position tolerance zone round?
 
-A position tolerance zone is round because a pin fits a hole equally well whichever direction the hole is off. With ± coordinate tolerances, the zone is a square, and its corners allow more error diagonally than straight across. Wevolver's example: ±0.13 mm in X and Y gives a 0.26 mm square; the round zone that just contains that square has about **57% more usable area**, while still guaranteeing the same fit.
+A position tolerance zone is round because a pin fits a hole equally well whichever direction the hole is off. With ± coordinate tolerances, the zone is a square, and its corners allow more error diagonally than straight across.
+
+Wevolver's example: ±0.13 mm in X and Y gives a 0.26 mm square; the round zone that just contains that square has about **57% more usable area**, while still guaranteeing the same fit.
 
 Inspectors check it with the true position formula: **position = 2 × √(ΔX² + ΔY²)**, where ΔX and ΔY are the measured offsets from the exact location. A hole measured 0.06 mm off in X and 0.08 mm off in Y gives 2 × 0.10 = **0.20 mm** — exactly on the limit for a ⌀0.2 position tolerance.
 
