@@ -31,6 +31,8 @@ article blockquote{ border-left:3px solid var(--accent); margin:26px 0; padding:
 article table{ width:100%; border-collapse:collapse; margin:0 0 20px; font-size:15px; }
 article th, article td{ border:1px solid rgba(94,167,255,0.18); padding:8px 10px; text-align:left; }
 article th{ color:var(--ink); background:rgba(94,167,255,0.06); }
+/* Phones: a wide table scrolls sideways inside the post instead of pushing the whole page sideways. */
+@media (max-width:700px){ article table{ display:block; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; } article th, article td{ min-width:96px; } }
 article img{ max-width:100%; height:auto; }
 .hero{ margin:0 0 30px; }
 .hero img{ width:100%; height:auto; border-radius:12px; border:1px solid rgba(94,167,255,0.18); display:block; }
