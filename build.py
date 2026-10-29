@@ -83,11 +83,40 @@ MODELS = {
     "pulleybelt": ("V-Belt Pulley Drive", "Two pulleys and a V-belt reducing speed with true belt kinematics."),
     "pump": ("Centrifugal Pump", "End-suction pump with a backward-curved impeller and volute casing."),
 }
+# Free 3D model pages on engx3d.com/3d-models/ (slug, different parts to download)
+MODEL_PAGES = {"turbo": ("turbocharger", 34), "pump": ("centrifugal-pump", 20), "pulleybelt": ("v-belt-drive", 20)}
 LIST_KEYS = ("sources", "takeaways", "faq")
 SIMPLE_KEYS = ("category", "tag", "date", "updated", "model", "draft", "image", "video")
 WORDS_PER_MIN = 220
 
 e = html.escape
+
+
+def download_box(model):
+    """Free 3D model download box: the post's own machine in detail, or all machines in a strip."""
+    if model in MODEL_PAGES:
+        slug, n = MODEL_PAGES[model]
+        name, desc = MODELS[model]
+        page = f"{MAIN}/3d-models/{slug}"
+        return ('  <section class="dlbox">\n'
+                f'    <a class="dl-img" href="{page}"><img src="{MAIN}/3d-models/img/{slug}.jpg" alt="{e(name)} 3D model" width="1200" height="900" loading="lazy"></a>\n'
+                '    <div class="dl-body"><div class="box-title">Free 3D model &middot; download</div>\n'
+                f'      <h3>{e(name)}</h3>\n'
+                f'      <p>{e(desc)} Real scale, every part named. Download the whole machine as GLB or STL, '
+                f'grab any of its {n} parts as its own STL, or view it in AR on your phone.</p>\n'
+                f'      <div class="dl-act"><a class="btn" href="{page}">Download the model &rarr;</a>'
+                f'<a class="more" href="{page}#parts">All {n} parts</a>'
+                f'<a class="more" href="{MAIN}/atlas#m={model}">Open in 3D</a></div>\n'
+                '      <p class="small">Free for personal and educational use (CC BY-NC 4.0), credit Engine&#8209;X.</p>\n'
+                '    </div>\n  </section>\n')
+    cards = "".join(
+        f'<a class="dl-mini" href="{MAIN}/3d-models/{slug}"><img src="{MAIN}/3d-models/img/{slug}.jpg" alt="{e(MODELS[k][0])} 3D model" '
+        f'width="1200" height="900" loading="lazy"><b>{e(MODELS[k][0])}</b><span>{n} parts &middot; GLB &middot; STL</span></a>'
+        for k, (slug, n) in MODEL_PAGES.items())
+    return ('  <section class="dlbox all">\n    <div class="box-title">Free 3D models to download</div>\n'
+            '    <p>Real-scale machines with every part named: download GLB or STL, single parts, or view them in AR.</p>\n'
+            f'    <div class="dl-row">{cards}</div>\n'
+            f'    <a class="more" href="{MAIN}/3d-models/">All free 3D models &rarr;</a>\n  </section>\n')
 
 
 def parse(path):
@@ -439,6 +468,8 @@ def render_post(p, posts):
         for name, url in p["sources"]:
             out.append(f'    <li><a href="{e(url)}" rel="noopener" target="_blank">{e(name)}</a></li>\n')
         out.append("  </ul></div>\n")
+
+    out.append(download_box(p.get("model")))
 
     # share
     enc_url, enc_title = quote(p["url"], safe=""), quote(p["title"], safe="")
