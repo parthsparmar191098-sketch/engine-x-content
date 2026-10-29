@@ -14,7 +14,7 @@ Instructions for the daily run that writes one blog post.
 | Tue | News · automation |
 | Wed | News · space |
 | Thu | News · design |
-| Fri | Machine Guide or Learn Engineering (link an Engine-X model when relevant) |
+| Fri | Guide or Learn Engineering (link an Engine-X model when relevant) |
 | Sat | News · the week's biggest machine story (any tag) |
 | Sun | Case Study on the 1st and 3rd Sunday of the month, otherwise News |
 
@@ -26,7 +26,7 @@ Instructions for the daily run that writes one blog post.
 
 ## Post file
 `posts/YYYY-MM-DD-short-slug.md`, header as documented in `build.py`:
-- `category`: news | guide | case-study | field-notes | learn
+- `category`: news | guide | case-study | field-notes | learn (`guide` shows as "Guide"; the Journal's "Machine Guides" filter is only for the Engine-X 3D machine pages on the main site)
 - `tag` (news only): machines | automation | space | design
 - `summary`: 1–2 sentences, under 220 characters
 - `seo_title`: the title Google shows, **max 60 characters**, main search phrase first (e.g. "Pump Cavitation and NPSH Explained, With an Example"). The on-page headline (`title`) can stay longer. " | Engine-X Blog" is added automatically only if it still fits.

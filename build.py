@@ -69,7 +69,7 @@ LOGO = f"{MAIN}/og-image.jpg"
 
 CATEGORIES = {
     "news": "News",
-    "guide": "Machine Guide",
+    "guide": "Guide",
     "case-study": "Case Study",
     "field-notes": "Field Notes",
     "learn": "Learn Engineering",
