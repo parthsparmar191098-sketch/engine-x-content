@@ -83,9 +83,11 @@ MODELS = {
     "turbo": ("Turbocharger", "Exhaust-driven turbine spinning a compressor, with journal bearings and a wastegate."),
     "pulleybelt": ("V-Belt Pulley Drive", "Two pulleys and a V-belt reducing speed with true belt kinematics."),
     "pump": ("Centrifugal Pump", "End-suction pump with a backward-curved impeller and volute casing."),
+    "gearbox": ("Helical Gear Reducer", "Two-stage helical gearbox, 16 : 1, with meshing helical gears and tapered roller bearings."),
 }
 # Free 3D model pages on engx3d.com/3d-models/ (slug, different parts to download)
-MODEL_PAGES = {"turbo": ("turbocharger", 34), "pump": ("centrifugal-pump", 20), "pulleybelt": ("v-belt-drive", 20)}
+MODEL_PAGES = {"turbo": ("turbocharger", 34), "pump": ("centrifugal-pump", 20), "pulleybelt": ("v-belt-drive", 20),
+               "gearbox": ("gear-reducer", 29)}
 LIST_KEYS = ("sources", "takeaways", "faq")
 SIMPLE_KEYS = ("category", "tag", "date", "updated", "model", "draft", "image", "video")
 WORDS_PER_MIN = 220

@@ -36,7 +36,7 @@ Instructions for the daily run that writes one blog post.
 - `summary`: 1–2 sentences, under 220 characters
 - `seo_title`: the title Google shows, **max 60 characters**, main search phrase first (e.g. "Pump Cavitation and NPSH Explained, With an Example"). The on-page headline (`title`) can stay longer. " | Engine-X Blog" is added automatically only if it still fits.
 - `seo_description`: the Google snippet, **120–155 characters**, says what the reader will learn; only facts that are in the post. If left out, the summary is cut to 155 automatically.
-- `model`: turbo | pulleybelt | pump — only when genuinely related (also adds the "Free 3D model · download" box for that machine; posts without it show all models in a strip)
+- `model`: turbo | pulleybelt | pump | gearbox — only when genuinely related (also adds the "Free 3D model · download" box for that machine; posts without it show all models in a strip)
 - `sources`: every source used, `Name | URL`
 - `keywords`: 3–6 comma-separated search phrases people would actually type (e.g. "how does a jack-up vessel work")
 - `takeaways`: 3–5 short bullet points (one line each) — shown in the "In short" box at the top
@@ -69,6 +69,7 @@ Write every post so ChatGPT, Perplexity, Google AI Overviews and similar tools c
   - https://engx3d.com/turbocharger · https://engx3d.com/turbocharger-vs-supercharger
   - https://engx3d.com/centrifugal-pump · https://engx3d.com/centrifugal-vs-positive-displacement-pump
   - https://engx3d.com/v-belt-drive · https://engx3d.com/belt-vs-chain-vs-gear-drive
+  - https://engx3d.com/gear-reducer (gearboxes, gears, reducers)
 - **Consistent names.** Always "Engine-X" (with the hyphen) and "Parth Parmar".
 
 ### AEO v2 — what gets a post cited first
