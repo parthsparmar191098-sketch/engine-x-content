@@ -85,6 +85,25 @@ MODELS = {
 }
 # Free 3D model pages on engx3d.com/3d-models/ (slug, different parts to download)
 MODEL_PAGES = {"turbo": ("turbocharger", 34), "pump": ("centrifugal-pump", 20), "pulleybelt": ("v-belt-drive", 20)}
+
+
+def load_models():
+    """Machines listed by the main site (engx3d.com/models/index.json, made by the Engine-x repo):
+    a newly added machine shows up in the 3D boxes and download boxes without editing this file."""
+    import urllib.request
+    try:
+        req = urllib.request.Request(f"{MAIN}/models/index.json", headers={"User-Agent": "engine-x-blog-bot (+https://engx3d.com/blog/)"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            data = json.load(r)
+    except Exception as err:  # offline build: keep the built-in list
+        print(f"models/index.json not loaded ({err}); using built-in machine list")
+        return
+    for m in data:
+        MODELS.setdefault(m["id"], (m["name"], m["sub"]))
+        MODEL_PAGES[m["id"]] = (m["page"], m["parts"])
+
+
+load_models()
 LIST_KEYS = ("sources", "takeaways", "faq")
 SIMPLE_KEYS = ("category", "tag", "date", "updated", "model", "draft", "image", "video")
 WORDS_PER_MIN = 220

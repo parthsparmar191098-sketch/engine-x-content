@@ -1,0 +1,43 @@
+# Writes a blog post for every Engine-X machine that has none yet (a new machine added to the
+# 3D atlas), publishes it, and pings IndexNow. Reads engx3d.com/models/index.json, which the
+# Engine-x repo rebuilds whenever a machine is added. Runs daily; can also be run by hand.
+name: New machine posts
+
+on:
+  schedule:
+    - cron: "17 2 * * *"   # 07:47 IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: new-machine-posts
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Write posts for new machines
+        run: python machine_posts.py
+      - name: Commit, then build and publish the blog
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add posts assets
+          if git diff --cached --quiet; then
+            echo "No new machine."
+            exit 0
+          fi
+          git config user.name "engine-x-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Auto: blog post for new Engine-X machine"
+          git push
+          # a push made with the workflow token does not start other workflows, so start the publish run directly
+          gh workflow run deploy.yml --ref main -f urls="$(cat .new_post_urls)"
