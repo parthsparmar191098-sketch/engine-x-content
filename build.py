@@ -7,7 +7,7 @@ Each post is a Markdown file with a simple header:
     title: The Ships Building Europe's Offshore Wind Farms
     date: 2026-10-10
     updated: 2026-10-14       # optional: date of a real content update
-    category: news            # news | guide | case-study | field-notes | learn
+    category: news            # news | comparison | case-study | field-notes | learn
     tag: machines             # news only: machines | automation | space | design
     summary: One or two sentences shown on the blog card and in the "In short" box.
     seo_title: Short title for Google, max 60 characters    # optional
@@ -70,11 +70,12 @@ LOGO = f"{MAIN}/og-image.jpg"
 CATEGORIES = {
     "news": "News",
     "guide": "Guide",
+    "comparison": "Comparison",
     "case-study": "Case Study",
     "field-notes": "Field Notes",
     "learn": "Learn Engineering",
 }
-FILTERS = [("all", "All"), ("news", "News"), ("guide", "Guides"),
+FILTERS = [("all", "All"), ("news", "News"), ("comparison", "Comparisons"),
            ("case-study", "Case Studies"), ("field-notes", "Field Notes"), ("learn", "Learn")]
 TAGS = {"machines": "⚙️ Machines", "automation": "🤖 Automation",
         "space": "🚀 Space", "design": "✏️ Design"}

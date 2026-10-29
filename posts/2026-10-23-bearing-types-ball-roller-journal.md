@@ -2,7 +2,7 @@
 title: Ball, Roller or Journal Bearing? How Bearing Types Work and How to Choose
 date: 2026-10-23
 updated: 2026-10-26
-category: guide
+category: comparison
 summary: Ball, roller and journal bearings all carry a turning shaft, but in very different ways. How each type works, which loads it handles, and how bearing life is calculated.
 seo_title: Ball vs Roller vs Journal Bearings: How to Choose
 seo_description: How ball, roller and journal bearings carry a shaft, which loads each handles, and how bearing life (L10) is calculated, explained simply.

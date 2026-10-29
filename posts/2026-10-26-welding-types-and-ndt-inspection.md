@@ -2,7 +2,7 @@
 title: Stick, MIG or TIG? Welding Types Explained, and How Welds Are Inspected
 date: 2026-10-26
 updated: 2026-10-26
-category: learn
+category: comparison
 summary: SMAW, MIG and TIG welding each protect the molten weld in a different way, which decides where they work best. How each process works, common weld defects, and the NDT methods that find them.
 seo_title: Stick vs MIG vs TIG Welding, and How Welds Are Inspected
 seo_description: How SMAW, MIG and TIG welding work, where each fits best, the common weld defects, and the NDT methods (UT, RT, MPI, DPT) that find them.

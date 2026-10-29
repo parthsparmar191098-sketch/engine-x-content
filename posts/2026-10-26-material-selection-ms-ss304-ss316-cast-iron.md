@@ -2,7 +2,7 @@
 title: Mild Steel, SS304, SS316 or Cast Iron? A Practical Material Selection Guide
 date: 2026-10-26
 updated: 2026-10-26
-category: learn
+category: comparison
 summary: Mild steel, SS304, SS316 and cast iron cover most everyday mechanical jobs. How their composition drives strength, corrosion resistance and weldability, and where each one belongs.
 seo_title: Mild Steel vs SS304 vs SS316 vs Cast Iron: Which to Use?
 seo_description: How mild steel, SS304, SS316 and cast iron compare on strength, corrosion resistance and weldability, and which job each one suits best.
