@@ -1,7 +1,7 @@
 ---
 title: Gate, Globe, Butterfly or Check Valve? How Each Works and When to Use It
 date: 2026-10-27
-category: learn
+category: comparison
 summary: Gate valves isolate, globe valves throttle, butterfly valves are compact quarter-turn all-rounders, and check valves stop backflow. How each one works inside, and how valves are pressure-tested.
 seo_title: Gate vs Globe vs Butterfly vs Check Valve: Which to Use?
 seo_description: How gate, globe, butterfly and check valves work inside, which job each one suits, and how valves are pressure-tested to API 598.

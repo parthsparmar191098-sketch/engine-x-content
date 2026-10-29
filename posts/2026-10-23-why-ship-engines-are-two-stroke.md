@@ -1,7 +1,7 @@
 ---
 title: Why Big Ships Use Two-Stroke Engines (and Smaller Ones Use Four-Stroke)
 date: 2026-10-23
-category: guide
+category: comparison
 summary: Container ships and tankers run on huge slow-speed two-stroke diesels bolted straight to the propeller. Why that works, how it compares with four-stroke engines, and where each is used.
 seo_title: Why Big Ships Use Two-Stroke Engines, Not Four-Stroke
 seo_description: Why container ships and tankers use slow-speed two-stroke diesels bolted to the propeller, and where four-stroke marine engines win instead.

@@ -1,7 +1,7 @@
 ---
 title: Pump Cavitation and NPSH Explained — Why a Pump Sounds Like Gravel
 date: 2026-10-22
-category: guide
+category: field-notes
 summary: Cavitation is when liquid boils inside a pump and the bubbles collapse on the impeller. How NPSH available and NPSH required decide whether it happens, with a worked example.
 seo_title: Pump Cavitation and NPSH Explained, With an Example
 seo_description: What pump cavitation is, why it sounds like gravel, and how NPSH available vs NPSH required decide if it happens. Includes a worked example.

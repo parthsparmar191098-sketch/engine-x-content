@@ -2,7 +2,7 @@
 title: AutoCAD vs SolidWorks — Which CAD Tool Should a Mechanical Engineer Use?
 date: 2026-10-26
 updated: 2026-10-26
-category: learn
+category: comparison
 summary: AutoCAD is built for 2D drafting and layouts; SolidWorks is built for 3D parametric parts and assemblies. How each works, where each wins, and which one to learn first.
 seo_title: AutoCAD vs SolidWorks: Which Should Engineers Learn?
 seo_description: AutoCAD is for 2D drafting; SolidWorks is for 3D parametric parts and assemblies. Where each wins and which a mechanical engineer should learn first.

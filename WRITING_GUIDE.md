@@ -14,7 +14,7 @@ Instructions for the daily run that writes one blog post.
 | Tue | News · automation |
 | Wed | News · space |
 | Thu | News · design |
-| Fri | Machine Guide or Learn Engineering (link an Engine-X model when relevant) |
+| Fri | Comparison, Field Notes or Learn Engineering (link an Engine-X model when relevant) |
 | Sat | News · the week's biggest machine story (any tag) |
 | Sun | Case Study on the 1st and 3rd Sunday of the month, otherwise News |
 
@@ -26,7 +26,12 @@ Instructions for the daily run that writes one blog post.
 
 ## Post file
 `posts/YYYY-MM-DD-short-slug.md`, header as documented in `build.py`:
-- `category`: news | guide | case-study | field-notes | learn
+- `category`: news | comparison | case-study | field-notes | learn
+  - `comparison`: any post that compares machines, parts, materials, methods or tools ("A vs B", "A, B or C?")
+  - `field-notes`: practical how-it-works and troubleshooting from ship repair, dry dock, piping, testing and workshop work
+  - `case-study`: a well-documented real event (official reports, reputable outlets)
+  - `learn`: engineering basics and skills (drawings, CAD, standards)
+  - The Journal's "Machine Guides" filter is only for the Engine-X 3D machine pages on the main site; don't use `guide` for new posts
 - `tag` (news only): machines | automation | space | design
 - `summary`: 1–2 sentences, under 220 characters
 - `seo_title`: the title Google shows, **max 60 characters**, main search phrase first (e.g. "Pump Cavitation and NPSH Explained, With an Example"). The on-page headline (`title`) can stay longer. " | Engine-X Blog" is added automatically only if it still fits.
@@ -43,7 +48,7 @@ Instructions for the daily run that writes one blog post.
 The template adds the rest automatically: contents list, breadcrumbs, reading time, author link and bio, dates, share buttons, related and latest posts, the 3D machines box, the services box and all schema.org data. Do not write these by hand in the body.
 
 ## Length & structure
-- News: 450–800 words. Case study: 900–1500 words. Guide: 800–1300 words.
+- News: 450–800 words. Case study: 900–1500 words. Comparison, field notes and learn: 800–1300 words.
 - Open with what happened (2–3 sentences), then `##` sections explaining the engineering. Use at least 3 `##` sections with clear, descriptive headings (they become the contents list).
 - Use numbered steps when explaining a process or how-to, and a short Markdown comparison table when comparing options, specs or old vs new. Only when they genuinely help.
 - Include a real-world example (a named project, vessel, plant or test from the sources) to ground the explanation.
