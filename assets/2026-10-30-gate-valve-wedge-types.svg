@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="36" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">Three gate valve wedges</text>
+  <text x="400" y="58" text-anchor="middle" fill="#8fc4ff" font-size="14">Side view between the two seat rings · flow left to right</text>
+  <g id="panels">
+    <!-- SOLID -->
+    <rect x="20" y="76" width="240" height="300" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+    <text x="140" y="102" text-anchor="middle" fill="#eaf1ff" font-size="17" font-weight="700">Solid wedge</text>
+    <rect x="70" y="140" width="16" height="170" fill="#8a6cff"/><rect x="194" y="140" width="16" height="170" fill="#8a6cff"/>
+    <polygon points="98,130 182,130 172,300 108,300" fill="#5ea7ff"/>
+    <rect x="132" y="112" width="16" height="20" fill="#8fc4ff"/>
+    <text x="140" y="336" text-anchor="middle" fill="#eaf1ff" font-size="13">One rigid piece</text>
+    <text x="140" y="356" text-anchor="middle" fill="#8fc4ff" font-size="13">Simple · can bind when hot</text>
+    <!-- FLEXIBLE -->
+    <rect x="280" y="76" width="240" height="300" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+    <text x="400" y="102" text-anchor="middle" fill="#eaf1ff" font-size="17" font-weight="700">Flexible wedge</text>
+    <rect x="330" y="140" width="16" height="170" fill="#8a6cff"/><rect x="454" y="140" width="16" height="170" fill="#8a6cff"/>
+    <polygon points="358,130 442,130 432,300 368,300" fill="#5ea7ff"/>
+    <rect x="392" y="160" width="16" height="110" rx="6" fill="#0a1120"/>
+    <rect x="392" y="112" width="16" height="20" fill="#8fc4ff"/>
+    <text x="400" y="336" text-anchor="middle" fill="#eaf1ff" font-size="13">Groove lets the faces flex</text>
+    <text x="400" y="356" text-anchor="middle" fill="#8fc4ff" font-size="13">Most industrial steel valves</text>
+    <!-- SPLIT -->
+    <rect x="540" y="76" width="240" height="300" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+    <text x="660" y="102" text-anchor="middle" fill="#eaf1ff" font-size="17" font-weight="700">Split wedge</text>
+    <rect x="590" y="140" width="16" height="170" fill="#8a6cff"/><rect x="714" y="140" width="16" height="170" fill="#8a6cff"/>
+    <polygon points="618,130 655,130 655,300 628,300" fill="#5ea7ff"/>
+    <polygon points="665,130 702,130 692,300 665,300" fill="#5ea7ff"/>
+    <circle cx="660" cy="215" r="9" fill="#8fc4ff"/>
+    <rect x="652" y="112" width="16" height="20" fill="#8fc4ff"/>
+    <text x="660" y="336" text-anchor="middle" fill="#eaf1ff" font-size="13">Two halves line up</text>
+    <text x="660" y="356" text-anchor="middle" fill="#8fc4ff" font-size="13">Stainless, alloy, small bronze</text>
+  </g>
+  <text x="140" y="408" text-anchor="middle" fill="#8a6cff" font-size="13">Purple = seat rings</text>
+  <text x="400" y="408" text-anchor="middle" fill="#5ea7ff" font-size="13">Blue = wedge (tapered faces)</text>
+  <text x="660" y="408" text-anchor="middle" fill="#8fc4ff" font-size="13">Top = stem T-head</text>
+  <text x="400" y="440" text-anchor="middle" fill="#eaf1ff" font-size="14">Thermal binding: the body cools and shrinks onto a rigid wedge, so it will not open</text>
+</svg>

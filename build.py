@@ -84,10 +84,11 @@ MODELS = {
     "pulleybelt": ("V-Belt Pulley Drive", "Two pulleys and a V-belt reducing speed with true belt kinematics."),
     "pump": ("Centrifugal Pump", "End-suction pump with a backward-curved impeller and volute casing."),
     "gearbox": ("Helical Gear Reducer", "Two-stage helical gearbox, 16 : 1, with meshing helical gears and tapered roller bearings."),
+    "gatevalve": ("Gate Valve", "NPS 4 Class 150 OS&Y wedge gate valve with a rising stem, seat rings, packing and handwheel."),
 }
 # Free 3D model pages on engx3d.com/3d-models/ (slug, different parts to download)
 MODEL_PAGES = {"turbo": ("turbocharger", 34), "pump": ("centrifugal-pump", 20), "pulleybelt": ("v-belt-drive", 20),
-               "gearbox": ("gear-reducer", 29)}
+               "gearbox": ("gear-reducer", 29), "gatevalve": ("gate-valve", 22)}
 LIST_KEYS = ("sources", "takeaways", "faq")
 SIMPLE_KEYS = ("category", "tag", "date", "updated", "model", "draft", "image", "video")
 WORDS_PER_MIN = 220
