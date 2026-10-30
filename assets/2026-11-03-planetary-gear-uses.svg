@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="38" fill="#eaf1ff" font-size="22" font-weight="700" text-anchor="middle">One planetary gear set, three very different machines</text>
+  <text x="400" y="62" fill="#8fc4ff" font-size="13" text-anchor="middle">Hold one member, drive one, take power from the third</text>
+  <!-- gear set -->
+  <circle cx="130" cy="230" r="95" fill="none" stroke="#8a6cff" stroke-width="6"/>
+  <circle cx="130" cy="230" r="86" fill="none" stroke="#8a6cff" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="130" cy="230" r="24" fill="#5ea7ff" fill-opacity="0.3" stroke="#5ea7ff" stroke-width="3"/>
+  <circle cx="130" cy="172" r="33" fill="none" stroke="#eaf1ff" stroke-width="3"/>
+  <circle cx="180" cy="259" r="33" fill="none" stroke="#eaf1ff" stroke-width="3"/>
+  <circle cx="80" cy="259" r="33" fill="none" stroke="#eaf1ff" stroke-width="3"/>
+  <path d="M130 172 L180 259 L80 259 Z" fill="none" stroke="#ff8a6c" stroke-width="3"/>
+  <text x="130" y="235" fill="#eaf1ff" font-size="12" text-anchor="middle">sun</text>
+  <text x="130" y="176" fill="#eaf1ff" font-size="11" text-anchor="middle">planet</text>
+  <text x="130" y="350" fill="#8a6cff" font-size="13" text-anchor="middle">ring (internal teeth)</text>
+  <text x="130" y="370" fill="#ff8a6c" font-size="13" text-anchor="middle">carrier joins the planets</text>
+  <text x="130" y="398" fill="#8fc4ff" font-size="12" text-anchor="middle">Ring held: 1 + ring ÷ sun</text>
+  <text x="130" y="416" fill="#8fc4ff" font-size="12" text-anchor="middle">72 ÷ 18 → 5 : 1</text>
+  <!-- three uses -->
+  <rect x="270" y="88" width="510" height="100" rx="12" fill="none" stroke="#5ea7ff" stroke-opacity="0.6"/>
+  <text x="290" y="114" fill="#5ea7ff" font-size="16" font-weight="700">Automatic transmission</text>
+  <text x="290" y="138" fill="#eaf1ff" font-size="13">Clutches and bands hold or drive different members.</text>
+  <text x="290" y="158" fill="#eaf1ff" font-size="13">Ring held = reduction · carrier held = reverse</text>
+  <text x="290" y="178" fill="#8fc4ff" font-size="12">Two members locked = direct drive 1 : 1 · at least 2 sets in a car</text>
+  <rect x="270" y="200" width="510" height="110" rx="12" fill="none" stroke="#8a6cff" stroke-opacity="0.7"/>
+  <text x="290" y="226" fill="#8a6cff" font-size="16" font-weight="700">Hybrid car (Prius power split device)</text>
+  <text x="290" y="250" fill="#eaf1ff" font-size="13">Engine → carrier</text>
+  <text x="290" y="270" fill="#eaf1ff" font-size="13">MG1 → sun (generates, starts engine)</text>
+  <text x="290" y="290" fill="#eaf1ff" font-size="13">MG2 + wheels → ring</text>
+  <text x="610" y="270" fill="#8fc4ff" font-size="12">Nothing fixed: MG1 sets</text>
+  <text x="610" y="288" fill="#8fc4ff" font-size="12">how engine power splits</text>
+  <rect x="270" y="322" width="510" height="110" rx="12" fill="none" stroke="#ff8a6c" stroke-opacity="0.7"/>
+  <text x="290" y="348" fill="#ff8a6c" font-size="16" font-weight="700">Wind turbine gearbox</text>
+  <text x="290" y="372" fill="#eaf1ff" font-size="13">Slow rotor, huge torque → planets share the load</text>
+  <text x="290" y="392" fill="#eaf1ff" font-size="13">NREL 5 MW reference: 2 planetary stages + 1 parallel stage</text>
+  <text x="290" y="414" fill="#8fc4ff" font-size="12">Planetary first, where the torque is highest</text>
+</svg>
