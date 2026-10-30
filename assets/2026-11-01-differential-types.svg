@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+<rect width="800" height="460" fill="#0a1120"/>
+<text x="400" y="36" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">One wheel on ice: where does the torque go?</text>
+<text x="400" y="58" text-anchor="middle" fill="#8fc4ff" font-size="14">Bars = torque at each wheel · orange = wheel with grip</text>
+<rect x="15" y="76" width="180" height="320" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+<text x="105" y="102" text-anchor="middle" fill="#eaf1ff" font-size="17" font-weight="700">Open</text>
+<text x="105" y="122" text-anchor="middle" fill="#8fc4ff" font-size="13">equal split</text>
+<rect x="37" y="150" width="40" height="80" rx="8" fill="#8fc4ff" opacity="0.35"/>
+<text x="57" y="246" text-anchor="middle" fill="#8fc4ff" font-size="12">ice</text>
+<rect x="133" y="150" width="40" height="80" rx="8" fill="#5ea7ff"/>
+<text x="153" y="246" text-anchor="middle" fill="#8fc4ff" font-size="12">grip</text>
+<rect x="91" y="176" width="28" height="28" rx="4" fill="#8a6cff"/>
+<line x1="77" y1="190" x2="91" y2="190" stroke="#8a6cff" stroke-width="4"/><line x1="119" y1="190" x2="133" y2="190" stroke="#8a6cff" stroke-width="4"/>
+<rect x="43" y="338.0" width="28" height="12.0" fill="#8fc4ff"/>
+<rect x="139" y="338.0" width="28" height="12.0" fill="#ffb86b"/>
+<text x="105" y="376" text-anchor="middle" fill="#eaf1ff" font-size="13" font-weight="600">Car stays stuck</text>
+<rect x="210" y="76" width="180" height="320" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+<text x="300" y="102" text-anchor="middle" fill="#eaf1ff" font-size="17" font-weight="700">Clutch LSD</text>
+<text x="300" y="122" text-anchor="middle" fill="#8fc4ff" font-size="13">clutch friction</text>
+<rect x="232" y="150" width="40" height="80" rx="8" fill="#8fc4ff" opacity="0.35"/>
+<text x="252" y="246" text-anchor="middle" fill="#8fc4ff" font-size="12">ice</text>
+<rect x="328" y="150" width="40" height="80" rx="8" fill="#5ea7ff"/>
+<text x="348" y="246" text-anchor="middle" fill="#8fc4ff" font-size="12">grip</text>
+<rect x="286" y="176" width="28" height="28" rx="4" fill="#8a6cff"/>
+<line x1="272" y1="190" x2="286" y2="190" stroke="#8a6cff" stroke-width="4"/><line x1="314" y1="190" x2="328" y2="190" stroke="#8a6cff" stroke-width="4"/>
+<rect x="238" y="338.0" width="28" height="12.0" fill="#8fc4ff"/>
+<rect x="334" y="300.0" width="28" height="50.0" fill="#ffb86b"/>
+<text x="300" y="376" text-anchor="middle" fill="#eaf1ff" font-size="13" font-weight="600">Some push</text>
+<rect x="405" y="76" width="180" height="320" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+<text x="495" y="102" text-anchor="middle" fill="#eaf1ff" font-size="17" font-weight="700">Gear LSD</text>
+<text x="495" y="122" text-anchor="middle" fill="#8fc4ff" font-size="13">Torsen-style, TBR 3 : 1</text>
+<rect x="427" y="150" width="40" height="80" rx="8" fill="#8fc4ff" opacity="0.35"/>
+<text x="447" y="246" text-anchor="middle" fill="#8fc4ff" font-size="12">ice</text>
+<rect x="523" y="150" width="40" height="80" rx="8" fill="#5ea7ff"/>
+<text x="543" y="246" text-anchor="middle" fill="#8fc4ff" font-size="12">grip</text>
+<rect x="481" y="176" width="28" height="28" rx="4" fill="#8a6cff"/>
+<line x1="467" y1="190" x2="481" y2="190" stroke="#8a6cff" stroke-width="4"/><line x1="509" y1="190" x2="523" y2="190" stroke="#8a6cff" stroke-width="4"/>
+<rect x="433" y="338.0" width="28" height="12.0" fill="#8fc4ff"/>
+<rect x="529" y="314.0" width="28" height="36.0" fill="#ffb86b"/>
+<text x="495" y="376" text-anchor="middle" fill="#eaf1ff" font-size="13" font-weight="600">3 × the ice wheel</text>
+<rect x="600" y="76" width="180" height="320" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+<text x="690" y="102" text-anchor="middle" fill="#eaf1ff" font-size="17" font-weight="700">Locker</text>
+<text x="690" y="122" text-anchor="middle" fill="#8fc4ff" font-size="13">axles joined</text>
+<rect x="622" y="150" width="40" height="80" rx="8" fill="#8fc4ff" opacity="0.35"/>
+<text x="642" y="246" text-anchor="middle" fill="#8fc4ff" font-size="12">ice</text>
+<rect x="718" y="150" width="40" height="80" rx="8" fill="#5ea7ff"/>
+<text x="738" y="246" text-anchor="middle" fill="#8fc4ff" font-size="12">grip</text>
+<rect x="676" y="176" width="28" height="28" rx="4" fill="#8a6cff"/>
+<line x1="662" y1="190" x2="676" y2="190" stroke="#8a6cff" stroke-width="4"/><line x1="704" y1="190" x2="718" y2="190" stroke="#8a6cff" stroke-width="4"/>
+<rect x="628" y="338.0" width="28" height="12.0" fill="#8fc4ff"/>
+<rect x="724" y="260.0" width="28" height="90.0" fill="#ffb86b"/>
+<text x="690" y="376" text-anchor="middle" fill="#eaf1ff" font-size="13" font-weight="600">Grip wheel does it all</text>
+<text x="400" y="430" text-anchor="middle" fill="#8fc4ff" font-size="12">Illustrative, not to scale · purple = differential · Engine-X</text>
+</svg>
