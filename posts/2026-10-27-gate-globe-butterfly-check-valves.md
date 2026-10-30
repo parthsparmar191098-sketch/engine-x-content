@@ -8,6 +8,7 @@ seo_description: How gate, globe, butterfly and check valves work inside, which 
 image: assets/2026-10-27-valve-types.svg
 image_alt: Cross-section diagram of a gate valve, globe valve, butterfly valve and swing check valve showing how each closing element meets the flow
 image_credit: Diagram: Engine-X
+model: gatevalve
 keywords: gate valve vs globe valve, types of valves and their uses, butterfly valve vs gate valve, how does a check valve work, API 598 valve test
 tldr: Use a gate valve for full-open or full-closed isolation, a globe valve for throttling, a butterfly valve for compact quarter-turn service in large lines, and a check valve to stop backflow automatically.
 takeaways:
