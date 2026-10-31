@@ -85,10 +85,11 @@ MODELS = {
     "pump": ("Centrifugal Pump", "End-suction pump with a backward-curved impeller and volute casing."),
     "gearbox": ("Helical Gear Reducer", "Two-stage helical gearbox, 16 : 1, with meshing helical gears and tapered roller bearings."),
     "diesel855": ("Marine Diesel Engine", "Inline-6, 14 L marine diesel in the NT855 Big Cam style: pistons, camshaft, 24 valves, PT injectors, turbo and sea water cooling."),
+    "phe": ("Plate Heat Exchanger", "Gasketed plate-and-frame exchanger, 41 plates, DN100, with hot and cold water in alternate channels."),
 }
 # Free 3D model pages on engx3d.com/3d-models/ (slug, different parts to download)
 MODEL_PAGES = {"turbo": ("turbocharger", 34), "pump": ("centrifugal-pump", 20), "pulleybelt": ("v-belt-drive", 20),
-               "gearbox": ("gear-reducer", 29), "diesel855": ("marine-diesel-engine", 62)}
+               "gearbox": ("gear-reducer", 29), "diesel855": ("marine-diesel-engine", 62), "phe": ("plate-heat-exchanger", 22)}
 LIST_KEYS = ("sources", "takeaways", "faq")
 SIMPLE_KEYS = ("category", "tag", "date", "updated", "model", "draft", "image", "video")
 WORDS_PER_MIN = 220

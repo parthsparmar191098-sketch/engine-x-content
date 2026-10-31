@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <defs>
+    <marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#5ea7ff"/></marker>
+    <marker id="v" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#8a6cff"/></marker>
+    <marker id="r" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#ff8a6c"/></marker>
+  </defs>
+  <text x="400" y="40" fill="#eaf1ff" font-size="22" font-weight="700" text-anchor="middle">Ship central cooling system</text>
+  <text x="400" y="64" fill="#8fc4ff" font-size="13" text-anchor="middle">Seawater touches only the central cooler. Fresh water cools everything else.</text>
+  <!-- sea -->
+  <rect x="20" y="380" width="760" height="60" rx="10" fill="#5ea7ff" fill-opacity="0.12" stroke="#5ea7ff" stroke-opacity="0.5"/>
+  <text x="400" y="416" fill="#8fc4ff" font-size="14" text-anchor="middle">Sea</text>
+  <!-- central cooler -->
+  <rect x="80" y="160" width="150" height="150" rx="10" fill="none" stroke="#eaf1ff" stroke-width="2"/>
+  <path d="M100 170 V300 M115 170 V300 M130 170 V300 M145 170 V300 M160 170 V300 M175 170 V300 M190 170 V300 M205 170 V300" stroke="#8fc4ff" stroke-width="2"/>
+  <text x="155" y="140" fill="#eaf1ff" font-size="14" font-weight="700" text-anchor="middle">Central cooler</text>
+  <text x="155" y="330" fill="#8fc4ff" font-size="12" text-anchor="middle">titanium plate heat exchanger</text>
+  <text x="155" y="347" fill="#8fc4ff" font-size="12" text-anchor="middle">(2 fitted, duplex)</text>
+  <!-- seawater path -->
+  <path d="M60 380 V240 H80" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#b)"/>
+  <text x="36" y="300" fill="#5ea7ff" font-size="12" transform="rotate(-90 36 300)" text-anchor="middle">sea chest + strainer</text>
+  <path d="M230 290 H260 V380" stroke="#5ea7ff" stroke-width="3" fill="none" marker-end="url(#b)"/>
+  <text x="268" y="365" fill="#5ea7ff" font-size="12">overboard</text>
+  <!-- LT circuit -->
+  <rect x="330" y="150" width="200" height="120" rx="12" fill="#8a6cff" fill-opacity="0.12" stroke="#8a6cff" stroke-width="2"/>
+  <text x="430" y="176" fill="#eaf1ff" font-size="15" font-weight="700" text-anchor="middle">LT fresh water</text>
+  <text x="430" y="196" fill="#8a6cff" font-size="14" font-weight="700" text-anchor="middle">about 36–40 °C</text>
+  <text x="430" y="218" fill="#eaf1ff" font-size="12" text-anchor="middle">lube oil + charge air coolers</text>
+  <text x="430" y="236" fill="#eaf1ff" font-size="12" text-anchor="middle">air compressors, generators</text>
+  <text x="430" y="254" fill="#eaf1ff" font-size="12" text-anchor="middle">A/C, hydraulics</text>
+  <path d="M330 190 H230" stroke="#8a6cff" stroke-width="3" marker-end="url(#v)"/>
+  <path d="M230 215 H330" stroke="#8a6cff" stroke-width="3" marker-end="url(#v)"/>
+  <text x="280" y="182" fill="#8a6cff" font-size="12" text-anchor="middle">warm</text>
+  <text x="280" y="234" fill="#8a6cff" font-size="12" text-anchor="middle">cooled</text>
+  <!-- HT circuit -->
+  <rect x="590" y="150" width="190" height="120" rx="12" fill="#ff8a6c" fill-opacity="0.10" stroke="#ff8a6c" stroke-width="2"/>
+  <text x="685" y="176" fill="#eaf1ff" font-size="15" font-weight="700" text-anchor="middle">HT fresh water</text>
+  <text x="685" y="196" fill="#ff8a6c" font-size="14" font-weight="700" text-anchor="middle">about 80–90 °C</text>
+  <text x="685" y="218" fill="#eaf1ff" font-size="12" text-anchor="middle">main engine jackets,</text>
+  <text x="685" y="236" fill="#eaf1ff" font-size="12" text-anchor="middle">heads and liners</text>
+  <text x="685" y="254" fill="#eaf1ff" font-size="12" text-anchor="middle">fresh water generator</text>
+  <path d="M590 190 H530" stroke="#ff8a6c" stroke-width="3" marker-end="url(#r)"/>
+  <path d="M530 230 H590" stroke="#8a6cff" stroke-width="3" marker-end="url(#v)"/>
+  <text x="560" y="300" fill="#eaf1ff" font-size="12" text-anchor="middle">temperature control valve</text>
+  <text x="560" y="317" fill="#8fc4ff" font-size="12" text-anchor="middle">mixes LT water into HT</text>
+  <circle cx="560" cy="230" r="7" fill="#0a1120" stroke="#eaf1ff" stroke-width="2"/>
+  <path d="M560 237 V285" stroke="#eaf1ff" stroke-width="1" stroke-dasharray="3 3"/>
+</svg>
