@@ -63,4 +63,4 @@ The result: a technician can walk from a rolling ship onto a turbine platform as
 
 ## The engineering takeaway
 
-Offshore wind is turning shipyards into machine builders. Jacking systems, heavy-lift cranes, hybrid power plants and active motion control are all mechanical and control-engineering problems — the same families of gears, hydraulics and drives you'll find in any workshop, just scaled up to sea.
+Offshore wind is turning shipyards into machine builders. Jacking systems, heavy-lift cranes, hybrid power plants and active motion control are all mechanical and control-engineering problems — the same families of gears, hydraulics and drives you'll find in any workshop, just scaled up to sea. To see that family of gears up close, explore a [helical gear reducer in 3D](https://engx3d.com/gear-reducer): a fast motor turning slow, high-torque output is the same idea that drives the pinions climbing a jack-up vessel's legs.
