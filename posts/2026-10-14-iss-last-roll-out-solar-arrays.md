@@ -65,4 +65,4 @@ This is a very familiar situation to anyone who has modified an old ship: new eq
 
 ## The engineering takeaway
 
-Good design often removes parts instead of adding them. By letting the booms store energy, deploy the array and then carry its load, the roll-out array replaces motors and hinges with one shaped piece of composite. The lesson for any machine, in space or in a dry dock, is that the most reliable component is the one you did not need to install.
+Good design often removes parts instead of adding them. By letting the booms store energy, deploy the array and then carry its load, the roll-out array replaces motors and hinges with one shaped piece of composite. The lesson for any machine, in space or in a dry dock, is that the most reliable component is the one you did not need to install. For the parts a motorised mechanism would have needed, see [ball, roller and journal bearings explained](https://engx3d.com/blog/posts/2026-10-23-bearing-types-ball-roller-journal.html) and the gears inside a [helical gear reducer in 3D](https://engx3d.com/gear-reducer).
