@@ -103,4 +103,4 @@ Learn the one your next job needs, but plan on both. All3DP itself is mixed on w
 
 ## The engineering takeaway
 
-AutoCAD is a precise pencil; SolidWorks is a design engine. Use AutoCAD when the output is a drawing and the geometry is simple, and SolidWorks when the design will change, has many parts, or needs analysis. Knowing both — and knowing when to switch — is what most mechanical design and site roles actually expect.
+AutoCAD is a precise pencil; SolidWorks is a design engine. Use AutoCAD when the output is a drawing and the geometry is simple, and SolidWorks when the design will change, has many parts, or needs analysis. Knowing both — and knowing when to switch — is what most mechanical design and site roles actually expect. For an example of what 3D modelling can show that a flat drawing cannot, download any Engine-X machine and each of its parts free from the [3D models gallery](https://engx3d.com/3d-models/).
