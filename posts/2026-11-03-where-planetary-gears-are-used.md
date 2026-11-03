@@ -36,7 +36,9 @@ The same four parts appear in all of them: a sun gear in the middle, planet gear
 
 ## How does a planetary gear set give different ratios?
 
-A planetary gear set gives different ratios because any of its three members can be the input, the output or the one held still. The planets themselves are idlers: they spin on their pins and pass power between the others. As [Gears Magazine](https://gearsmagazine.com/magazine/getting-comfortable-with-the-transmission/) puts it, one member must be held (or two locked together) before the set can transmit power at all.
+A planetary gear set gives different ratios because any of its three members can be the input, the output or the one held still. The planets themselves are idlers: they spin on their pins and pass power between the others.
+
+As [Gears Magazine](https://gearsmagazine.com/magazine/getting-comfortable-with-the-transmission/) puts it, one member must be held (or two locked together) before the set can transmit power at all.
 
 The rules are simple:
 
@@ -73,7 +75,9 @@ NREL's [5 MW reference gearbox for offshore wind turbines](https://www.osti.gov/
 
 ## Why are planetary gearboxes so compact?
 
-A planetary gearbox is compact because the load is shared between several planets at once, so each tooth mesh carries only part of the torque. With three planets, each sun-to-planet mesh carries roughly a third of the load, and input and output sit on the same axis. That is why the same layout turns up in small places too: kfz-tech.de mentions car starter motors, and robot joints and servo gearheads use it for the same reason. For a comparison with other gear types, see [spur, helical, bevel or worm](https://engx3d.com/blog/posts/2026-10-23-gear-types-spur-helical-bevel-worm.html) and the parallel-shaft [gear reducer guide](https://engx3d.com/gear-reducer).
+A planetary gearbox is compact because the load is shared between several planets at once, so each tooth mesh carries only part of the torque. With three planets, each sun-to-planet mesh carries roughly a third of the load, and input and output sit on the same axis.
+
+That is why the same layout turns up in small places too: kfz-tech.de mentions car starter motors, and robot joints and servo gearheads use it for the same reason. For a comparison with other gear types, see [spur, helical, bevel or worm](https://engx3d.com/blog/posts/2026-10-23-gear-types-spur-helical-bevel-worm.html) and the parallel-shaft [gear reducer guide](https://engx3d.com/gear-reducer).
 
 ## The engineering takeaway
 

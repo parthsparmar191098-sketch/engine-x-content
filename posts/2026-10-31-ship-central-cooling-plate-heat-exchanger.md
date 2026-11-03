@@ -4,7 +4,7 @@ date: 2026-10-31
 category: field-notes
 summary: Most modern ships keep seawater out of the engine room's cooling pipes. A titanium plate heat exchanger, the central cooler, hands the heat to the sea instead. Here is how the three circuits work.
 seo_title: Ship Central Cooling System and the Plate Heat Exchanger
-seo_description: How a ship's central cooling system works: seawater, LT (36–40 °C) and HT (80–90 °C) fresh water circuits, and why the central cooler is a titanium plate heat exchanger.
+seo_description: How a ship's central cooling works: seawater, LT (36–40 °C) and HT (80–90 °C) fresh water loops, and why the cooler is a titanium plate exchanger.
 image: assets/2026-10-31-ship-central-cooling.svg
 image_alt: Diagram of a ship's central cooling system: seawater from the sea chest passes through a titanium plate heat exchanger (central cooler) and goes overboard; the LT fresh water circuit at 36–40 °C cools auxiliaries and the HT circuit at 80–90 °C cools the main engine jackets
 image_credit: Diagram: Engine-X
@@ -45,7 +45,9 @@ The HT circuit has no cooler of its own to the sea. Temperature control valves m
 
 ## Why is the central cooler a plate heat exchanger?
 
-The central cooler is a plate heat exchanger because it moves a large amount of heat in a compact frame, can be opened for cleaning, and its plates can be pressed from titanium. A plate heat exchanger is a stack of thin corrugated metal plates with gaskets that make alternate channels for the two liquids, so heat crosses every plate without the liquids mixing.
+The central cooler is a plate heat exchanger because it moves a large amount of heat in a compact frame, can be opened for cleaning, and its plates can be pressed from titanium.
+
+A plate heat exchanger is a stack of thin corrugated metal plates with gaskets that make alternate channels for the two liquids, so heat crosses every plate without the liquids mixing.
 
 [Alfa Laval](https://www.alfalaval.nl/link/ed43a95425464b629e0826c1ba1fa396.aspx) describes the seawater path as sea chest → coarse strainer → titanium central coolers → overboard. Titanium is chosen because seawater attacks most other metals; Marine Insight and Merchant Navy Decoded both note that central coolers are generally plate type with titanium plates. A bypass valve on the fresh water side sends only part of the flow through the cooler, which is how the LT temperature is held constant.
 
