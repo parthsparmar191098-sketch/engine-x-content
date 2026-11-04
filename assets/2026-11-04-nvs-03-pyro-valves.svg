@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#5ea7ff"/></marker></defs>
+  <text x="400" y="38" fill="#eaf1ff" font-size="22" font-weight="700" text-anchor="middle">NVS-02 vs NVS-03: one valve, two strategies</text>
+  <text x="400" y="62" fill="#8fc4ff" font-size="13" text-anchor="middle">Oxidiser line to the orbit-raising engine</text>
+  <!-- row 1 NVS-02 -->
+  <text x="30" y="96" fill="#ff8a6c" font-size="16" font-weight="700">NVS-02 (Jan 2025): pyro valve closed</text>
+  <rect x="30" y="125" width="110" height="80" rx="40" fill="none" stroke="#eaf1ff" stroke-width="2"/>
+  <text x="85" y="170" fill="#eaf1ff" font-size="13" text-anchor="middle">Oxidiser</text>
+  <path d="M140 165 H230" stroke="#5ea7ff" stroke-width="4"/>
+  <rect x="230" y="140" width="90" height="50" rx="6" fill="#ff8a6c" fill-opacity="0.15" stroke="#ff8a6c" stroke-width="2"/>
+  <text x="275" y="162" fill="#eaf1ff" font-size="12" text-anchor="middle">Pyro valve</text>
+  <text x="275" y="180" fill="#ff8a6c" font-size="12" font-weight="700" text-anchor="middle">CLOSED</text>
+  <path d="M275 140 V124 H412" stroke="#ff8a6c" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+  <text x="420" y="113" fill="#ff8a6c" font-size="12">firing signal never arrived (loose connector,</text>
+  <text x="420" y="129" fill="#ff8a6c" font-size="12">main and backup path)</text>
+  <path d="M320 165 H420" stroke="#8fc4ff" stroke-width="4" stroke-dasharray="2 6"/>
+  <rect x="420" y="140" width="90" height="50" rx="6" fill="none" stroke="#8a6cff" stroke-width="2"/>
+  <text x="465" y="170" fill="#eaf1ff" font-size="12" text-anchor="middle">Latch valve</text>
+  <path d="M510 165 H600" stroke="#8fc4ff" stroke-width="4" stroke-dasharray="2 6"/>
+  <path d="M600 140 L680 165 L600 190 Z" fill="none" stroke="#eaf1ff" stroke-width="2"/>
+  <text x="700" y="160" fill="#eaf1ff" font-size="12">Engine</text>
+  <text x="700" y="176" fill="#ff8a6c" font-size="12">no fire</text>
+  <text x="30" y="225" fill="#8fc4ff" font-size="12">Result: stuck in 170 × 37,785 km transfer orbit</text>
+  <!-- row 2 NVS-03 -->
+  <text x="30" y="282" fill="#5ea7ff" font-size="16" font-weight="700">NVS-03 (30 Oct 2026): pyro valves opened before launch</text>
+  <rect x="30" y="300" width="110" height="80" rx="40" fill="none" stroke="#eaf1ff" stroke-width="2"/>
+  <text x="85" y="345" fill="#eaf1ff" font-size="13" text-anchor="middle">Oxidiser</text>
+  <path d="M140 340 H230 M320 340 H420" stroke="#5ea7ff" stroke-width="4"/>
+  <rect x="230" y="315" width="90" height="50" rx="6" fill="#5ea7ff" fill-opacity="0.15" stroke="#5ea7ff" stroke-width="2"/>
+  <text x="275" y="337" fill="#eaf1ff" font-size="12" text-anchor="middle">Pyro valve</text>
+  <text x="275" y="355" fill="#5ea7ff" font-size="12" font-weight="700" text-anchor="middle">OPEN</text>
+  <rect x="420" y="315" width="90" height="50" rx="6" fill="#8a6cff" fill-opacity="0.2" stroke="#8a6cff" stroke-width="3"/>
+  <text x="465" y="337" fill="#eaf1ff" font-size="12" text-anchor="middle">Latch valve</text>
+  <text x="465" y="355" fill="#8a6cff" font-size="12" font-weight="700" text-anchor="middle">holds alone</text>
+  <path d="M510 340 H596" stroke="#5ea7ff" stroke-width="4" marker-end="url(#a)"/>
+  <path d="M600 315 L680 340 L600 365 Z" fill="none" stroke="#eaf1ff" stroke-width="2"/>
+  <text x="700" y="335" fill="#eaf1ff" font-size="12">Engine</text>
+  <text x="700" y="351" fill="#5ea7ff" font-size="12">on command</text>
+  <text x="30" y="405" fill="#8fc4ff" font-size="12">Gain: no firing signal needed in space.</text>
+  <text x="30" y="425" fill="#8fc4ff" font-size="12">Risk: the latch valve must seal through launch vibration and open on command.</text>
+</svg>
