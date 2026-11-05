@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#8fc4ff"/></marker></defs>
+  <text x="400" y="38" fill="#eaf1ff" font-size="22" font-weight="700" text-anchor="middle">How DIAL 3D printing builds one layer</text>
+  <text x="400" y="62" fill="#8fc4ff" font-size="13" text-anchor="middle">Paste-like ink + patterned light. The uncured paste holds up the overhang.</text>
+  <!-- step boxes -->
+  <g font-size="13" fill="#eaf1ff" text-anchor="middle">
+    <rect x="30" y="86" width="170" height="64" rx="10" fill="none" stroke="#5ea7ff"/>
+    <text x="115" y="112" font-weight="700" fill="#5ea7ff">1  Lay ink</text>
+    <text x="115" y="132">slot-die nozzle</text>
+    <rect x="220" y="86" width="170" height="64" rx="10" fill="none" stroke="#5ea7ff"/>
+    <text x="305" y="112" font-weight="700" fill="#5ea7ff">2  Spread</text>
+    <text x="305" y="132">blade → 50 µm sheet</text>
+    <rect x="410" y="86" width="170" height="64" rx="10" fill="none" stroke="#8a6cff"/>
+    <text x="495" y="112" font-weight="700" fill="#8a6cff">3  Cure</text>
+    <text x="495" y="132">projector lights pattern</text>
+    <rect x="600" y="86" width="170" height="64" rx="10" fill="none" stroke="#8a6cff"/>
+    <text x="685" y="112" font-weight="700" fill="#8a6cff">4  Repeat, wash</text>
+    <text x="685" y="132">uncured ink reused</text>
+  </g>
+  <path d="M202 118 H218" stroke="#8fc4ff" stroke-width="2" marker-end="url(#a)"/><path d="M392 118 H408" stroke="#8fc4ff" stroke-width="2" marker-end="url(#a)"/><path d="M582 118 H598" stroke="#8fc4ff" stroke-width="2" marker-end="url(#a)"/>
+  <!-- projector -->
+  <rect x="330" y="172" width="140" height="34" rx="6" fill="none" stroke="#8a6cff" stroke-width="2"/>
+  <text x="400" y="194" fill="#eaf1ff" font-size="12" text-anchor="middle">projector</text>
+  <path d="M370 206 L330 262 M400 206 L400 262 M430 206 L470 262" stroke="#8a6cff" stroke-width="2" stroke-dasharray="4 4"/>
+  <!-- blade -->
+  <path d="M600 214 L590 264" stroke="#eaf1ff" stroke-width="5"/>
+  <text x="612" y="226" fill="#8fc4ff" font-size="12">blade</text>
+  <path d="M640 244 H700" stroke="#8fc4ff" stroke-width="2" marker-end="url(#a)"/>
+  <!-- paste bed -->
+  <rect x="120" y="264" width="560" height="120" fill="#5ea7ff" fill-opacity="0.12" stroke="#5ea7ff" stroke-opacity="0.6"/>
+  <text x="600" y="300" fill="#8fc4ff" font-size="12" text-anchor="middle">uncured paste</text>
+  <text x="600" y="316" fill="#8fc4ff" font-size="12" text-anchor="middle">(yield-stress ink)</text>
+  <!-- cured part: pillar + overhang -->
+  <rect x="220" y="304" width="40" height="80" fill="#8a6cff" fill-opacity="0.75"/>
+  <rect x="220" y="264" width="260" height="40" fill="#8a6cff" fill-opacity="0.75"/>
+  <text x="350" y="289" fill="#eaf1ff" font-size="12" text-anchor="middle">cured part (overhang)</text>
+  <path d="M300 300 V340 M340 300 V340 M380 300 V340 M420 300 V340 M460 300 V340" stroke="#eaf1ff" stroke-width="2" stroke-dasharray="3 4"/>
+  <text x="390" y="362" fill="#eaf1ff" font-size="12" text-anchor="middle">paste holds the overhang up: no printed supports</text>
+  <rect x="100" y="384" width="600" height="10" fill="#8fc4ff" fill-opacity="0.4"/>
+  <text x="400" y="420" fill="#8fc4ff" font-size="13" text-anchor="middle">Test grid: 30 min with DIAL vs 124 min with extrusion · walls down to 150 µm</text>
+</svg>
