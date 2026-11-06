@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <text x="400" y="38" fill="#eaf1ff" font-size="22" font-weight="700" text-anchor="middle">Gland packing vs mechanical seal</text>
+  <text x="400" y="62" fill="#8fc4ff" font-size="13" text-anchor="middle">Two ways to stop liquid escaping where the pump shaft leaves the casing</text>
+  <!-- left: packing -->
+  <rect x="20" y="80" width="370" height="360" rx="14" fill="none" stroke="#5ea7ff" stroke-opacity="0.5"/>
+  <text x="205" y="108" fill="#5ea7ff" font-size="16" font-weight="700" text-anchor="middle">Gland packing</text>
+  <rect x="40" y="208" width="330" height="26" fill="#8fc4ff" fill-opacity="0.35"/>
+  <text x="58" y="226" fill="#0a1120" font-size="12" font-weight="700">shaft</text>
+  <rect x="40" y="140" width="80" height="68" fill="#5ea7ff" fill-opacity="0.12" stroke="#5ea7ff"/>
+  <text x="80" y="134" fill="#8fc4ff" font-size="12" text-anchor="middle">casing</text>
+  <g fill="#8a6cff" fill-opacity="0.6" stroke="#eaf1ff" stroke-width="1">
+    <rect x="125" y="176" width="24" height="32"/><rect x="153" y="176" width="24" height="32"/>
+    <rect x="209" y="176" width="24" height="32"/><rect x="237" y="176" width="24" height="32"/>
+  </g>
+  <rect x="181" y="176" width="24" height="32" fill="none" stroke="#5ea7ff" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="193" y="168" fill="#8fc4ff" font-size="11" text-anchor="middle">lantern ring</text>
+  <text x="193" y="154" fill="#8fc4ff" font-size="11" text-anchor="middle">(flush)</text>
+  <rect x="265" y="160" width="22" height="48" fill="none" stroke="#eaf1ff" stroke-width="2"/>
+  <path d="M300 184 H290" stroke="#eaf1ff" stroke-width="2"/>
+  <path d="M296 178 L288 184 L296 190" stroke="#eaf1ff" stroke-width="2" fill="none"/>
+  <text x="330" y="164" fill="#eaf1ff" font-size="12" text-anchor="middle">gland</text>
+  <text x="330" y="180" fill="#eaf1ff" font-size="12" text-anchor="middle">follower</text>
+  <text x="193" y="276" fill="#eaf1ff" font-size="12" text-anchor="middle">packing rings squeezed against the shaft</text>
+  <circle cx="276" cy="242" r="4" fill="#5ea7ff"/><circle cx="276" cy="254" r="3" fill="#5ea7ff"/><text x="290" y="254" fill="#5ea7ff" font-size="11">drip</text>
+  <text x="205" y="304" fill="#eaf1ff" font-size="13" text-anchor="middle">Must drip to stay cool:</text>
+  <text x="205" y="324" fill="#5ea7ff" font-size="13" font-weight="700" text-anchor="middle">~1 drop/min per inch of shaft</text>
+  <text x="205" y="356" fill="#8fc4ff" font-size="12" text-anchor="middle">+ cheap, adjust while running</text>
+  <text x="205" y="376" fill="#8fc4ff" font-size="12" text-anchor="middle">− wears the sleeve, more power</text>
+  <!-- right: mechanical seal -->
+  <rect x="410" y="80" width="370" height="360" rx="14" fill="none" stroke="#8a6cff" stroke-opacity="0.6"/>
+  <text x="595" y="108" fill="#8a6cff" font-size="16" font-weight="700" text-anchor="middle">Mechanical seal</text>
+  <rect x="430" y="208" width="330" height="26" fill="#8fc4ff" fill-opacity="0.35"/>
+  <text x="448" y="226" fill="#0a1120" font-size="12" font-weight="700">shaft (turning)</text>
+  <path d="M470 196 l8 -8 l8 8 l8 -8 l8 8 l8 -8 l8 8 l8 -8 l8 8" stroke="#eaf1ff" stroke-width="2" fill="none"/>
+  <text x="502" y="176" fill="#eaf1ff" font-size="12" text-anchor="middle">spring</text>
+  <rect x="542" y="150" width="26" height="58" fill="#5ea7ff" fill-opacity="0.45" stroke="#5ea7ff"/>
+  <rect x="572" y="150" width="26" height="58" fill="#8a6cff" fill-opacity="0.45" stroke="#8a6cff"/>
+  <path d="M570 146 V212" stroke="#eaf1ff" stroke-width="1" stroke-dasharray="2 2"/>
+  <rect x="598" y="132" width="80" height="76" fill="#8a6cff" fill-opacity="0.12" stroke="#8a6cff"/>
+  <text x="638" y="126" fill="#8fc4ff" font-size="12" text-anchor="middle">housing</text>
+  <circle cx="555" cy="204" r="4" fill="none" stroke="#eaf1ff"/><circle cx="610" cy="140" r="4" fill="none" stroke="#eaf1ff"/>
+  <text x="530" y="262" fill="#5ea7ff" font-size="12" text-anchor="middle">rotating face</text>
+  <text x="640" y="262" fill="#8a6cff" font-size="12" text-anchor="middle">stationary face</text>
+  <text x="595" y="282" fill="#eaf1ff" font-size="12" text-anchor="middle">thin fluid film between faces · O-rings seal each ring</text>
+  <text x="595" y="314" fill="#eaf1ff" font-size="13" text-anchor="middle">Faces lapped flat to under 1 micron:</text>
+  <text x="595" y="334" fill="#8a6cff" font-size="13" font-weight="700" text-anchor="middle">no visible leakage</text>
+  <text x="595" y="366" fill="#8fc4ff" font-size="12" text-anchor="middle">+ no sleeve wear, less power</text>
+  <text x="595" y="386" fill="#8fc4ff" font-size="12" text-anchor="middle">− costs more, must never run dry</text>
+</svg>
