@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="460" fill="#0a1120"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#8fc4ff"/></marker></defs>
+  <text x="400" y="38" fill="#eaf1ff" font-size="22" font-weight="700" text-anchor="middle">How a Starship tower catch works</text>
+  <text x="400" y="62" fill="#8fc4ff" font-size="13" text-anchor="middle">Flight 15 (target 13 Nov 2026) will try to catch both stages</text>
+  <!-- ground -->
+  <rect x="0" y="420" width="800" height="40" fill="#5ea7ff" fill-opacity="0.08"/>
+  <!-- tower -->
+  <rect x="620" y="150" width="30" height="270" fill="none" stroke="#eaf1ff" stroke-width="2"/>
+  <path d="M620 170 L640 190 L620 210 L640 230 L620 250 L640 270 L620 290 L640 310 L620 330 L640 350 L620 370 L640 390 L620 410" stroke="#eaf1ff" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M620 230 L560 222 M620 250 L560 258" stroke="#8a6cff" stroke-width="6" stroke-linecap="round"/>
+  <text x="700" y="232" fill="#8a6cff" font-size="12" text-anchor="middle">chopstick</text>
+  <text x="700" y="248" fill="#8a6cff" font-size="12" text-anchor="middle">arms</text>
+  <text x="635" y="140" fill="#eaf1ff" font-size="12" text-anchor="middle">tower ~122 m</text>
+  <!-- booster in catch -->
+  <rect x="530" y="200" width="28" height="120" rx="6" fill="#5ea7ff" fill-opacity="0.35" stroke="#5ea7ff" stroke-width="2"/>
+  <path d="M536 320 l-4 14 M544 320 l0 16 M552 320 l4 14" stroke="#ff8a6c" stroke-width="2"/>
+  <text x="470" y="350" fill="#ff8a6c" font-size="12" text-anchor="middle">3 engines:</text>
+  <text x="470" y="366" fill="#ff8a6c" font-size="12" text-anchor="middle">hover in the gap</text>
+  <!-- booster path -->
+  <rect x="90" y="110" width="20" height="80" rx="5" fill="#5ea7ff" fill-opacity="0.35" stroke="#5ea7ff" stroke-width="2"/>
+  <text x="100" y="210" fill="#eaf1ff" font-size="12" text-anchor="middle">1 Separation</text>
+  <path d="M120 150 Q220 90 300 140" stroke="#8fc4ff" stroke-width="2" fill="none" stroke-dasharray="5 4" marker-end="url(#a)"/>
+  <text x="215" y="100" fill="#eaf1ff" font-size="12" text-anchor="middle">2 Boostback burn</text>
+  <path d="M310 160 Q400 210 470 250" stroke="#8fc4ff" stroke-width="2" fill="none" stroke-dasharray="5 4" marker-end="url(#a)"/>
+  <text x="330" y="208" fill="#eaf1ff" font-size="12" text-anchor="middle">3 Coast</text>
+  <text x="430" y="290" fill="#eaf1ff" font-size="12" text-anchor="middle">4 Landing burn</text>
+  <text x="430" y="306" fill="#ff8a6c" font-size="12" text-anchor="middle">13 engines</text>
+  <text x="545" y="190" fill="#eaf1ff" font-size="12" text-anchor="middle">5 Catch</text>
+  <!-- info boxes -->
+  <rect x="30" y="250" width="300" height="76" rx="10" fill="none" stroke="#5ea7ff" stroke-opacity="0.6"/>
+  <text x="46" y="274" fill="#5ea7ff" font-size="13" font-weight="700">Booster (Super Heavy)</text>
+  <text x="46" y="294" fill="#eaf1ff" font-size="12">Caught on 3 of 14 flights</text>
+  <text x="46" y="312" fill="#eaf1ff" font-size="12">Catch ~7 min after liftoff</text>
+  <rect x="30" y="336" width="300" height="76" rx="10" fill="none" stroke="#8a6cff" stroke-opacity="0.7"/>
+  <text x="46" y="360" fill="#8a6cff" font-size="13" font-weight="700">Ship (upper stage)</text>
+  <text x="46" y="380" fill="#eaf1ff" font-size="12">Never caught: returns from orbit,</text>
+  <text x="46" y="398" fill="#eaf1ff" font-size="12">must survive reentry heat first</text>
+</svg>
