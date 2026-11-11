@@ -89,10 +89,11 @@ MODELS = {
     "aircomp": ("Reciprocating Air Compressor", "Two-stage piston compressor, 12 bar, with reed valves, an intercooler, a V-belt drive and an air tank."),
     "planetary": ("Planetary Gearbox", "Single-stage planetary reducer, 5 : 1: sun, three planets, fixed ring gear and carrier output."),
     "turbofan": ("Turbofan Jet Engine", "Two-spool high-bypass turbofan in the CFM56-7B style: 61-inch fan, booster, 9-stage compressor, combustor and turbines."),
+    "gatevalve": ("Gate Valve", "NPS 4 Class 150 OS&Y wedge gate valve: rising stem, bolted bonnet, graphite packing and handwheel."),
 }
 # Free 3D model pages on engx3d.com/3d-models/ (slug, different parts to download)
 MODEL_PAGES = {"turbo": ("turbocharger", 34), "pump": ("centrifugal-pump", 20), "pulleybelt": ("v-belt-drive", 20),
-               "gearbox": ("gear-reducer", 29), "diesel855": ("marine-diesel-engine", 62), "phe": ("plate-heat-exchanger", 22), "aircomp": ("reciprocating-air-compressor", 43), "planetary": ("planetary-gearbox", 27), "turbofan": ("turbofan-engine", 39)}
+               "gearbox": ("gear-reducer", 29), "diesel855": ("marine-diesel-engine", 62), "phe": ("plate-heat-exchanger", 22), "aircomp": ("reciprocating-air-compressor", 43), "planetary": ("planetary-gearbox", 27), "turbofan": ("turbofan-engine", 39), "gatevalve": ("gate-valve", 22)}
 LIST_KEYS = ("sources", "takeaways", "faq")
 SIMPLE_KEYS = ("category", "tag", "date", "updated", "model", "draft", "image", "video")
 WORDS_PER_MIN = 220
