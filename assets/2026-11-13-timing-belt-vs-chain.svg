@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+<rect width="800" height="460" fill="#0a1120"/>
+<text x="400" y="36" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">Timing belt vs timing chain</text>
+<text x="400" y="58" text-anchor="middle" fill="#8fc4ff" font-size="14">Both turn the camshafts once for every two crankshaft turns</text>
+<!-- belt panel -->
+<rect x="20" y="76" width="370" height="364" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+<text x="205" y="104" text-anchor="middle" fill="#eaf1ff" font-size="18" font-weight="700">Timing belt</text>
+<text x="205" y="124" text-anchor="middle" fill="#8fc4ff" font-size="13">toothed rubber, runs dry, outside the engine</text>
+<circle cx="140" cy="180" r="36" fill="none" stroke="#5ea7ff" stroke-width="3"/><circle cx="140" cy="180" r="6" fill="#5ea7ff"/>
+<circle cx="270" cy="180" r="36" fill="none" stroke="#5ea7ff" stroke-width="3"/><circle cx="270" cy="180" r="6" fill="#5ea7ff"/>
+<circle cx="205" cy="300" r="18" fill="none" stroke="#ffb86b" stroke-width="3"/><circle cx="205" cy="300" r="4" fill="#ffb86b"/>
+<circle cx="285" cy="262" r="12" fill="none" stroke="#8fa1bc" stroke-width="3"/>
+<path d="M104 180 L187 300 M223 300 L297 262 M306 180 A36 36 0 0 0 234 180 M176 180 A36 36 0 0 0 104 180 M176 180 L234 180 M297 262 L306 180" fill="none" stroke="#2fb27a" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+<text x="140" y="236" text-anchor="middle" fill="#8fc4ff" font-size="11">cam pulley</text>
+<text x="270" y="236" text-anchor="middle" fill="#8fc4ff" font-size="11">cam pulley</text>
+<text x="205" y="334" text-anchor="middle" fill="#ffb86b" font-size="11">crank pulley</text>
+<text x="318" y="282" fill="#8fa1bc" font-size="11">tensioner</text>
+<text x="40" y="368" fill="#eaf1ff" font-size="13">Replace every ~60,000–100,000 miles</text>
+<text x="40" y="390" fill="#eaf1ff" font-size="13">Quiet · often also drives the water pump</text>
+<text x="40" y="412" fill="#ff8a7a" font-size="13">Can break without warning</text>
+<!-- chain panel -->
+<rect x="410" y="76" width="370" height="364" rx="12" fill="#111b30" stroke="#2a3a5c"/>
+<text x="595" y="104" text-anchor="middle" fill="#eaf1ff" font-size="18" font-weight="700">Timing chain</text>
+<text x="595" y="124" text-anchor="middle" fill="#8fc4ff" font-size="13">steel links, runs in engine oil, inside a cover</text>
+<circle cx="530" cy="180" r="36" fill="none" stroke="#5ea7ff" stroke-width="3" stroke-dasharray="5 4"/><circle cx="530" cy="180" r="6" fill="#5ea7ff"/>
+<circle cx="660" cy="180" r="36" fill="none" stroke="#5ea7ff" stroke-width="3" stroke-dasharray="5 4"/><circle cx="660" cy="180" r="6" fill="#5ea7ff"/>
+<circle cx="595" cy="300" r="18" fill="none" stroke="#ffb86b" stroke-width="3" stroke-dasharray="4 3"/><circle cx="595" cy="300" r="4" fill="#ffb86b"/>
+<path d="M494 180 L577 300 M613 300 L696 180 M696 180 A36 36 0 0 0 624 180 M566 180 A36 36 0 0 0 494 180 M566 180 L624 180" fill="none" stroke="#8a6cff" stroke-width="6" stroke-dasharray="7 3" opacity="0.95"/>
+<rect x="676" y="200" width="10" height="90" rx="4" fill="#8fa1bc" transform="rotate(-34 681 245)"/>
+<text x="712" y="262" fill="#8fa1bc" font-size="11">tensioner</text>
+<text x="530" y="236" text-anchor="middle" fill="#8fc4ff" font-size="11">cam sprocket</text>
+<text x="660" y="236" text-anchor="middle" fill="#8fc4ff" font-size="11">cam sprocket</text>
+<text x="595" y="334" text-anchor="middle" fill="#ffb86b" font-size="11">crank sprocket</text>
+<text x="430" y="368" fill="#eaf1ff" font-size="13">Usually lasts 150,000–200,000+ miles</text>
+<text x="430" y="390" fill="#eaf1ff" font-size="13">Noisier · needs clean oil and oil pressure</text>
+<text x="430" y="412" fill="#ffb86b" font-size="13">Warns you: rattle at cold start</text>
+</svg>

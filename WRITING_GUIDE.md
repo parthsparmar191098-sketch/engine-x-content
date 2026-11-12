@@ -36,7 +36,7 @@ Instructions for the daily run that writes one blog post.
 - `summary`: 1–2 sentences, under 220 characters
 - `seo_title`: the title Google shows, **max 60 characters**, main search phrase first (e.g. "Pump Cavitation and NPSH Explained, With an Example"). The on-page headline (`title`) can stay longer. " | Engine-X Blog" is added automatically only if it still fits.
 - `seo_description`: the Google snippet, **120–155 characters**, says what the reader will learn; only facts that are in the post. If left out, the summary is cut to 155 automatically.
-- `model`: turbo | pulleybelt | pump | gearbox | diesel855 | phe | aircomp | planetary | turbofan | gatevalve | differential — only when genuinely related (also adds the "Free 3D model · download" box for that machine; posts without it show all models in a strip)
+- `model`: turbo | pulleybelt | pump | gearbox | diesel855 | phe | aircomp | planetary | turbofan | gatevalve | differential | carengine — only when genuinely related (also adds the "Free 3D model · download" box for that machine; posts without it show all models in a strip)
 - `sources`: every source used, `Name | URL`
 - `keywords`: 3–6 comma-separated search phrases people would actually type (e.g. "how does a jack-up vessel work")
 - `takeaways`: 3–5 short bullet points (one line each) — shown in the "In short" box at the top
@@ -77,6 +77,7 @@ Write every post so ChatGPT, Perplexity, Google AI Overviews and similar tools c
   - https://engx3d.com/turbofan-engine (jet engines, turbofans, gas turbines)
   - https://engx3d.com/gate-valve (gate valves, isolation valves, valve parts)
   - https://engx3d.com/car-differential (differentials, final drives, axles)
+  - https://engx3d.com/car-engine (car engines, petrol engines, four-stroke cycle, valves, timing belts and chains)
 - **Consistent names.** Always "Engine-X" (with the hyphen) and "Parth Parmar".
 
 ### AEO v2 — what gets a post cited first
