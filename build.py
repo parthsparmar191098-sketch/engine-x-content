@@ -91,10 +91,11 @@ MODELS = {
     "turbofan": ("Turbofan Jet Engine", "Two-spool high-bypass turbofan in the CFM56-7B style: 61-inch fan, booster, 9-stage compressor, combustor and turbines."),
     "gatevalve": ("Gate Valve", "NPS 4 Class 150 OS&Y wedge gate valve: rising stem, bolted bonnet, graphite packing and handwheel."),
     "differential": ("Car Differential", "Rear-axle open differential, 41 : 11 = 3.73 : 1: ring and pinion, spider and side gears, axle shafts."),
+    "carengine": ("Car Engine", "2.0 L inline-four petrol engine, DOHC 16-valve: crankshaft, pistons, chain-driven camshafts, valves, spark plugs and injectors."),
 }
 # Free 3D model pages on engx3d.com/3d-models/ (slug, different parts to download)
 MODEL_PAGES = {"turbo": ("turbocharger", 34), "pump": ("centrifugal-pump", 20), "pulleybelt": ("v-belt-drive", 20),
-               "gearbox": ("gear-reducer", 29), "diesel855": ("marine-diesel-engine", 62), "phe": ("plate-heat-exchanger", 22), "aircomp": ("reciprocating-air-compressor", 43), "planetary": ("planetary-gearbox", 27), "turbofan": ("turbofan-engine", 39), "gatevalve": ("gate-valve", 22), "differential": ("car-differential", 34)}
+               "gearbox": ("gear-reducer", 29), "diesel855": ("marine-diesel-engine", 62), "phe": ("plate-heat-exchanger", 22), "aircomp": ("reciprocating-air-compressor", 43), "planetary": ("planetary-gearbox", 27), "turbofan": ("turbofan-engine", 39), "gatevalve": ("gate-valve", 22), "differential": ("car-differential", 34), "carengine": ("car-engine", 44)}
 LIST_KEYS = ("sources", "takeaways", "faq")
 SIMPLE_KEYS = ("category", "tag", "date", "updated", "model", "draft", "image", "video")
 WORDS_PER_MIN = 220
