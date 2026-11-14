@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+<rect width="800" height="460" fill="#0a1120"/>
+<text x="400" y="34" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">Reading a motor nameplate</text>
+<text x="400" y="56" text-anchor="middle" fill="#8fc4ff" font-size="14">Example: 7.5 kW, 4-pole, IEC frame 132M three-phase motor</text>
+<rect x="190" y="80" width="420" height="250" rx="10" fill="#c9cdd1" stroke="#8fa1bc" stroke-width="2"/>
+<circle cx="206" cy="96" r="5" fill="#8a929c"/><circle cx="594" cy="96" r="5" fill="#8a929c"/><circle cx="206" cy="314" r="5" fill="#8a929c"/><circle cx="594" cy="314" r="5" fill="#8a929c"/>
+<text x="400" y="110" text-anchor="middle" fill="#0a1120" font-size="16" font-weight="700">3~ INDUCTION MOTOR</text>
+<g fill="#0a1120" font-size="14" font-family="ui-monospace, Menlo, monospace">
+<text x="215" y="142">Type 132M-4</text><text x="420" y="142">IM B3   IP55</text>
+<text x="215" y="170">400 V Δ / 690 V Y</text><text x="420" y="170">50 Hz</text>
+<text x="215" y="198">7.5 kW</text><text x="320" y="198">14.3 A</text><text x="420" y="198">1450 rpm</text>
+<text x="215" y="226">cos φ 0.84</text><text x="420" y="226">Eff. 90.4 %</text>
+<text x="215" y="254">Ins. Cl. F</text><text x="320" y="254">S1</text><text x="420" y="254">Amb. 40 °C</text>
+<text x="215" y="282">DE 6308</text><text x="320" y="282">NDE 6308</text><text x="420" y="282">56 kg</text>
+</g>
+<g font-size="12.5" fill="#8fc4ff">
+<line x1="190" y1="138" x2="150" y2="118" stroke="#5ea7ff"/><text x="20" y="112">Frame: shaft 132 mm</text><text x="20" y="127">high, M = foot length</text>
+<line x1="190" y1="166" x2="150" y2="168" stroke="#5ea7ff"/><text x="20" y="166">Δ on 400 V, Y on 690 V</text>
+<line x1="190" y1="194" x2="150" y2="214" stroke="#5ea7ff"/><text x="20" y="212">Output power at the</text><text x="20" y="227">shaft, full-load current</text>
+<line x1="190" y1="250" x2="150" y2="268" stroke="#5ea7ff"/><text x="20" y="266">S1 = continuous duty</text>
+<line x1="610" y1="138" x2="650" y2="118" stroke="#ffb86b"/><text x="656" y="112" fill="#ffb86b">IP55: dust and</text><text x="656" y="127" fill="#ffb86b">water jets</text>
+<line x1="610" y1="194" x2="650" y2="190" stroke="#ffb86b"/><text x="656" y="186" fill="#ffb86b">1450 rpm ≈ 1500</text><text x="656" y="201" fill="#ffb86b">→ 4 poles, 3.3 % slip</text>
+<line x1="610" y1="250" x2="650" y2="252" stroke="#ffb86b"/><text x="656" y="248" fill="#ffb86b">Max room</text><text x="656" y="263" fill="#ffb86b">temperature</text>
+<line x1="610" y1="278" x2="650" y2="300" stroke="#ffb86b"/><text x="656" y="300" fill="#ffb86b">Bearing sizes:</text><text x="656" y="315" fill="#ffb86b">order spares</text>
+</g>
+<text x="400" y="372" text-anchor="middle" fill="#eaf1ff" font-size="14">Speed tells you the poles: 3000 → 2 · 1500 → 4 · 1000 → 6 · 750 → 8 (at 50 Hz)</text>
+<text x="400" y="398" text-anchor="middle" fill="#8fa1bc" font-size="13">Generic example plate based on a 7.5 kW 132M data sheet · not a real brand</text>
+</svg>
