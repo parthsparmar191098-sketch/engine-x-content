@@ -4,7 +4,7 @@ date: 2026-11-16
 category: learn
 summary: A crunch going into gear has three usual causes: a worn synchro ring, a clutch that does not fully release, or low or wrong gear oil. How to tell them apart from the symptoms, and what each one means inside the gearbox.
 seo_title: Why Does a Manual Gearbox Grind When Shifting?
-seo_description: Why a manual gearbox grinds when changing gear: worn synchro rings, a dragging clutch or low gear oil, how to tell them apart, and what else pops it out of gear.
+seo_description: Why a manual gearbox grinds when changing gear: worn synchro rings, a dragging clutch or low gear oil, how to tell them apart, and why gears pop out.
 image: assets/2026-11-16-gearbox-grinding.svg
 image_alt: Three-step section diagram of a synchroniser: the sleeve moves towards the gear, the brass blocker ring rubs on the gear cone to match speeds, then the sleeve locks onto the dog teeth; notes explain grinding from a worn ring or a dragging clutch
 image_credit: Diagram: Engine-X
@@ -79,7 +79,9 @@ The table is drawn from [AA1Car](https://www.aa1car.com/library/2004/ic20428.htm
 
 ## Why does a car pop out of gear?
 
-Because the sleeve is not staying fully engaged on the dog teeth. The teeth are normally given a slight reverse taper, so load pulls the sleeve tighter into gear; a worn synchro or worn teeth lose that grip ([Jalopnik](https://www.jalopnik.com/2213891/signs-synchronizers-failing-manual-transmission/)). Bent or loose shift forks and rails, worn hub splines, missing interlock parts, too much shaft end play and even a broken engine mount can do the same ([AA1Car](https://www.aa1car.com/library/2004/ic20428.htm)).
+Because the sleeve is not staying fully on the dog teeth. The teeth have a slight reverse taper, so load pulls the sleeve tighter into gear; worn synchros or teeth lose that grip ([Jalopnik](https://www.jalopnik.com/2213891/signs-synchronizers-failing-manual-transmission/)).
+
+Bent or loose shift forks and rails, worn hub splines, missing interlock parts, too much shaft end play and even a broken engine mount can do the same ([AA1Car](https://www.aa1car.com/library/2004/ic20428.htm)).
 
 Reverse is a special case: it is usually straight-cut and not synchronised, so it is meant to be selected only with the car stopped ([Edumech](https://www.edumech.co.uk/learn/transmission-and-driveline/synchromesh-manual-transmission)). A crunch into reverse while rolling is normal behaviour, not a fault, but it still chips the teeth.
 
