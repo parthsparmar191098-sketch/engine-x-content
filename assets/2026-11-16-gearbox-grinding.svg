@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Inter, Arial, sans-serif">
+<rect width="800" height="460" fill="#0a1120"/>
+<text x="400" y="34" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">How a synchroniser stops the crunch</text>
+<text x="400" y="56" text-anchor="middle" fill="#8fc4ff" font-size="14">Three moments of one gear change, seen in section</text>
+<g font-size="13">
+<!-- panel frames -->
+<rect x="20" y="76" width="244" height="290" rx="10" fill="#111b30" stroke="#2a3a5c"/>
+<rect x="278" y="76" width="244" height="290" rx="10" fill="#111b30" stroke="#2a3a5c"/>
+<rect x="536" y="76" width="244" height="290" rx="10" fill="#111b30" stroke="#2a3a5c"/>
+<text x="142" y="102" text-anchor="middle" fill="#eaf1ff" font-weight="700">1 · Sleeve moves</text>
+<text x="400" y="102" text-anchor="middle" fill="#eaf1ff" font-weight="700">2 · Ring matches speed</text>
+<text x="658" y="102" text-anchor="middle" fill="#eaf1ff" font-weight="700">3 · Sleeve locks gear</text>
+</g>
+<!-- reusable drawing: shaft line, gear (right), hub (left), ring, sleeve -->
+<g id="p1">
+<rect x="40" y="300" width="204" height="10" fill="#5a6a86"/>
+<rect x="60" y="210" width="40" height="90" fill="#8fa1bc"/><text x="80" y="330" text-anchor="middle" fill="#8fa1bc" font-size="11">hub</text>
+<rect x="170" y="150" width="54" height="150" fill="#3aa6d8"/><text x="197" y="330" text-anchor="middle" fill="#3aa6d8" font-size="11">gear</text>
+<polygon points="160,215 170,205 170,300 160,300" fill="#5ea7ff"/><text x="150" y="196" fill="#5ea7ff" font-size="10">dog teeth + cone</text>
+<polygon points="128,214 146,208 146,300 128,300" fill="#d9a21b"/><text x="122" y="348" fill="#d9a21b" font-size="11">blocker ring</text>
+<rect x="56" y="186" width="58" height="22" rx="3" fill="#e9eef6"/><text x="85" y="178" text-anchor="middle" fill="#e9eef6" font-size="11">sleeve</text>
+<path d="M118 197 h20" stroke="#ffb86b" stroke-width="3" marker-end="url(#a)"/>
+</g>
+<g id="p2">
+<rect x="298" y="300" width="204" height="10" fill="#5a6a86"/>
+<rect x="318" y="210" width="40" height="90" fill="#8fa1bc"/>
+<rect x="428" y="150" width="54" height="150" fill="#3aa6d8"/>
+<polygon points="418,215 428,205 428,300 418,300" fill="#5ea7ff"/>
+<polygon points="398,214 416,208 416,300 398,300" fill="#d9a21b"/>
+<rect x="346" y="186" width="58" height="22" rx="3" fill="#e9eef6"/>
+<path d="M412 240 q8 -10 0 -20" stroke="#ff8a7a" stroke-width="2" fill="none"/><path d="M412 270 q8 -10 0 -20" stroke="#ff8a7a" stroke-width="2" fill="none"/>
+<text x="400" y="348" text-anchor="middle" fill="#ff8a7a" font-size="11">friction on the cone</text>
+</g>
+<g id="p3">
+<rect x="556" y="300" width="204" height="10" fill="#5a6a86"/>
+<rect x="576" y="210" width="40" height="90" fill="#8fa1bc"/>
+<rect x="686" y="150" width="54" height="150" fill="#3aa6d8"/>
+<polygon points="676,215 686,205 686,300 676,300" fill="#5ea7ff"/>
+<polygon points="656,214 674,208 674,300 656,300" fill="#d9a21b"/>
+<rect x="626" y="186" width="60" height="22" rx="3" fill="#e9eef6"/>
+<text x="658" y="348" text-anchor="middle" fill="#2fb27a" font-size="11">same speed: locked, no crunch</text>
+</g>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#ffb86b"/></marker></defs>
+<text x="400" y="396" text-anchor="middle" fill="#eaf1ff" font-size="14">Worn ring → speeds not matched → sleeve teeth hit the dog teeth → grinding</text>
+<text x="400" y="420" text-anchor="middle" fill="#8fa1bc" font-size="13">Clutch not fully releasing → the input shaft keeps turning → every gear grinds</text>
+</svg>
