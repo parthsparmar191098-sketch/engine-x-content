@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" font-family="Inter, Arial, sans-serif">
+<rect width="800" height="440" fill="#0a1120"/>
+<text x="400" y="34" text-anchor="middle" fill="#eaf1ff" font-size="22" font-weight="700">Same pump, same pressure, two directions</text>
+<text x="400" y="56" text-anchor="middle" fill="#8fc4ff" font-size="14">63 mm bore, 36 mm rod · 160 bar · 24 L/min</text>
+<!-- extend -->
+<text x="40" y="100" fill="#2fb27a" font-size="16" font-weight="700">Extend: oil on the full piston</text>
+<rect x="40" y="116" width="360" height="90" rx="6" fill="none" stroke="#8fa1bc" stroke-width="3"/>
+<rect x="42" y="118" width="196" height="86" fill="#2fb27a" opacity="0.35"/>
+<rect x="238" y="118" width="22" height="86" fill="#e2571f"/>
+<rect x="260" y="146" width="250" height="30" fill="#b8bec6"/>
+<path d="M520 161 h50" stroke="#2fb27a" stroke-width="4" marker-end="url(#g)"/>
+<text x="60" y="166" fill="#eaf1ff" font-size="13">31.2 cm²</text>
+<text x="600" y="150" fill="#eaf1ff" font-size="15">49.9 kN</text>
+<text x="600" y="172" fill="#2fb27a" font-size="15">12.8 cm/s</text>
+<!-- retract -->
+<text x="40" y="256" fill="#3aa6d8" font-size="16" font-weight="700">Retract: oil on the ring round the rod</text>
+<rect x="40" y="272" width="360" height="90" rx="6" fill="none" stroke="#8fa1bc" stroke-width="3"/>
+<rect x="238" y="274" width="22" height="86" fill="#e2571f"/>
+<rect x="260" y="274" width="138" height="86" fill="#3aa6d8" opacity="0.35"/>
+<rect x="260" y="302" width="250" height="30" fill="#b8bec6"/>
+<path d="M570 317 h-50" stroke="#3aa6d8" stroke-width="4" marker-end="url(#b)"/>
+<text x="290" y="296" fill="#eaf1ff" font-size="13">21.0 cm²</text>
+<text x="600" y="306" fill="#eaf1ff" font-size="15">33.6 kN</text>
+<text x="600" y="328" fill="#3aa6d8" font-size="15">19.1 cm/s</text>
+<defs>
+<marker id="g" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#2fb27a"/></marker>
+<marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#3aa6d8"/></marker>
+</defs>
+<text x="400" y="400" text-anchor="middle" fill="#eaf1ff" font-size="14">Force = pressure × area · Speed = flow ÷ area</text>
+<text x="400" y="424" text-anchor="middle" fill="#8fa1bc" font-size="13">Smaller area on the rod side: less force, more speed</text>
+</svg>
