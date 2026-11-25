@@ -96,10 +96,11 @@ MODELS = {
     "manualgearbox": ("Manual Gearbox", "5-speed manual transaxle with VW 02T ratios: input and output shafts, five gear pairs, synchronisers, shift forks and final drive."),
     "butterflyvalve": ("Butterfly Valve", "NPS 6 lug butterfly valve, concentric and rubber seated, with a 24 : 1 worm gear operator: disc, stem, seat, gearbox and handwheel."),
     "hydraulics": ("Hydraulic Pump & Cylinder", "16 cm³/rev gear pump, tank, relief valve and 4/3 valve driving a 63/36 mm double-acting tie-rod cylinder."),
+    "windturbine": ("Wind Turbine Nacelle", "5 MW geared nacelle: hub and pitch drives, main shaft, 97 : 1 planetary gearbox, brake, generator and yaw drives."),
 }
 # Free 3D model pages on engx3d.com/3d-models/ (slug, different parts to download)
 MODEL_PAGES = {"turbo": ("turbocharger", 34), "pump": ("centrifugal-pump", 20), "pulleybelt": ("v-belt-drive", 20),
-               "gearbox": ("gear-reducer", 29), "diesel855": ("marine-diesel-engine", 62), "phe": ("plate-heat-exchanger", 22), "aircomp": ("reciprocating-air-compressor", 43), "planetary": ("planetary-gearbox", 27), "turbofan": ("turbofan-engine", 39), "gatevalve": ("gate-valve", 22), "differential": ("car-differential", 34), "carengine": ("car-engine", 44), "inductionmotor": ("induction-motor", 21), "manualgearbox": ("manual-gearbox", 42), "butterflyvalve": ("butterfly-valve", 21), "hydraulics": ("hydraulic-cylinder", 34)}
+               "gearbox": ("gear-reducer", 29), "diesel855": ("marine-diesel-engine", 62), "phe": ("plate-heat-exchanger", 22), "aircomp": ("reciprocating-air-compressor", 43), "planetary": ("planetary-gearbox", 27), "turbofan": ("turbofan-engine", 39), "gatevalve": ("gate-valve", 22), "differential": ("car-differential", 34), "carengine": ("car-engine", 44), "inductionmotor": ("induction-motor", 21), "manualgearbox": ("manual-gearbox", 42), "butterflyvalve": ("butterfly-valve", 21), "hydraulics": ("hydraulic-cylinder", 34), "windturbine": ("wind-turbine", 45)}
 LIST_KEYS = ("sources", "takeaways", "faq")
 SIMPLE_KEYS = ("category", "tag", "date", "updated", "model", "draft", "image", "video")
 WORDS_PER_MIN = 220
